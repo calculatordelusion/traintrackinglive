@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Train, Clock, AlertTriangle, CheckCircle, ArrowRight, Navigation, HelpCircle, TrendingUp, Timer, Search, XCircle, Activity } from "lucide-react";
+import PremiumHero from "@/components/PremiumHero";
 import SEOHead from "@/components/SEOHead";
 import { fetchLivePositions, type LiveTrainPosition } from "@/lib/trainApi";
 

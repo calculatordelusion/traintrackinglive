@@ -107,7 +107,7 @@ export default function UrduFAQPage() {
 
       <div className="bg-card border-t py-4 text-center">
         <p className="text-sm text-muted-foreground">
-          This page is available in English: <Link to="/faq" className="text-primary font-semibold hover:underline">Switch to English →</Link>
+          یہ صفحہ انگریزی میں بھی دستیاب ہے: <Link to="/faq" className="text-primary font-semibold hover:underline">English version →</Link>
         </p>
       </div>
     </div>

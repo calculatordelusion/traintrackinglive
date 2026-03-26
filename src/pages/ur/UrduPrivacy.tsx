@@ -1,6 +1,6 @@
 import SEOHead from "@/components/SEOHead";
 import UrduPageShell from "@/components/UrduPageShell";
-import Privacy from "@/pages/Privacy";
+import UrduPrivacyContent from "@/components/ur/UrduPrivacyContent";
 import { Shield, Lock, Eye } from "lucide-react";
 
 const faqs = [
@@ -34,7 +34,7 @@ export default function UrduPrivacy() {
         faqs={faqs}
         englishPath="/privacy"
       >
-        <Privacy />
+        <UrduPrivacyContent />
       </UrduPageShell>
     </div>
   );

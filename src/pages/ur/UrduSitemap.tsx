@@ -1,6 +1,6 @@
 import SEOHead from "@/components/SEOHead";
 import UrduPageShell from "@/components/UrduPageShell";
-import Sitemap from "@/pages/Sitemap";
+import UrduSitemapContent from "@/components/ur/UrduSitemapContent";
 import { Map } from "lucide-react";
 
 export default function UrduSitemap() {
@@ -22,7 +22,7 @@ export default function UrduSitemap() {
         faqs={[]}
         englishPath="/sitemap"
       >
-        <Sitemap />
+        <UrduSitemapContent />
       </UrduPageShell>
     </div>
   );

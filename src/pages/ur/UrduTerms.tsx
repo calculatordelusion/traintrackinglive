@@ -1,6 +1,6 @@
 import SEOHead from "@/components/SEOHead";
 import UrduPageShell from "@/components/UrduPageShell";
-import Terms from "@/pages/Terms";
+import UrduTermsContent from "@/components/ur/UrduTermsContent";
 import { FileText, Shield, Scale, Gavel } from "lucide-react";
 
 const faqs = [
@@ -39,7 +39,7 @@ export default function UrduTerms() {
         faqs={faqs}
         englishPath="/terms"
       >
-        <Terms />
+        <UrduTermsContent />
       </UrduPageShell>
     </div>
   );

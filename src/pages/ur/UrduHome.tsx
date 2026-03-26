@@ -679,9 +679,9 @@ export default function UrduHomePage() {
       <div className="bg-card border-t py-5 text-center">
         <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
           <Globe className="w-4 h-4" />
-          <span>This page is available in English:</span>
+          <span>یہ صفحہ انگریزی میں بھی دستیاب ہے:</span>
           <Link to="/" className="text-primary font-semibold hover:underline inline-flex items-center gap-1">
-            Switch to English →
+            English version →
           </Link>
         </div>
       </div>

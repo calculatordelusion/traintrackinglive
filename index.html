@@ -148,8 +148,8 @@
       .ssr-loader-dot:nth-child(3){animation-delay:.3s}
       @keyframes ssr-loader-bounce{0%,80%,100%{transform:scale(0.6);opacity:.4}40%{transform:scale(1);opacity:1}}
       /* Hide shell + loader once React mounts */
-      #root:not(:empty)+.ssr-shell{display:none}
-      #root:not(:empty)~.ssr-loader-wrap{opacity:0;transform:translateY(12px);pointer-events:none}
+      #root:not(:empty)~.ssr-shell{display:none}
+      #root:not(:empty)~.ssr-loader-wrap{display:none}
     </style>
 
     <!-- Structured Data: WebApplication -->

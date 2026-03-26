@@ -70,11 +70,6 @@ User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /supabase/
-Disallow: /_next/
-Disallow: /src/
-Disallow: /node_modules/
-Disallow: /*.js$
-Disallow: /*.css$
 
 # Sitemap Index (contains 6 sub-sitemaps)
 Sitemap: https://trackmytrain.pk/sitemap-index.xml

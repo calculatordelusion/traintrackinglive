@@ -39,6 +39,7 @@ export default function Navbar() {
     { label: "Contact", path: "/contact", icon: Phone },
   ];
 
+  const isUrdu = location.pathname.startsWith("/ur");
   const isActive = (path: string) => location.pathname === path;
 
   return (

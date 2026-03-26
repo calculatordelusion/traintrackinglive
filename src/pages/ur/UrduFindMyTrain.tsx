@@ -1,6 +1,6 @@
 import SEOHead from "@/components/SEOHead";
 import UrduPageShell from "@/components/UrduPageShell";
-import FindMyTrain from "@/pages/FindMyTrain";
+import UrduFindMyTrainTool from "@/components/ur/UrduFindMyTrainTool";
 import { Navigation, MapPin, Shield, Smartphone, Zap, Radio } from "lucide-react";
 
 const faqs = [
@@ -40,7 +40,7 @@ export default function UrduFindMyTrain() {
         faqs={faqs}
         englishPath="/find-my-train"
       >
-        <FindMyTrain />
+        <UrduFindMyTrainTool />
       </UrduPageShell>
     </div>
   );

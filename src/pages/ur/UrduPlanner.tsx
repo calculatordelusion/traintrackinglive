@@ -1,6 +1,6 @@
 import SEOHead from "@/components/SEOHead";
 import UrduPageShell from "@/components/UrduPageShell";
-import JourneyPlanner from "@/pages/JourneyPlanner";
+import UrduJourneyPlannerTool from "@/components/ur/UrduJourneyPlannerTool";
 import { Route, MapPin, Clock, CreditCard, Train, Zap } from "lucide-react";
 
 const faqs = [
@@ -61,7 +61,7 @@ export default function UrduPlanner() {
         ctaDesc="اوپر ابتدائی اور منزل کا اسٹیشن منتخب کریں اور تمام دستیاب ٹرینیں دیکھیں۔"
         englishPath="/planner"
       >
-        <JourneyPlanner />
+        <UrduJourneyPlannerTool />
       </UrduPageShell>
     </div>
   );

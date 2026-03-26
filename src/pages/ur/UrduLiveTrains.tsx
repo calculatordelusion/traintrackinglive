@@ -1,6 +1,6 @@
 import SEOHead from "@/components/SEOHead";
 import UrduPageShell from "@/components/UrduPageShell";
-import LiveTrains from "@/pages/LiveTrains";
+import UrduLiveTrainsTool from "@/components/ur/UrduLiveTrainsTool";
 import { Navigation, Train, MapPin, Clock, Zap, Shield, Eye } from "lucide-react";
 
 const faqs = [
@@ -70,7 +70,7 @@ export default function UrduLiveTrains() {
         ctaDesc="اوپر نقشے پر تمام فعال ٹرینوں کی ریئل ٹائم GPS پوزیشنز دیکھیں۔ مفت، سائن اپ کی ضرورت نہیں۔"
         englishPath="/train"
       >
-        <LiveTrains />
+        <UrduLiveTrainsTool />
       </UrduPageShell>
     </div>
   );

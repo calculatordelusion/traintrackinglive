@@ -1,6 +1,6 @@
 import SEOHead from "@/components/SEOHead";
 import UrduPageShell from "@/components/UrduPageShell";
-import RoutesPage from "@/pages/Routes";
+import UrduRoutesExplorer from "@/components/ur/UrduRoutesExplorer";
 import { Route, Train, MapPin, Navigation, Globe, Zap } from "lucide-react";
 
 const faqs = [
@@ -64,7 +64,7 @@ export default function UrduRoutes() {
         ctaDesc="اوپر سے اپنا مطلوبہ روٹ منتخب کریں اور تمام دستیاب ٹرینیں، اسٹاپس، اور فاصلے دیکھیں۔"
         englishPath="/routes"
       >
-        <RoutesPage />
+        <UrduRoutesExplorer />
       </UrduPageShell>
     </div>
   );

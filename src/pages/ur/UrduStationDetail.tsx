@@ -2,7 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import SEOHead from "@/components/SEOHead";
-import RelatedLinks from "@/components/RelatedLinks";
+import UrduRelatedLinks from "@/components/ur/UrduRelatedLinks";
 import { getStationBySlug } from "@/data/stations";
 import { trains } from "@/data/trains";
 

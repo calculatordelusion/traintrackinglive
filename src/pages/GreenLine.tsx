@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Train, Clock, MapPin, Star, Zap, Shield, Wifi, Utensils, BatteryCharging, ArrowRight, Navigation, CreditCard, HelpCircle, Users, Gauge, Route, Calendar } from "lucide-react";
+import PremiumHero from "@/components/PremiumHero";
 import { fetchTrainDetail, type TrainDetail } from "@/lib/trainApi";
 import SEOHead from "@/components/SEOHead";
 

@@ -1,6 +1,6 @@
 import SEOHead from "@/components/SEOHead";
 import UrduPageShell from "@/components/UrduPageShell";
-import Stations from "@/pages/Stations";
+import UrduStationsDirectory from "@/components/ur/UrduStationsDirectory";
 import { MapPin, Train, Building2, Clock, Globe, Search } from "lucide-react";
 
 const faqs = [
@@ -72,7 +72,7 @@ export default function UrduStations() {
         ctaDesc="اوپر سرچ باکس میں اسٹیشن کا نام ٹائپ کریں اور مکمل تفصیلات دیکھیں۔"
         englishPath="/stations"
       >
-        <Stations />
+        <UrduStationsDirectory />
       </UrduPageShell>
     </div>
   );

@@ -1,6 +1,6 @@
 import SEOHead from "@/components/SEOHead";
 import UrduPageShell from "@/components/UrduPageShell";
-import Blog from "@/pages/Blog";
+import UrduBlogIndex from "@/components/ur/UrduBlogIndex";
 import { BookOpen, Newspaper, Lightbulb, TrendingUp } from "lucide-react";
 
 const faqs = [
@@ -35,7 +35,7 @@ export default function UrduBlog() {
         faqs={faqs}
         englishPath="/blog"
       >
-        <Blog />
+        <UrduBlogIndex />
       </UrduPageShell>
     </div>
   );

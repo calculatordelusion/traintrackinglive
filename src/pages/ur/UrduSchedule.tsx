@@ -1,6 +1,6 @@
 import SEOHead from "@/components/SEOHead";
 import UrduPageShell from "@/components/UrduPageShell";
-import Schedule from "@/pages/Schedule";
+import UrduScheduleTable from "@/components/ur/UrduScheduleTable";
 import { Calendar, Train, Clock, MapPin, Route, Zap } from "lucide-react";
 
 const faqs = [
@@ -68,7 +68,7 @@ export default function UrduSchedule() {
         ctaDesc="اوپر سرچ باکس میں اپنی ٹرین کا نام ٹائپ کریں اور مکمل شیڈول فوری طور پر دیکھیں۔"
         englishPath="/schedule"
       >
-        <Schedule />
+        <UrduScheduleTable />
       </UrduPageShell>
     </div>
   );

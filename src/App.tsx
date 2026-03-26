@@ -55,15 +55,19 @@ const UrduSchedule = lazy(() => import("./pages/ur/UrduSchedule"));
 const UrduRoutes = lazy(() => import("./pages/ur/UrduRoutes"));
 const UrduPlanner = lazy(() => import("./pages/ur/UrduPlanner"));
 const UrduFindMyTrain = lazy(() => import("./pages/ur/UrduFindMyTrain"));
+const UrduTrainDetail = lazy(() => import("./pages/ur/UrduTrainDetail"));
 const UrduExpressTrains = lazy(() => import("./pages/ur/UrduExpressTrains"));
 const UrduTicketPricing = lazy(() => import("./pages/ur/UrduTicketPricing"));
 const UrduCheckDelays = lazy(() => import("./pages/ur/UrduCheckDelays"));
 const UrduGreenLine = lazy(() => import("./pages/ur/UrduGreenLine"));
 const UrduPrivacy = lazy(() => import("./pages/ur/UrduPrivacy"));
 const UrduBlog = lazy(() => import("./pages/ur/UrduBlog"));
+const UrduBlogPost = lazy(() => import("./pages/ur/UrduBlogPost"));
 const UrduSitemap = lazy(() => import("./pages/ur/UrduSitemap"));
 const UrduRequestFeature = lazy(() => import("./pages/ur/UrduRequestFeature"));
 const UrduScheduleGuide = lazy(() => import("./pages/ur/UrduScheduleGuide"));
+const UrduStationDetail = lazy(() => import("./pages/ur/UrduStationDetail"));
+const UrduRouteDetail = lazy(() => import("./pages/ur/UrduRouteDetail"));
 const UrduBuyTickets = lazy(() => import("./pages/ur/UrduBuyTickets"));
 const UrduRailwayHelpline = lazy(() => import("./pages/ur/UrduRailwayHelpline"));
 const UrduTerms = lazy(() => import("./pages/ur/UrduTerms"));
@@ -138,12 +142,12 @@ const App = () => {
                   {/* Urdu routes — /ur/ prefix */}
                   <Route path="/ur" element={<UrduWrapper><UrduHome /></UrduWrapper>} />
                   <Route path="/ur/train" element={<UrduWrapper><UrduLiveTrains /></UrduWrapper>} />
-                  <Route path="/ur/train/:id" element={<UrduWrapper><TrainDetail /></UrduWrapper>} />
+                  <Route path="/ur/train/:id" element={<UrduWrapper><UrduTrainDetail /></UrduWrapper>} />
                   <Route path="/ur/stations" element={<UrduWrapper><UrduStations /></UrduWrapper>} />
-                  <Route path="/ur/stations/:slug" element={<UrduWrapper><StationDetail /></UrduWrapper>} />
+                  <Route path="/ur/stations/:slug" element={<UrduWrapper><UrduStationDetail /></UrduWrapper>} />
                   <Route path="/ur/schedule" element={<UrduWrapper><UrduSchedule /></UrduWrapper>} />
                   <Route path="/ur/routes" element={<UrduWrapper><UrduRoutes /></UrduWrapper>} />
-                  <Route path="/ur/routes/:slug" element={<UrduWrapper><RouteDetail /></UrduWrapper>} />
+                  <Route path="/ur/routes/:slug" element={<UrduWrapper><UrduRouteDetail /></UrduWrapper>} />
                   <Route path="/ur/planner" element={<UrduWrapper><UrduPlanner /></UrduWrapper>} />
                   <Route path="/ur/find-my-train" element={<UrduWrapper><UrduFindMyTrain /></UrduWrapper>} />
                   <Route path="/ur/express-trains" element={<UrduWrapper><UrduExpressTrains /></UrduWrapper>} />
@@ -153,7 +157,7 @@ const App = () => {
                   <Route path="/ur/contact" element={<UrduWrapper><UrduContact /></UrduWrapper>} />
                   <Route path="/ur/privacy" element={<UrduWrapper><UrduPrivacy /></UrduWrapper>} />
                   <Route path="/ur/blog" element={<UrduWrapper><UrduBlog /></UrduWrapper>} />
-                  <Route path="/ur/blog/:slug" element={<UrduWrapper><BlogPost /></UrduWrapper>} />
+                  <Route path="/ur/blog/:slug" element={<UrduWrapper><UrduBlogPost /></UrduWrapper>} />
                   <Route path="/ur/green-line-express" element={<UrduWrapper><UrduGreenLine /></UrduWrapper>} />
                   <Route path="/ur/check-delays" element={<UrduWrapper><UrduCheckDelays /></UrduWrapper>} />
                   <Route path="/ur/sitemap" element={<UrduWrapper><UrduSitemap /></UrduWrapper>} />

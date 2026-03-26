@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import heroTrainBg from "@/assets/hero-train-bg.webp";
 
 const majorTrainSchedules = [
   { name: "گرین لائن ایکسپریس", number: "5UP / 6DN", from: "کراچی کینٹ", to: "مارگلہ (اسلام آباد)", type: "اے سی پریمیم", departure: "16:00", arrival: "10:00", duration: "18 گھنٹے", days: "روزانہ", stops: 12, highlight: true },
@@ -103,7 +104,12 @@ export default function UrduScheduleGuide() {
       />
 
       {/* Hero */}
-      <section className="relative overflow-hidden bg-hero-gradient text-primary-foreground py-12 sm:py-16 md:py-20">
+      <section className="relative overflow-hidden bg-hero-gradient text-primary-foreground py-14 sm:py-20 md:py-24">
+        <div className="absolute inset-0">
+          <img src={heroTrainBg} alt="" aria-hidden="true" className="w-full h-full object-cover opacity-10" width={1920} height={1080} />
+        </div>
+        <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-[hsl(152_55%_40%/0.08)] blur-3xl" />
+        <div className="absolute -bottom-32 -left-32 w-80 h-80 rounded-full bg-[hsl(43_74%_49%/0.06)] blur-3xl" />
         <div className="relative container mx-auto px-4">
           <div className="flex items-center gap-2 text-sm mb-3">
             <Link to="/ur" className="opacity-70 hover:opacity-100">ہوم</Link>
@@ -111,10 +117,10 @@ export default function UrduScheduleGuide() {
             <span>شیڈول گائیڈ</span>
           </div>
           <div className="text-center max-w-4xl mx-auto">
-            <div className="inline-flex items-center gap-2 bg-primary-foreground/10 backdrop-blur-sm rounded-full px-4 py-1.5 text-sm mb-4">
+            <div className="inline-flex items-center gap-2.5 bg-[hsl(152_55%_40%/0.15)] backdrop-blur-sm border border-[hsl(152_55%_40%/0.3)] rounded-full px-5 py-2.5 text-sm mb-6 shadow-lg shadow-[hsl(152_55%_40%/0.1)]">
               <Calendar className="w-4 h-4" /> آفیشل ٹائم ٹیبل • مارچ 2026 اپڈیٹ
             </div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black mb-4 leading-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-4 leading-tight drop-shadow-sm">
               پاکستان ریلوے <span className="text-gradient-gold">ٹرین شیڈول اور ٹائم ٹیبل</span> 2026
             </h1>
             <p className="text-base sm:text-lg text-primary-foreground/80 max-w-3xl mx-auto leading-relaxed">

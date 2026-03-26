@@ -97,29 +97,15 @@ export default function ExpressTrainsPage() {
           ]
         }]}
       />
-      {/* Hero */}
-      <section className="bg-hero-gradient text-primary-foreground py-12 sm:py-16">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center gap-2 text-sm mb-3">
-            <Link to="/" className="opacity-70 hover:opacity-100">Home</Link>
-            <span className="opacity-50">›</span>
-            <span>Express Trains</span>
-          </div>
-          <div className="text-center">
-            <div className="inline-flex items-center gap-2 bg-primary-foreground/10 backdrop-blur-sm rounded-full px-4 py-1.5 text-sm mb-4">
-              <Zap className="w-4 h-4" /> Premium Express & AC Train Services
-            </div>
-            <h1 className="text-3xl md:text-5xl font-black mb-3">
-              Pakistan Railways<br />
-              <span className="text-gradient-gold">Express Trains — Complete Guide</span>
-            </h1>
-            <p className="text-base sm:text-lg opacity-80 max-w-2xl mx-auto mt-4">
-              Complete list of all express and AC trains with real-time tracking, schedules, routes, and booking information. Find the perfect train for your journey.
-            </p>
-            <p className="opacity-60 text-sm mt-2">پاکستان ریلوے ایکسپریس ٹرینیں — مکمل فہرست اور ٹریکنگ</p>
-          </div>
-        </div>
-      </section>
+      <PremiumHero
+        breadcrumbs={[{ label: "Home", to: "/" }, { label: "Express Trains" }]}
+        badge="PREMIUM EXPRESS & AC TRAIN SERVICES"
+        badgeIcon={<Zap className="w-3.5 h-3.5 text-[hsl(152_55%_45%)]" />}
+        title={<>Pakistan Railways<br /><span className="text-gradient-gold">Express Trains — Complete Guide</span></>}
+        subtitle="Complete list of all express and AC trains with real-time tracking, schedules, routes, and booking information. Find the perfect train for your journey."
+        subtitleUrdu="پاکستان ریلوے ایکسپریس ٹرینیں — مکمل فہرست اور ٹریکنگ"
+        centered
+      />
 
       {/* Floating Stats */}
       <div className="container mx-auto px-4 -mt-6 relative z-10">

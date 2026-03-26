@@ -233,47 +233,27 @@ export default function JourneyPlannerPage() {
           "description": `Find trains between any two of ${meta.totalStations}+ Pakistan Railways stations. Compare schedules, fares, and journey times.`
         }]}
       />
-      {/* Hero */}
-      <section className="relative overflow-hidden bg-hero-gradient text-primary-foreground py-12 sm:py-16 md:py-20">
-        <div className="absolute inset-0 bg-[url('https://traintracking.pk/_next/image?url=%2FTrainTrackingpk-TrackLiveTrains.webp&w=2048&q=75')] bg-cover bg-center opacity-15" />
-        <div className="relative container mx-auto px-4">
-          <div className="flex items-center gap-2 text-sm mb-3">
-            <Link to="/" className="opacity-70 hover:opacity-100">Home</Link>
-            <span className="opacity-50">›</span>
-            <span>Journey Planner</span>
-          </div>
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2.5 bg-[hsl(152_55%_40%/0.15)] backdrop-blur-sm border border-[hsl(152_55%_40%/0.3)] rounded-full px-5 py-2.5 text-sm mb-6">
-              <span className="relative flex h-3 w-3">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[hsl(152_55%_45%)] opacity-75" />
-                <span className="relative inline-flex rounded-full h-3 w-3 bg-[hsl(152_55%_45%)]" />
-              </span>
-              <span className="font-semibold tracking-wider text-[hsl(152_55%_45%)]">REAL-TIME ROUTE SEARCH</span>
+      <PremiumHero
+        breadcrumbs={[{ label: "Home", to: "/" }, { label: "Journey Planner" }]}
+        badge="REAL-TIME ROUTE SEARCH"
+        title={<>Plan Your{" "}<span className="text-gradient-gold">Train Journey</span></>}
+        subtitle={`Find the best routes between any two stations in Pakistan. Compare timings, durations, and choose the perfect train for your travel across ${meta.totalStations}+ stations.`}
+        subtitleUrdu="اپنا سفر پلان کریں - پاکستان میں کسی بھی دو اسٹیشنوں کے درمیان"
+      >
+        {/* Stats in hero */}
+        <div className="grid grid-cols-3 gap-3 mt-8 max-w-lg">
+          {[
+            { value: `${meta.totalStations}+`, label: "Stations" },
+            { value: `${meta.totalTrains}+`, label: "Trains" },
+            { value: `${meta.totalRoutes}+`, label: "Routes" },
+          ].map((s, i) => (
+            <div key={i} className="bg-[hsl(0_0%_100%/0.08)] backdrop-blur-sm rounded-xl p-4 text-center border border-[hsl(0_0%_100%/0.1)]">
+              <div className="text-2xl font-bold stat-counter">{s.value}</div>
+              <div className="text-xs opacity-70">{s.label}</div>
             </div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black mb-4 leading-tight">
-              🗺️ Plan Your{" "}
-              <span className="text-gradient-gold">Train Journey</span>
-            </h1>
-            <p className="text-base sm:text-lg opacity-90 mb-2 max-w-2xl">Find the best routes between any two stations in Pakistan. Compare timings, durations, and choose the perfect train for your travel across {meta.totalStations}+ stations.</p>
-            <p className="opacity-60 text-sm">اپنا سفر پلان کریں - پاکستان میں کسی بھی دو اسٹیشنوں کے درمیان</p>
-          </div>
-
-          {/* Stats in hero */}
-          <div className="grid grid-cols-3 gap-3 mt-8 max-w-lg">
-            {[
-              { value: `${meta.totalStations}+`, label: "Stations", icon: "📍" },
-              { value: `${meta.totalTrains}+`, label: "Trains", icon: "🚂" },
-              { value: `${meta.totalRoutes}+`, label: "Routes", icon: "🛤️" },
-            ].map((s, i) => (
-              <div key={i} className="bg-[hsl(0_0%_100%/0.08)] backdrop-blur-sm rounded-xl p-4 text-center border border-[hsl(0_0%_100%/0.1)]">
-                <div className="text-lg mb-1">{s.icon}</div>
-                <div className="text-2xl font-bold stat-counter">{s.value}</div>
-                <div className="text-xs opacity-70">{s.label}</div>
-              </div>
-            ))}
-          </div>
+          ))}
         </div>
-      </section>
+      </PremiumHero>
 
       <div className="container mx-auto px-4 py-8 sm:py-12">
         {/* Search Form */}

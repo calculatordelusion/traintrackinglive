@@ -107,29 +107,15 @@ export default function TicketPricingPage() {
           }))
         }]}
       />
-      {/* Hero */}
-      <section className="bg-hero-gradient text-primary-foreground py-12 sm:py-16">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center gap-2 text-sm mb-3">
-            <Link to="/" className="opacity-70 hover:opacity-100">Home</Link>
-            <span className="opacity-50">›</span>
-            <span>Ticket Pricing</span>
-          </div>
-          <div className="text-center">
-            <div className="inline-flex items-center gap-2 bg-primary-foreground/10 backdrop-blur-sm rounded-full px-4 py-1.5 text-sm mb-4">
-              <CreditCard className="w-4 h-4" /> Updated Fare List 2026
-            </div>
-            <h1 className="text-3xl md:text-5xl font-black mb-3">
-              Pakistan Railways<br />
-              <span className="text-gradient-gold">Ticket Prices & Fares 2026</span>
-            </h1>
-            <p className="text-base sm:text-lg opacity-80 max-w-2xl mx-auto mt-4">
-              Complete and updated fare list for all major routes across Pakistan. Compare prices across Economy, Business, AC Standard, AC Business, Sleeper, and Parlor classes.
-            </p>
-            <p className="opacity-60 text-sm mt-2">پاکستان ریلوے ٹکٹ کی قیمتیں — تمام کلاسز اور روٹس</p>
-          </div>
-        </div>
-      </section>
+      <PremiumHero
+        breadcrumbs={[{ label: "Home", to: "/" }, { label: "Ticket Pricing" }]}
+        badge="UPDATED FARE LIST 2026"
+        badgeIcon={<CreditCard className="w-3.5 h-3.5 text-[hsl(152_55%_45%)]" />}
+        title={<>Pakistan Railways<br /><span className="text-gradient-gold">Ticket Prices & Fares 2026</span></>}
+        subtitle="Complete and updated fare list for all major routes across Pakistan. Compare prices across Economy, Business, AC Standard, AC Business, Sleeper, and Parlor classes."
+        subtitleUrdu="پاکستان ریلوے ٹکٹ کی قیمتیں — تمام کلاسز اور روٹس"
+        centered
+      />
 
       {/* Floating Stats */}
       <div className="container mx-auto px-4 -mt-6 relative z-10">

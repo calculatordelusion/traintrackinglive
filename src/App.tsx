@@ -64,6 +64,10 @@ const UrduBlog = lazy(() => import("./pages/ur/UrduBlog"));
 const UrduSitemap = lazy(() => import("./pages/ur/UrduSitemap"));
 const UrduRequestFeature = lazy(() => import("./pages/ur/UrduRequestFeature"));
 const UrduScheduleGuide = lazy(() => import("./pages/ur/UrduScheduleGuide"));
+const UrduBuyTickets = lazy(() => import("./pages/ur/UrduBuyTickets"));
+const UrduRailwayHelpline = lazy(() => import("./pages/ur/UrduRailwayHelpline"));
+const UrduTerms = lazy(() => import("./pages/ur/UrduTerms"));
+const UrduDisclaimer = lazy(() => import("./pages/ur/UrduDisclaimer"));
 
 // Minimal loading fallback
 const PageLoader = () => (
@@ -155,6 +159,10 @@ const App = () => {
                   <Route path="/ur/sitemap" element={<UrduWrapper><UrduSitemap /></UrduWrapper>} />
                   <Route path="/ur/request-feature" element={<UrduWrapper><UrduRequestFeature /></UrduWrapper>} />
                   <Route path="/ur/schedule-guide" element={<UrduWrapper><UrduScheduleGuide /></UrduWrapper>} />
+                  <Route path="/ur/buy-tickets" element={<UrduWrapper><UrduBuyTickets /></UrduWrapper>} />
+                  <Route path="/ur/railway-helpline" element={<UrduWrapper><UrduRailwayHelpline /></UrduWrapper>} />
+                  <Route path="/ur/terms" element={<UrduWrapper><UrduTerms /></UrduWrapper>} />
+                  <Route path="/ur/disclaimer" element={<UrduWrapper><UrduDisclaimer /></UrduWrapper>} />
 
                   <Route path="*" element={<NotFound />} />
                 </Routes>

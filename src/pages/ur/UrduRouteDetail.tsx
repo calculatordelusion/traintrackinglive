@@ -6,6 +6,7 @@ import SEOHead from "@/components/SEOHead";
 import { getRouteBySlug } from "@/data/routeDetails";
 import NotFound from "@/pages/NotFound";
 import { formatFareUrdu, getRouteUrduDetailContent, getRouteUrduFaqs, getRouteUrduSummary, getRouteUrduTravelTips, translateStationName, translateTrainName, translateTrainType } from "@/lib/urduContent";
+import UrduRelatedLinks from "@/components/ur/UrduRelatedLinks";
 
 export default function UrduRouteDetail() {
   const { slug } = useParams<{ slug: string }>();

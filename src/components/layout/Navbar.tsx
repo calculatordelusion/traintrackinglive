@@ -137,6 +137,17 @@ export default function Navbar() {
               </Button>
             </Link>
 
+            {/* Language Toggle */}
+            <Link
+              to={isUrdu ? "/" : "/ur"}
+              className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg hover:bg-muted transition-colors text-xs sm:text-sm font-semibold text-muted-foreground hover:text-foreground"
+              aria-label={isUrdu ? "Switch to English" : "اردو میں دیکھیں"}
+            >
+              <Globe className="w-3.5 h-3.5" />
+              <span className="hidden sm:inline">{isUrdu ? "English" : "اردو"}</span>
+              <span className="sm:hidden">{isUrdu ? "EN" : "اردو"}</span>
+            </Link>
+
             <button
               onClick={toggle}
               className="p-2 rounded-lg hover:bg-muted transition-colors"

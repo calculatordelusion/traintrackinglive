@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { HelpCircle, Train, CreditCard, Navigation, MapPin, Zap, Shield } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import heroTrainBg from "@/assets/hero-train-bg.webp";
 
 const faqCategories = [
   {
@@ -53,15 +54,19 @@ export default function UrduFAQPage() {
       />
 
       {/* Hero */}
-      <section className="bg-hero-gradient text-primary-foreground py-12 sm:py-16">
-        <div className="container mx-auto px-4 text-center">
-          <div className="inline-flex items-center gap-2 bg-primary-foreground/10 backdrop-blur-sm rounded-full px-4 py-1.5 text-sm mb-4">
+      <section className="relative overflow-hidden bg-hero-gradient text-primary-foreground py-14 sm:py-20">
+        <div className="absolute inset-0">
+          <img src={heroTrainBg} alt="" aria-hidden="true" className="w-full h-full object-cover opacity-10" width={1920} height={1080} />
+        </div>
+        <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-[hsl(152_55%_40%/0.08)] blur-3xl" />
+        <div className="relative container mx-auto px-4 text-center">
+          <div className="inline-flex items-center gap-2 bg-[hsl(152_55%_40%/0.15)] backdrop-blur-sm border border-[hsl(152_55%_40%/0.3)] rounded-full px-5 py-2.5 text-sm mb-6 shadow-lg shadow-[hsl(152_55%_40%/0.1)]">
             <HelpCircle className="w-4 h-4" /> تمام سوالات کے جوابات ایک جگہ
           </div>
-          <h1 className="text-3xl md:text-5xl font-black mb-3">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-4 drop-shadow-sm">
             اکثر پوچھے جانے والے <span className="text-gradient-gold">سوالات</span>
           </h1>
-          <p className="text-base opacity-80 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg opacity-85 max-w-2xl mx-auto">
             پاکستان ریلوے، ٹکٹ بکنگ، لائیو ٹریکنگ، اور سفری منصوبہ بندی سے متعلق ہر سوال کا جواب
           </p>
         </div>
@@ -72,15 +77,17 @@ export default function UrduFAQPage() {
         <div className="max-w-4xl mx-auto space-y-8">
           {faqCategories.map((cat) => (
             <div key={cat.id}>
-              <div className="flex items-center gap-3 mb-4">
-                <cat.icon className="w-6 h-6 text-primary" />
+              <div className="flex items-center gap-3 mb-5">
+                <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                  <cat.icon className="w-5 h-5 text-primary" />
+                </div>
                 <h2 className="text-xl font-bold">{cat.title}</h2>
               </div>
               <Accordion type="single" collapsible className="space-y-3">
                 {cat.faqs.map((faq, i) => (
-                  <AccordionItem key={i} value={`${cat.id}-${i}`} className="border rounded-xl px-4">
-                    <AccordionTrigger className="text-right font-semibold text-sm sm:text-base py-4">{faq.q}</AccordionTrigger>
-                    <AccordionContent className="text-muted-foreground text-sm leading-relaxed pb-4">{faq.a}</AccordionContent>
+                  <AccordionItem key={i} value={`${cat.id}-${i}`} className="border rounded-xl px-5 shadow-sm hover:shadow-md transition-shadow">
+                    <AccordionTrigger className="text-right font-semibold text-sm sm:text-base py-5">{faq.q}</AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground text-sm leading-relaxed pb-5">{faq.a}</AccordionContent>
                   </AccordionItem>
                 ))}
               </Accordion>

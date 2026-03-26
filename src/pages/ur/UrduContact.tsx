@@ -7,6 +7,7 @@ import { Mail, Phone, Clock, MessageSquare, MapPin, Shield } from "lucide-react"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import heroTrainBg from "@/assets/hero-train-bg.webp";
 
 const contactFaqs = [
   { q: "ٹریک مائی ٹرین سے جواب ملنے میں کتنا وقت لگتا ہے؟", a: "ہم عام طور پر 2-3 کاروباری دنوں میں تمام سوالات کا جواب دیتے ہیں۔ فوری بگ رپورٹس کے لیے ہم 24 گھنٹے کے اندر جواب دینے کی کوشش کرتے ہیں۔" },
@@ -55,15 +56,19 @@ export default function UrduContactPage() {
       />
 
       {/* Hero */}
-      <section className="bg-hero-gradient text-primary-foreground py-12 sm:py-16">
-        <div className="container mx-auto px-4 text-center">
-          <div className="inline-flex items-center gap-2 bg-primary-foreground/10 backdrop-blur-sm rounded-full px-4 py-1.5 text-sm mb-4">
+      <section className="relative overflow-hidden bg-hero-gradient text-primary-foreground py-14 sm:py-20">
+        <div className="absolute inset-0">
+          <img src={heroTrainBg} alt="" aria-hidden="true" className="w-full h-full object-cover opacity-10" width={1920} height={1080} />
+        </div>
+        <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-[hsl(152_55%_40%/0.08)] blur-3xl" />
+        <div className="relative container mx-auto px-4 text-center">
+          <div className="inline-flex items-center gap-2.5 bg-[hsl(152_55%_40%/0.15)] backdrop-blur-sm border border-[hsl(152_55%_40%/0.3)] rounded-full px-5 py-2.5 text-sm mb-6 shadow-lg shadow-[hsl(152_55%_40%/0.1)]">
             <MessageSquare className="w-4 h-4" /> ہم آپ سے سننا چاہتے ہیں
           </div>
-          <h1 className="text-3xl md:text-5xl font-black mb-3">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-4 drop-shadow-sm">
             ہم سے <span className="text-gradient-gold">رابطہ</span> کریں
           </h1>
-          <p className="text-base opacity-80 max-w-xl mx-auto">
+          <p className="text-base sm:text-lg opacity-85 max-w-xl mx-auto">
             بگ رپورٹس، فیچر تجاویز، یا عمومی فیڈبیک — ہم آپ کی بات سننے کے لیے تیار ہیں۔
           </p>
         </div>

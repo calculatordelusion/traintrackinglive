@@ -1,6 +1,6 @@
 import SEOHead from "@/components/SEOHead";
 import UrduPageShell from "@/components/UrduPageShell";
-import ExpressTrains from "@/pages/ExpressTrains";
+import UrduExpressTrainsTool from "@/components/ur/UrduExpressTrainsTool";
 import { Train, Star, Zap, CreditCard, Clock, MapPin } from "lucide-react";
 
 const faqs = [
@@ -72,7 +72,7 @@ export default function UrduExpressTrains() {
         ctaDesc="اوپر سے اپنی پسندیدہ ایکسپریس ٹرین منتخب کریں اور شیڈول، کرایہ، اور لائیو ٹریکنگ دیکھیں۔"
         englishPath="/express-trains"
       >
-        <ExpressTrains />
+        <UrduExpressTrainsTool />
       </UrduPageShell>
     </div>
   );

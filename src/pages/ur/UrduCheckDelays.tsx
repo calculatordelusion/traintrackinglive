@@ -1,6 +1,6 @@
 import SEOHead from "@/components/SEOHead";
 import UrduPageShell from "@/components/UrduPageShell";
-import CheckDelays from "@/pages/CheckDelays";
+import UrduDelayChecker from "@/components/ur/UrduDelayChecker";
 import { AlertTriangle, Clock, Navigation, Shield, CloudFog, Zap } from "lucide-react";
 
 const faqs = [
@@ -67,7 +67,7 @@ export default function UrduCheckDelays() {
         ctaDesc="اوپر اپنی ٹرین تلاش کریں اور ریئل ٹائم تاخیر اسٹیٹس فوری طور پر دیکھیں۔"
         englishPath="/check-delays"
       >
-        <CheckDelays />
+        <UrduDelayChecker />
       </UrduPageShell>
     </div>
   );

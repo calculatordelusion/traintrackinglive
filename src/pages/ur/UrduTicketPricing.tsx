@@ -1,6 +1,6 @@
 import SEOHead from "@/components/SEOHead";
 import UrduPageShell from "@/components/UrduPageShell";
-import TicketPricing from "@/pages/TicketPricing";
+import UrduTicketPricingTable from "@/components/ur/UrduTicketPricingTable";
 import { CreditCard, Train, Users, Clock, Star, Percent } from "lucide-react";
 
 const faqs = [
@@ -60,7 +60,7 @@ export default function UrduTicketPricing() {
         ctaDesc="اوپر سے اپنی ٹرین اور کلاس منتخب کریں اور تازہ ترین کرایے فوری طور پر دیکھیں۔"
         englishPath="/ticket-pricing"
       >
-        <TicketPricing />
+        <UrduTicketPricingTable />
       </UrduPageShell>
     </div>
   );

@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Search, Train, Clock, MapPin, HelpCircle, Route, Globe, Wifi, Navigation, Gauge, Map, ChevronRight, Star, Zap, BarChart3, Shield } from "lucide-react";
+import PremiumHero from "@/components/PremiumHero";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import SEOHead from "@/components/SEOHead";
 import { trains } from "@/data/trains";

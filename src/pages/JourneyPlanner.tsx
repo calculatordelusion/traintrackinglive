@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { MapPin, ArrowRight, Clock, Train, ArrowUpDown, Search, Zap, Navigation, HelpCircle, Loader2, Globe, Shield, Star, BarChart3 } from "lucide-react";
+import PremiumHero from "@/components/PremiumHero";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import SEOHead from "@/components/SEOHead";
 import { searchPlannerRoutes, fetchPlannerStations } from "@/lib/trainApi";

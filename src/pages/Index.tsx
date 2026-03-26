@@ -116,12 +116,21 @@ export default function HomePage() {
     <div>
       {/* Hero Section */}
       <section aria-label="Hero — Live train tracking" className="relative overflow-hidden bg-hero-gradient text-primary-foreground">
+        {/* Multi-layer background */}
         <div className="absolute inset-0">
-          <img src={heroTrainBg} alt="" aria-hidden="true" className="w-full h-full object-cover opacity-20" width={1920} height={1080} />
+          <img src={heroTrainBg} alt="" aria-hidden="true" className="w-full h-full object-cover opacity-[0.12]" width={1920} height={1080} />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[hsl(var(--hero-gradient-end)/0.9)]" />
         </div>
-        <div className="relative container mx-auto px-4 py-12 sm:py-16 md:py-24">
+        {/* Decorative gradient orbs */}
+        <div className="absolute -top-40 -right-40 w-[500px] h-[500px] rounded-full bg-[hsl(152_55%_40%/0.07)] blur-3xl" />
+        <div className="absolute top-1/2 -left-32 w-[400px] h-[400px] rounded-full bg-[hsl(43_74%_49%/0.05)] blur-3xl" />
+        <div className="absolute bottom-0 right-1/4 w-[300px] h-[300px] rounded-full bg-[hsl(152_60%_30%/0.06)] blur-3xl" />
+        {/* Subtle grid pattern overlay */}
+        <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, currentColor 1px, transparent 0)', backgroundSize: '40px 40px' }} />
+
+        <div className="relative container mx-auto px-4 py-14 sm:py-20 md:py-28">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2.5 bg-[hsl(152_55%_40%/0.15)] backdrop-blur-sm border border-[hsl(152_55%_40%/0.3)] rounded-full px-5 py-2.5 text-sm mb-6">
+            <div className="inline-flex items-center gap-2.5 bg-[hsl(152_55%_40%/0.15)] backdrop-blur-sm border border-[hsl(152_55%_40%/0.3)] rounded-full px-5 py-2.5 text-sm mb-7 shadow-lg shadow-[hsl(152_55%_40%/0.1)]">
               <span className="relative flex h-3 w-3">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[hsl(152_55%_45%)] opacity-75" />
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-[hsl(152_55%_45%)]" />
@@ -129,70 +138,70 @@ export default function HomePage() {
               <span className="font-semibold tracking-wider text-[hsl(152_55%_45%)]">LIVE GPS TRACKING • UPDATED EVERY 5 SECONDS</span>
             </div>
 
-            <h1 className="text-3xl sm:text-4xl md:text-6xl font-black mb-4 leading-tight">
-              Track <span className="text-primary-foreground font-black">My</span> Train —{" "}
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-black mb-5 leading-[1.08] drop-shadow-sm">
+              Track My Train —{" "}
               <span className="text-gradient-gold">Live Railway GPS Tracker</span>
             </h1>
 
-            <p className="text-base sm:text-lg md:text-xl opacity-90 mb-6 sm:mb-8 max-w-2xl">
+            <p className="text-base sm:text-lg md:text-xl opacity-85 mb-8 sm:mb-10 max-w-2xl leading-relaxed">
               See exactly where your Pakistan Railways train is right now. Live GPS positions, up-to-the-second delay info, and accurate ETAs for {netStats.totalTrains || "164"}+ trains across {netStats.totalStations || "342"}+ stations — completely free, no signup needed.
             </p>
 
-            <div className="flex flex-col sm:flex-row flex-wrap gap-3 mb-6 sm:mb-8">
+            <div className="flex flex-col sm:flex-row flex-wrap gap-3 mb-8 sm:mb-10">
               <Link to="/train">
-                <Button size="lg" className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-primary-foreground gap-2 rounded-xl font-semibold">
-                  <Train className="w-4 h-4" /> Open Live Tracker <ArrowRight className="w-4 h-4" />
+                <Button size="lg" className="w-full sm:w-auto bg-accent text-accent-foreground hover:bg-accent/90 gap-2 rounded-xl font-bold shadow-lg shadow-accent/25 px-7 text-base">
+                  <Train className="w-5 h-5" /> Open Live Tracker <ArrowRight className="w-4 h-4" />
                 </Button>
               </Link>
               <Link to="/find-my-train">
-                <Button size="lg" variant="outline" className="w-full sm:w-auto border-primary-foreground/30 bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20 gap-2 rounded-xl">
+                <Button size="lg" variant="outline" className="w-full sm:w-auto border-primary-foreground/25 bg-transparent text-primary-foreground hover:bg-primary-foreground/10 gap-2 rounded-xl font-semibold px-6">
                   <Navigation className="w-4 h-4" /> Find My Train (GPS)
                 </Button>
               </Link>
               <Link to="/schedule">
-                <Button size="lg" variant="outline" className="w-full sm:w-auto border-primary-foreground/30 bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20 gap-2 rounded-xl">
+                <Button size="lg" variant="outline" className="w-full sm:w-auto border-primary-foreground/25 bg-transparent text-primary-foreground hover:bg-primary-foreground/10 gap-2 rounded-xl font-semibold px-6">
                   <Clock className="w-4 h-4" /> View Schedules
                 </Button>
               </Link>
             </div>
 
-            <div className="flex flex-wrap gap-3 sm:gap-4 text-xs sm:text-sm opacity-80">
-              <span>✅ 100% Free Forever</span>
-              <span>✅ No Account Required</span>
-              <span>✅ Works on 2G/3G</span>
-              <span>✅ Bilingual (English & Urdu)</span>
+            <div className="flex flex-wrap gap-x-5 gap-y-2 text-xs sm:text-sm opacity-75">
+              <span className="flex items-center gap-1.5"><CheckCircle2 className="w-3.5 h-3.5 text-[hsl(152_55%_50%)]" /> 100% Free Forever</span>
+              <span className="flex items-center gap-1.5"><CheckCircle2 className="w-3.5 h-3.5 text-[hsl(152_55%_50%)]" /> No Account Required</span>
+              <span className="flex items-center gap-1.5"><CheckCircle2 className="w-3.5 h-3.5 text-[hsl(152_55%_50%)]" /> Works on 2G/3G</span>
+              <span className="flex items-center gap-1.5"><CheckCircle2 className="w-3.5 h-3.5 text-[hsl(152_55%_50%)]" /> Bilingual (EN & اردو)</span>
             </div>
           </div>
 
           {/* Stats - Desktop sidebar */}
           <div className="absolute right-4 md:right-12 top-1/2 -translate-y-1/2 hidden lg:flex flex-col gap-3">
             {[
-              { icon: Wifi, value: stats.running || stats.liveCount || stats.moving, label: "Moving Trains", color: "text-emerald-400" },
-              { icon: Train, value: stats.atStation, label: "At Stations", color: "text-amber-400" },
-              { icon: Zap, value: stats.total, label: "Total Trains", color: "text-blue-400" },
+              { icon: Wifi, value: stats.running || stats.liveCount || stats.moving, label: "Moving Trains", color: "text-emerald-400", bg: "bg-emerald-500/15" },
+              { icon: Train, value: stats.atStation, label: "At Stations", color: "text-amber-400", bg: "bg-amber-500/15" },
+              { icon: Zap, value: stats.total, label: "Total Trains", color: "text-blue-400", bg: "bg-blue-500/15" },
             ].map((stat, i) => (
-              <div key={i} className="bg-card/90 backdrop-blur-md text-card-foreground rounded-xl px-5 py-3 flex items-center gap-3 shadow-lg border border-border/50 hover-lift cursor-default">
-                <div className={`w-10 h-10 rounded-lg ${i === 0 ? 'bg-emerald-500/15' : i === 1 ? 'bg-amber-500/15' : 'bg-blue-500/15'} flex items-center justify-center`}>
+              <div key={i} className="bg-card/90 backdrop-blur-md text-card-foreground rounded-xl px-5 py-3.5 flex items-center gap-3.5 shadow-xl border border-border/50 hover-lift cursor-default">
+                <div className={`w-11 h-11 rounded-xl ${stat.bg} flex items-center justify-center`}>
                   <stat.icon className={`w-5 h-5 ${stat.color}`} />
                 </div>
                 <div>
-                  <div className={`text-2xl font-bold stat-counter ${stat.color}`}>{stat.value}</div>
-                  <div className="text-xs text-muted-foreground">{stat.label}</div>
+                  <div className={`text-2xl font-black stat-counter ${stat.color} tracking-tight`}>{stat.value}</div>
+                  <div className="text-xs text-muted-foreground font-medium">{stat.label}</div>
                 </div>
               </div>
             ))}
           </div>
 
           {/* Stats - Mobile inline */}
-          <div className="grid grid-cols-3 gap-3 mt-8 lg:hidden">
+          <div className="grid grid-cols-3 gap-3 mt-10 lg:hidden">
             {[
               { value: stats.running || stats.liveCount || stats.moving, label: "Moving", color: "text-emerald-400" },
               { value: stats.atStation, label: "At Station", color: "text-amber-400" },
               { value: stats.total, label: "Total", color: "text-blue-400" },
             ].map((stat, i) => (
-              <div key={i} className="bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-3 text-center border border-primary-foreground/10">
-                <div className={`text-2xl font-bold stat-counter ${stat.color}`}>{stat.value}</div>
-                <div className="text-xs opacity-70">{stat.label}</div>
+              <div key={i} className="bg-primary-foreground/8 backdrop-blur-sm rounded-xl p-3.5 text-center border border-primary-foreground/10 shadow-lg">
+                <div className={`text-2xl font-black stat-counter ${stat.color} tracking-tight`}>{stat.value}</div>
+                <div className="text-xs opacity-70 font-medium mt-0.5">{stat.label}</div>
               </div>
             ))}
           </div>

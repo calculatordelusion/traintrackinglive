@@ -7,6 +7,7 @@ import SEOHead from "@/components/SEOHead";
 import { blogPosts } from "@/data/blogPosts";
 import { getUrduBlogPostBySlug, urduBlogPosts } from "@/data/urduBlogPosts";
 import { urduBlogEnhancements } from "@/data/urduBlogEnhancements";
+import UrduRelatedLinks from "@/components/ur/UrduRelatedLinks";
 
 export default function UrduBlogPost() {
   const { slug } = useParams();

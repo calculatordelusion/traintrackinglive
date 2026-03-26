@@ -60,6 +60,7 @@ export default function UrduPlanner() {
         ctaTitle="ابھی سفر کا منصوبہ بنائیں"
         ctaDesc="اوپر ابتدائی اور منزل کا اسٹیشن منتخب کریں اور تمام دستیاب ٹرینیں دیکھیں۔"
         englishPath="/planner"
+        linkContext="route"
       >
         <UrduJourneyPlannerTool />
       </UrduPageShell>

@@ -59,6 +59,7 @@ export default function UrduTicketPricing() {
         ctaTitle="ابھی ٹکٹ کرایہ چیک کریں"
         ctaDesc="اوپر سے اپنی ٹرین اور کلاس منتخب کریں اور تازہ ترین کرایے فوری طور پر دیکھیں۔"
         englishPath="/ticket-pricing"
+        linkContext="train"
       >
         <UrduTicketPricingTable />
       </UrduPageShell>

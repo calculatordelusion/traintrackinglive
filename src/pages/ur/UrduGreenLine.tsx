@@ -74,6 +74,7 @@ export default function UrduGreenLine() {
         ctaLink="/ur/train"
         ctaLabel="لائیو ٹریکنگ دیکھیں"
         englishPath="/green-line-express"
+        linkContext="train"
       >
         <UrduGreenLineGuide />
       </UrduPageShell>

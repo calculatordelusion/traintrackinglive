@@ -67,6 +67,7 @@ export default function UrduSchedule() {
         ctaTitle="ابھی ٹرین شیڈول تلاش کریں"
         ctaDesc="اوپر سرچ باکس میں اپنی ٹرین کا نام ٹائپ کریں اور مکمل شیڈول فوری طور پر دیکھیں۔"
         englishPath="/schedule"
+        linkContext="schedule"
       >
         <UrduScheduleTable />
       </UrduPageShell>

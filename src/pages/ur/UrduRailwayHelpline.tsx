@@ -1,6 +1,6 @@
 import SEOHead from "@/components/SEOHead";
 import UrduPageShell from "@/components/UrduPageShell";
-import RailwayHelpline from "@/pages/RailwayHelpline";
+import UrduHelplineDirectory from "@/components/ur/UrduHelplineDirectory";
 import { Phone, Headphones, Shield, Building2, MapPin, MessageSquare } from "lucide-react";
 
 const faqs = [
@@ -52,7 +52,7 @@ export default function UrduRailwayHelpline() {
         ctaDesc="پاکستان ریلوے ہیلپ لائن 117 پر ابھی کال کریں — 24 گھنٹے، ہفتے کے 7 دن دستیاب۔"
         englishPath="/railway-helpline"
       >
-        <RailwayHelpline />
+        <UrduHelplineDirectory />
       </UrduPageShell>
     </div>
   );

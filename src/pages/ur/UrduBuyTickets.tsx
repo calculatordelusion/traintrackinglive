@@ -1,6 +1,6 @@
 import SEOHead from "@/components/SEOHead";
 import UrduPageShell from "@/components/UrduPageShell";
-import BuyTickets from "@/pages/BuyTickets";
+import UrduBuyTicketsGuide from "@/components/ur/UrduBuyTicketsGuide";
 import { Ticket, Smartphone, CreditCard, Shield, Clock, HelpCircle, Wallet, Users } from "lucide-react";
 
 const faqs = [
@@ -52,7 +52,7 @@ export default function UrduBuyTickets() {
         ctaDesc="RABTA ایپ ڈاؤن لوڈ کریں اور پاکستان ریلوے کی آن لائن ٹکٹ بکنگ سروس سے فائدہ اٹھائیں۔"
         englishPath="/buy-tickets"
       >
-        <BuyTickets />
+        <UrduBuyTicketsGuide />
       </UrduPageShell>
     </div>
   );

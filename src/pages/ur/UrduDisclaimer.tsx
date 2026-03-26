@@ -1,6 +1,6 @@
 import SEOHead from "@/components/SEOHead";
 import UrduPageShell from "@/components/UrduPageShell";
-import Disclaimer from "@/pages/Disclaimer";
+import UrduDisclaimerContent from "@/components/ur/UrduDisclaimerContent";
 import { AlertTriangle, Info, Train, Shield, CreditCard, Globe } from "lucide-react";
 
 const faqs = [
@@ -39,7 +39,7 @@ export default function UrduDisclaimer() {
         faqs={faqs}
         englishPath="/disclaimer"
       >
-        <Disclaimer />
+        <UrduDisclaimerContent />
       </UrduPageShell>
     </div>
   );

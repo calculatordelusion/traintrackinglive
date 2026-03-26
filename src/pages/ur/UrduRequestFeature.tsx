@@ -1,6 +1,6 @@
 import SEOHead from "@/components/SEOHead";
 import UrduPageShell from "@/components/UrduPageShell";
-import RequestFeature from "@/pages/RequestFeature";
+import UrduRequestFeatureForm from "@/components/ur/UrduRequestFeatureForm";
 import { Lightbulb, MessageSquare, Users } from "lucide-react";
 
 export default function UrduRequestFeature() {
@@ -31,7 +31,7 @@ export default function UrduRequestFeature() {
         ]}
         englishPath="/request-feature"
       >
-        <RequestFeature />
+        <UrduRequestFeatureForm />
       </UrduPageShell>
     </div>
   );

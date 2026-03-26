@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Train, ArrowRight, Clock, Zap, HelpCircle, Star, Navigation, MapPin, Shield, BarChart3, Utensils, Wind, Sofa, CreditCard } from "lucide-react";
+import PremiumHero from "@/components/PremiumHero";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import SEOHead from "@/components/SEOHead";
 import RelatedLinks from "@/components/RelatedLinks";

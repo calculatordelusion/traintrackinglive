@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 import { Accessibility, AlertTriangle, X, Type, ZoomIn, ZoomOut, MousePointer2, Underline, Contrast, LetterText, RotateCcw, Eye, ScanSearch, PauseCircle } from "lucide-react";
 
 export default function FloatingButtons() {

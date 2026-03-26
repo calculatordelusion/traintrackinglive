@@ -1,6 +1,7 @@
 import { useState, useEffect, useMemo } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Search, Train } from "lucide-react";
+import PremiumHero from "@/components/PremiumHero";
 import { Input } from "@/components/ui/input";
 import SEOHead from "@/components/SEOHead";
 import { Card, CardContent } from "@/components/ui/card";

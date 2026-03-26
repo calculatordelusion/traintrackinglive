@@ -64,6 +64,10 @@ const UrduBlog = lazy(() => import("./pages/ur/UrduBlog"));
 const UrduSitemap = lazy(() => import("./pages/ur/UrduSitemap"));
 const UrduRequestFeature = lazy(() => import("./pages/ur/UrduRequestFeature"));
 const UrduScheduleGuide = lazy(() => import("./pages/ur/UrduScheduleGuide"));
+const UrduBuyTickets = lazy(() => import("./pages/ur/UrduBuyTickets"));
+const UrduRailwayHelpline = lazy(() => import("./pages/ur/UrduRailwayHelpline"));
+const UrduTerms = lazy(() => import("./pages/ur/UrduTerms"));
+const UrduDisclaimer = lazy(() => import("./pages/ur/UrduDisclaimer"));
 
 // Minimal loading fallback
 const PageLoader = () => (

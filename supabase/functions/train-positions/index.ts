@@ -100,7 +100,6 @@ const stationCoords: Record<string, [number, number]> = {
   "Kemari": [24.8200, 66.9800],
   "Yousuf Wala Railway Station": [30.4800, 71.7200],
   "Marshalling Yard Pipri (Myp)": [24.9200, 67.1700],
-  "Nowshera Jn": [34.0062, 71.9750],
   "Prem Nagar": [24.8650, 67.0150],
   "Wazir Mansion": [24.8550, 67.0100],
   "Kundian Jn": [32.4500, 71.4800],
@@ -1251,9 +1250,10 @@ Deno.serve(async (req) => {
     }), {
       headers: { ...corsHeaders, 'Content-Type': 'application/json' },
     });
-  } catch (error) {
+  } catch (error: unknown) {
     console.error('Error:', error);
-    return new Response(JSON.stringify({ success: false, error: error.message }), {
+    const message = error instanceof Error ? error.message : 'Unknown error';
+    return new Response(JSON.stringify({ success: false, error: message }), {
       status: 500, headers: { ...corsHeaders, 'Content-Type': 'application/json' },
     });
   }

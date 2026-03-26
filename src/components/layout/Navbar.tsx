@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Home, Train, MapPin, Calendar, ChevronDown, Moon, Sun, Sparkles, Radio, Menu, X, Route, Navigation, Landmark, CreditCard, Zap, HelpCircle, Phone, Leaf, Ticket, BookOpen, Headphones } from "lucide-react";
+import { Home, Train, MapPin, Calendar, ChevronDown, Moon, Sun, Sparkles, Radio, Menu, X, Route, Navigation, Landmark, CreditCard, Zap, HelpCircle, Phone, Leaf, Ticket, BookOpen, Headphones, Globe } from "lucide-react";
 import { useTheme } from "@/lib/theme";
 import { Button } from "@/components/ui/button";
 
@@ -39,6 +39,7 @@ export default function Navbar() {
     { label: "Contact", path: "/contact", icon: Phone },
   ];
 
+  const isUrdu = location.pathname.startsWith("/ur");
   const isActive = (path: string) => location.pathname === path;
 
   return (
@@ -135,6 +136,17 @@ export default function Navbar() {
                 <Sparkles className="w-3.5 h-3.5" />
                 Request Feature
               </Button>
+            </Link>
+
+            {/* Language Toggle */}
+            <Link
+              to={isUrdu ? "/" : "/ur"}
+              className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg hover:bg-muted transition-colors text-xs sm:text-sm font-semibold text-muted-foreground hover:text-foreground"
+              aria-label={isUrdu ? "Switch to English" : "اردو میں دیکھیں"}
+            >
+              <Globe className="w-3.5 h-3.5" />
+              <span className="hidden sm:inline">{isUrdu ? "English" : "اردو"}</span>
+              <span className="sm:hidden">{isUrdu ? "EN" : "اردو"}</span>
             </Link>
 
             <button

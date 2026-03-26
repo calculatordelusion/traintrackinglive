@@ -3,6 +3,8 @@ import { useLocation } from "react-router-dom";
 import { Accessibility, AlertTriangle, X, Type, ZoomIn, ZoomOut, MousePointer2, Underline, Contrast, LetterText, RotateCcw, Eye, ScanSearch, PauseCircle } from "lucide-react";
 
 export default function FloatingButtons() {
+  const location = useLocation();
+  const isUrdu = location.pathname.startsWith("/ur");
   const [showAccessibility, setShowAccessibility] = useState(false);
   const [showDisclaimer, setShowDisclaimer] = useState(false);
   const [textSize, setTextSize] = useState(100);

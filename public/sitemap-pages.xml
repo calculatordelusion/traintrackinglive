@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- Homepage -->
+  <url>
+    <loc>https://trackmytrain.pk/</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://trackmytrain.pk/" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://trackmytrain.pk/ur" />
+  </url>
+
+  <!-- Core Features -->
+  <url>
+    <loc>https://trackmytrain.pk/train</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://trackmytrain.pk/train" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://trackmytrain.pk/ur/train" />
+  </url>
+  <url>
+    <loc>https://trackmytrain.pk/schedule</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://trackmytrain.pk/schedule" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://trackmytrain.pk/ur/schedule" />
+  </url>
+  <url>
+    <loc>https://trackmytrain.pk/planner</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://trackmytrain.pk/planner" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://trackmytrain.pk/ur/planner" />
+  </url>
+  <url>
+    <loc>https://trackmytrain.pk/check-delays</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://trackmytrain.pk/check-delays" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://trackmytrain.pk/ur/check-delays" />
+  </url>
+  <url>
+    <loc>https://trackmytrain.pk/find-my-train</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://trackmytrain.pk/find-my-train" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://trackmytrain.pk/ur/find-my-train" />
+  </url>
+  <url>
+    <loc>https://trackmytrain.pk/stations</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://trackmytrain.pk/stations" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://trackmytrain.pk/ur/stations" />
+  </url>
+  <url>
+    <loc>https://trackmytrain.pk/routes</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://trackmytrain.pk/routes" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://trackmytrain.pk/ur/routes" />
+  </url>
+  <url>
+    <loc>https://trackmytrain.pk/schedule-guide</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://trackmytrain.pk/schedule-guide" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://trackmytrain.pk/ur/schedule-guide" />
+  </url>
+  <url>
+    <loc>https://trackmytrain.pk/buy-tickets</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Services -->
+  <url>
+    <loc>https://trackmytrain.pk/express-trains</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://trackmytrain.pk/express-trains" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://trackmytrain.pk/ur/express-trains" />
+  </url>
+  <url>
+    <loc>https://trackmytrain.pk/green-line-express</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://trackmytrain.pk/green-line-express" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://trackmytrain.pk/ur/green-line-express" />
+  </url>
+  <url>
+    <loc>https://trackmytrain.pk/ticket-pricing</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://trackmytrain.pk/ticket-pricing" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://trackmytrain.pk/ur/ticket-pricing" />
+  </url>
+
+  <!-- Information -->
+  <url>
+    <loc>https://trackmytrain.pk/blog</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://trackmytrain.pk/blog" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://trackmytrain.pk/ur/blog" />
+  </url>
+  <url>
+    <loc>https://trackmytrain.pk/faq</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://trackmytrain.pk/faq" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://trackmytrain.pk/ur/faq" />
+  </url>
+  <url>
+    <loc>https://trackmytrain.pk/about</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://trackmytrain.pk/about" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://trackmytrain.pk/ur/about" />
+  </url>
+  <url>
+    <loc>https://trackmytrain.pk/contact</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://trackmytrain.pk/contact" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://trackmytrain.pk/ur/contact" />
+  </url>
+  <url>
+    <loc>https://trackmytrain.pk/request-feature</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://trackmytrain.pk/request-feature" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://trackmytrain.pk/ur/request-feature" />
+  </url>
+  <url>
+    <loc>https://trackmytrain.pk/privacy</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://trackmytrain.pk/privacy" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://trackmytrain.pk/ur/privacy" />
+  </url>
+  <url>
+    <loc>https://trackmytrain.pk/sitemap</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://trackmytrain.pk/sitemap" />
+    <xhtml:link rel="alternate" hreflang="ur" href="https://trackmytrain.pk/ur/sitemap" />
+  </url>
+  <url>
+    <loc>https://trackmytrain.pk/railway-helpline</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+</urlset>

@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <title>Track My Train – Live Pakistan Railway Train Tracking & GPS Status 2026</title>
+    <meta name="description" content="Track My Train gives you real-time GPS tracking for every Pakistan Railways train. Instantly check live location, speed, delays & ETAs for 164+ trains across 342+ stations. Free, no signup — works on any device." />
+    <meta name="keywords" content="track my train, train tracking, train live tracking, pakistan railway live tracking, live train status pakistan, train tracker pakistan, pakistan railways train location, pakistan train GPS tracker, train delay checker, railway schedule pakistan 2026, karachi lahore train tracker, tezgam live location, green line express tracking, karakoram express status, find my train pakistan, pak railway live map" />
+    <meta name="author" content="Track My Train" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <link rel="canonical" href="https://trackmytrain.pk/" />
+    <link rel="alternate" hreflang="en" href="https://trackmytrain.pk/" />
+    <link rel="alternate" hreflang="ur" href="https://trackmytrain.pk/ur" />
+    <link rel="alternate" hreflang="x-default" href="https://trackmytrain.pk/" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="bingbot" content="index, follow" />
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://oniorzytjnnaqyaaazwq.supabase.co" />
+    <link rel="preconnect" href="https://oniorzytjnnaqyaaazwq.supabase.co" crossorigin />
+
+    <!-- Preload critical font -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Track My Train – Live GPS Train Tracking for Pakistan Railways 2026" />
+    <meta property="og:description" content="Instantly see where any Pakistan Railways train is right now. Real-time GPS positions, delay alerts, journey planner & complete schedules for 164+ trains. 100% free." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://trackmytrain.pk/" />
+    <meta property="og:site_name" content="Track My Train" />
+    <meta property="og:locale" content="en_PK" />
+    <meta property="og:image" content="https://trackmytrain.pk/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Track My Train - Live Pakistan Railway GPS Tracking Platform" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@trackmytrain_pk" />
+    <meta name="twitter:title" content="Track My Train – Live GPS Train Tracking for Pakistan Railways" />
+    <meta name="twitter:description" content="Instantly see where any Pakistan Railways train is. Real-time GPS positions, delay alerts & ETAs for 164+ trains. Free, no signup." />
+    <meta name="twitter:image" content="https://trackmytrain.pk/og-image.jpg" />
+
+    <!-- Geo & Mobile -->
+    <meta name="geo.region" content="PK" />
+    <meta name="geo.placename" content="Pakistan" />
+    <meta name="theme-color" content="#1a6b4a" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1a3a2a" media="(prefers-color-scheme: dark)" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Track My Train" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Google Consent Mode v2 (default denied — updated by CookieConsent component) -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'analytics_storage': 'denied',
+        'functionality_storage': 'granted',
+        'personalization_storage': 'denied',
+        'security_storage': 'granted',
+        'wait_for_update': 500
+      });
+    </script>
+
+    <!-- AdSense: Uncomment and replace ca-pub-XXXXXXXXXXXXXXXX after approval -->
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+
+    <!-- Critical CSS for SSR-like instant FCP -->
+    <style>
+      /* Inline critical styles for prerendered skeleton */
+      :root {
+        --bg: #fafafa;
+        --fg: #1e293b;
+        --primary: #1a6b4a;
+        --primary-fg: #fff;
+        --accent: #d4a017;
+        --card-bg: #fff;
+        --muted: #64748b;
+        --border: #e2e8f0;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0c1a14;
+          --fg: #e2e8f0;
+          --primary: #22c55e;
+          --card-bg: #112119;
+          --muted: #94a3b8;
+          --border: #1e3a2c;
+        }
+      }
+      *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+      body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--fg);-webkit-font-smoothing:antialiased}
+      .ssr-skip-links{position:absolute;top:0;left:0;z-index:9999}
+      .ssr-skip-link{position:absolute;transform:translateY(-100%);padding:12px 24px;background:var(--primary);color:var(--primary-fg);font-weight:700;font-size:14px;text-decoration:none;border-radius:0 0 8px 8px;transition:transform .2s}
+      .ssr-skip-link:focus{transform:translateY(0)}
+      .ssr-skip-link:nth-child(2){left:160px}
+      .ssr-skip-link:nth-child(3){left:320px}
+      .ssr-header{position:fixed;top:0;left:0;right:0;z-index:50}
+      .ssr-nav{display:flex;align-items:center;justify-content:space-between;height:64px;padding:0 16px;background:rgba(255,255,255,.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);box-shadow:0 1px 3px rgba(0,0,0,.06)}
+      @media(prefers-color-scheme:dark){.ssr-nav{background:rgba(17,33,25,.8)}}
+      .ssr-logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--fg)}
+      .ssr-logo-icon{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--primary),#15803d);display:flex;align-items:center;justify-content:center;color:var(--primary-fg);font-size:20px}
+      .ssr-logo-text{font-weight:900;font-size:15px;letter-spacing:-.02em}
+      .ssr-logo-text span{color:var(--accent)}
+      .ssr-logo-sub{font-size:7px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--primary);opacity:.6;margin-top:2px}
+      .ssr-main{padding-top:72px}
+      .ssr-hero{padding:48px 16px 32px;max-width:1200px;margin:0 auto}
+      .ssr-badge{display:inline-flex;align-items:center;gap:8px;padding:8px 20px;border-radius:999px;border:1px solid rgba(34,197,94,.3);font-size:12px;font-weight:700;letter-spacing:.05em;color:var(--primary);margin-bottom:24px}
+      .ssr-badge-dot{width:8px;height:8px;border-radius:50%;background:var(--primary);animation:ssr-pulse 2s infinite}
+      @keyframes ssr-pulse{0%,100%{opacity:1}50%{opacity:.4}}
+      .ssr-h1{font-size:clamp(28px,5vw,48px);font-weight:900;line-height:1.1;margin-bottom:16px;letter-spacing:-.02em}
+      .ssr-h1 em{font-style:normal;color:var(--primary)}
+      .ssr-desc{font-size:clamp(15px,2vw,18px);color:var(--muted);line-height:1.6;max-width:640px;margin-bottom:32px}
+      .ssr-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:24px}
+      .ssr-cta{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:12px;font-weight:700;font-size:15px;text-decoration:none;transition:all .2s}
+      .ssr-cta-primary{background:var(--primary);color:var(--primary-fg);box-shadow:0 4px 16px rgba(26,107,74,.3)}
+      .ssr-cta-secondary{background:transparent;border:2px solid var(--border);color:var(--fg)}
+      .ssr-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:32px;max-width:400px}
+      .ssr-stat{padding:16px;border-radius:12px;background:var(--card-bg);border:1px solid var(--border);text-align:center}
+      .ssr-stat-num{font-size:24px;font-weight:900;color:var(--primary)}
+      .ssr-stat-label{font-size:11px;color:var(--muted);font-weight:600;margin-top:4px}
+      .ssr-skeleton{background:linear-gradient(90deg,var(--border) 25%,transparent 50%,var(--border) 75%);background-size:200% 100%;animation:ssr-shimmer 1.5s infinite;border-radius:8px}
+      @keyframes ssr-shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
+      .ssr-search{max-width:1200px;margin:0 auto;padding:0 16px 32px}
+      .ssr-search-box{padding:24px;border-radius:16px;background:var(--card-bg);border:1px solid var(--border)}
+      .ssr-search-title{font-weight:800;font-size:18px;margin-bottom:8px}
+      .ssr-search-sub{font-size:13px;color:var(--muted);margin-bottom:16px}
+      .ssr-search-input{width:100%;padding:14px 16px;border-radius:12px;border:1px solid var(--border);background:var(--bg);font-size:15px;color:var(--fg);outline:none}
+      /* Loading spinner overlay */
+      .ssr-loader{position:fixed;bottom:24px;right:24px;z-index:100;display:flex;align-items:center;gap:10px;padding:10px 18px;border-radius:999px;background:var(--card-bg);border:1px solid var(--border);box-shadow:0 8px 24px rgba(0,0,0,.12);font-size:13px;font-weight:600;color:var(--muted);opacity:1;transition:opacity .4s ease,transform .4s ease;transform:translateY(0)}
+      .ssr-loader-dot{width:8px;height:8px;border-radius:50%;background:var(--primary);animation:ssr-loader-bounce 1.2s ease-in-out infinite}
+      .ssr-loader-dot:nth-child(2){animation-delay:.15s}
+      .ssr-loader-dot:nth-child(3){animation-delay:.3s}
+      @keyframes ssr-loader-bounce{0%,80%,100%{transform:scale(0.6);opacity:.4}40%{transform:scale(1);opacity:1}}
+      /* Hide shell + loader once React mounts */
+      #root:not(:empty)+.ssr-shell{display:none}
+      #root:not(:empty)~.ssr-loader-wrap{opacity:0;transform:translateY(12px);pointer-events:none}
+    </style>
+
+    <!-- Structured Data: WebApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Track My Train",
+      "alternateName": ["TrackMyTrain.pk", "TrackMyTrain", "TMT Pakistan"],
+      "url": "https://trackmytrain.pk",
+      "description": "Track My Train is Pakistan's most trusted live train tracking platform. See real-time GPS positions, speed, delay status, and accurate ETAs for every Pakistan Railways train. Plan journeys, compare routes, and never miss your train again.",
+      "applicationCategory": "TravelApplication",
+      "operatingSystem": "Web",
+      "browserRequirements": "Requires JavaScript",
+      "inLanguage": ["en", "ur"],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Track My Train",
+        "url": "https://trackmytrain.pk"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "2450",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "featureList": [
+        "Real-time GPS train tracking with 5-second updates",
+        "Live delay alerts and accurate ETAs for all stations",
+        "Journey planner covering 342+ stations",
+        "Complete Pakistan Railways schedules and timetables 2026",
+        "164+ trains tracked including Express, AC, and Passenger",
+        "Bilingual interface in English and Urdu",
+        "Mobile-optimized — works on 2G/3G connections",
+        "Find My Train GPS auto-detection feature",
+        "Ticket pricing and fare comparison tool",
+        "Interactive route maps with station details"
+      ],
+      "screenshot": "https://trackmytrain.pk/og-image.png",
+      "softwareVersion": "3.0"
+    }
+    </script>
+
+    <!-- Structured Data: Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Track My Train",
+      "url": "https://trackmytrain.pk",
+      "logo": "https://trackmytrain.pk/logo.png",
+      "description": "Pakistan's #1 independent train tracking platform providing free real-time GPS tracking for 164+ trains across 342+ stations.",
+      "foundingDate": "2024",
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "Lahore, Pakistan"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Pakistan"
+      },
+      "sameAs": [],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "info@trackmytrain.pk",
+        "contactType": "customer service",
+        "areaServed": "PK",
+        "availableLanguage": ["English", "Urdu"]
+      }
+    }
+    </script>
+
+    <!-- Structured Data: WebSite with SearchAction -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Track My Train",
+      "alternateName": "TrackMyTrain.pk",
+      "url": "https://trackmytrain.pk",
+      "description": "Real-time GPS train tracking for Pakistan Railways — 164+ trains, 342+ stations, 100% free.",
+      "inLanguage": ["en", "ur"],
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://trackmytrain.pk/train?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- Structured Data: SiteNavigationElement -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SiteNavigationElement",
+      "name": "Main Navigation",
+      "hasPart": [
+        { "@type": "WebPage", "name": "Live Train Tracker", "url": "https://trackmytrain.pk/train" },
+        { "@type": "WebPage", "name": "Journey Planner", "url": "https://trackmytrain.pk/planner" },
+        { "@type": "WebPage", "name": "Train Schedule", "url": "https://trackmytrain.pk/schedule" },
+        { "@type": "WebPage", "name": "Stations Directory", "url": "https://trackmytrain.pk/stations" },
+        { "@type": "WebPage", "name": "Route Maps", "url": "https://trackmytrain.pk/routes" },
+        { "@type": "WebPage", "name": "Find My Train", "url": "https://trackmytrain.pk/find-my-train" },
+        { "@type": "WebPage", "name": "Check Delays", "url": "https://trackmytrain.pk/check-delays" },
+        { "@type": "WebPage", "name": "Ticket Pricing", "url": "https://trackmytrain.pk/ticket-pricing" },
+        { "@type": "WebPage", "name": "Express Trains", "url": "https://trackmytrain.pk/express-trains" },
+        { "@type": "WebPage", "name": "Green Line Express", "url": "https://trackmytrain.pk/green-line-express" },
+        { "@type": "WebPage", "name": "FAQ", "url": "https://trackmytrain.pk/faq" },
+        { "@type": "WebPage", "name": "About", "url": "https://trackmytrain.pk/about" },
+        { "@type": "WebPage", "name": "Contact", "url": "https://trackmytrain.pk/contact" },
+        { "@type": "WebPage", "name": "Blog", "url": "https://trackmytrain.pk/blog" }
+      ]
+    }
+    </script>
+
+    <!-- Structured Data: FAQPage (complete 22 FAQs for rich results) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"How can I track my train in Pakistan right now?","acceptedAnswer":{"@type":"Answer","text":"Open Track My Train, type your train's name or number into the search bar, and tap the result. You'll instantly see the train's live GPS position on the map, its current speed, how many minutes late it is (if any), and updated arrival estimates for every upcoming station. The page refreshes automatically every 5 seconds."}},
+        {"@type":"Question","name":"What details are shown when I track a train?","acceptedAnswer":{"@type":"Answer","text":"Each train's live page displays: exact GPS coordinates plotted on an interactive map, real-time speed in km/h, accumulated delay in minutes, a progress bar showing how far along the route the train has traveled, and an estimated time of arrival (ETA) at the next station and all remaining stops."}},
+        {"@type":"Question","name":"How reliable are the delay and ETA estimates?","acceptedAnswer":{"@type":"Answer","text":"Our algorithm cross-references the train's actual GPS position with the official Pakistan Railways timetable and calculates accumulated delay. Accuracy is typically ±3 to 5 minutes for most services. ETAs adjust dynamically as the train speeds up, slows down, or waits at a signal stop."}},
+        {"@type":"Question","name":"Do I need to download an app or create an account?","acceptedAnswer":{"@type":"Answer","text":"No — Track My Train works entirely in your browser. Open trackmytrain.pk on any phone, tablet, or computer and start tracking instantly. There's no app to install, no account to create, and no personal information collected."}},
+        {"@type":"Question","name":"Which trains are covered by Track My Train?","acceptedAnswer":{"@type":"Answer","text":"We cover every active Pakistan Railways passenger service — Express trains like Tezgam, Karakoram, Shalimar, and Allama Iqbal; premium AC services like Green Line Express and Business Express; and local Passenger trains. In total, our system monitors 164+ scheduled services running across 342+ stations."}},
+        {"@type":"Question","name":"Is Track My Train the same as Pakistan Railways' official website?","acceptedAnswer":{"@type":"Answer","text":"No. Track My Train (trackmytrain.pk) is a fully independent platform built by developers and railway enthusiasts. We are not affiliated with, endorsed by, or connected to Pakistan Railways or any government agency."}},
+        {"@type":"Question","name":"How is 'Find My Train' different from regular tracking?","acceptedAnswer":{"@type":"Answer","text":"Regular tracking lets you search for a train by name or number. 'Find My Train' flips it — you grant location access on your phone, and our system matches your GPS coordinates against all active train routes to figure out which train you're currently riding."}},
+        {"@type":"Question","name":"Can I plan a complete journey between two stations?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. Our Journey Planner lets you pick any departure and arrival station from the full Pakistan Railways network. It searches through all 164+ trains — including intermediate stops — and shows every direct option sorted by travel time with departure, arrival, duration, train type, and running days."}},
+        {"@type":"Question","name":"Does Track My Train work during festivals and holidays?","acceptedAnswer":{"@type":"Answer","text":"Yes. During Eid, national holidays, and summer rush when delays are more common, our live GPS data captures exactly what's happening — whether a train is stuck at a crossing, delayed at a junction, or running on schedule."}},
+        {"@type":"Question","name":"How does Track My Train make money if it's free?","acceptedAnswer":{"@type":"Answer","text":"The platform sustains itself through contextual advertisements. We do not charge users, sell personal data, or gate any features behind a paywall. Every tool — live tracking, journey planner, schedule lookup, delay alerts — is free and always will be."}},
+        {"@type":"Question","name":"What is the fastest train from Karachi to Lahore?","acceptedAnswer":{"@type":"Answer","text":"The Green Line Express is the fastest train on the Karachi–Lahore route, completing the journey in approximately 18 hours. It offers AC Business, AC Standard, and Economy class seating. Other popular options include the Tezgam (22 hours), Karakoram Express (22 hours), and Business Express (20 hours)."}},
+        {"@type":"Question","name":"How do I check Pakistan Railways ticket prices online?","acceptedAnswer":{"@type":"Answer","text":"Visit our Ticket Pricing page to see fares for all major routes. Economy class starts from Rs. 300 for short routes, while AC Business class on premium Express trains can cost Rs. 5,000–9,000 for long-distance journeys like Karachi to Peshawar."}},
+        {"@type":"Question","name":"Can I track the Green Line Express in real-time?","acceptedAnswer":{"@type":"Answer","text":"Yes! The Green Line Express (Train 101UP/102DN) between Islamabad and Karachi is fully tracked. Open the Live Tracker, search 'Green Line', and you'll see its exact GPS position, speed, delay status, and ETAs for all stations including Lahore, Multan, Sukkur, and Hyderabad."}},
+        {"@type":"Question","name":"What stations have WiFi and VIP lounges in Pakistan?","acceptedAnswer":{"@type":"Answer","text":"Lahore Junction is the most well-equipped station with WiFi, VIP lounge, food court, ATM, parking, and medical aid. Other major stations like Rawalpindi, Karachi Cantt, and Multan Cantt offer food courts, ATMs, and parking. Explore all station amenities on our Stations Directory."}},
+        {"@type":"Question","name":"How accurate is the Find My Train GPS feature?","acceptedAnswer":{"@type":"Answer","text":"Find My Train uses your phone's built-in GPS and cross-references it against all active train routes. In most cases it identifies the correct train within 30 seconds. It works best when the train is moving (not stationary at a platform where multiple trains may be present)."}},
+        {"@type":"Question","name":"Does Track My Train show train delays during fog season?","acceptedAnswer":{"@type":"Answer","text":"Yes, fog season (December–February) is when our platform is most valuable. Pakistan Railways trains frequently experience 2–8 hour delays during heavy fog in Punjab and upper Sindh. Our live GPS tracking shows you the actual position and accumulated delay for every train."}},
+        {"@type":"Question","name":"What is the cheapest train from Karachi to Lahore?","acceptedAnswer":{"@type":"Answer","text":"The cheapest options are the Tezgam Express and Karakoram Express, both offering Economy class seats for approximately Rs. 1,500. The journey takes 20–22 hours. For slightly more comfort, AC Standard class costs Rs. 3,000–3,500."}},
+        {"@type":"Question","name":"How do I get a student discount on Pakistan Railways?","acceptedAnswer":{"@type":"Answer","text":"Students enrolled in recognized Pakistani institutions receive a 25% discount on all ticket classes. Present your valid student ID card at the booking counter along with your CNIC. The discount applies to all train types including Express and AC services."}},
+        {"@type":"Question","name":"Can I carry luggage on Pakistan Railways trains?","acceptedAnswer":{"@type":"Answer","text":"Yes. Each passenger is allowed up to 40 kg of free luggage on Express and Mail trains, and 30 kg on Passenger services. Excess luggage is charged at Rs. 2–5 per kg depending on the route."}},
+        {"@type":"Question","name":"Is there food available on Pakistan Railways trains?","acceptedAnswer":{"@type":"Answer","text":"Yes. Premium trains like the Green Line Express and Business Express offer on-board catering with meals included in AC Business class tickets. On other trains, vendors board at major stations selling tea, snacks, biryani, and cold drinks."}},
+        {"@type":"Question","name":"How can I check if my train is running today?","acceptedAnswer":{"@type":"Answer","text":"Search for your train by name or number. If it shows a 'LIVE' badge with a green dot, it is currently running. If it shows 'Active' without a live badge, it is scheduled to run today but hasn't departed yet. If it shows 'Inactive', the service may be suspended or doesn't run on this day."}},
+        {"@type":"Question","name":"What happens if Pakistan Railways cancels my train?","acceptedAnswer":{"@type":"Answer","text":"Passengers are entitled to a full refund or can transfer their ticket to the next available train on the same route. Cancellations are rare and usually occur due to extreme weather or infrastructure emergencies. Visit any booking counter with your ticket and CNIC within 72 hours."}}
+      ]
+    }
+    </script>
+
+    <!-- Structured Data: HowTo (targets "how to track train" featured snippet) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to Track a Pakistan Railways Train in Real-Time",
+      "description": "Step-by-step guide to tracking any Pakistan Railways train live using Track My Train's free GPS tracking platform.",
+      "totalTime": "PT1M",
+      "tool": {"@type": "HowToTool", "name": "Any web browser on phone, tablet, or computer"},
+      "step": [
+        {"@type": "HowToStep", "position": 1, "name": "Search for Your Train", "text": "Open trackmytrain.pk and type your train name, number, or route into the search bar. Results appear instantly as you type.", "url": "https://trackmytrain.pk/#search"},
+        {"@type": "HowToStep", "position": 2, "name": "View Live GPS Position", "text": "Tap any train result to see its real-time GPS position on the interactive map, current speed in km/h, and delay status in minutes.", "url": "https://trackmytrain.pk/train"},
+        {"@type": "HowToStep", "position": 3, "name": "Check ETAs and Share", "text": "Scroll to the station list for updated ETAs at every upcoming stop. Copy the page link and share it with family waiting at the station.", "url": "https://trackmytrain.pk/train"}
+      ]
+    }
+    </script>
+
+    <!-- Structured Data: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://trackmytrain.pk/"}
+      ]
+    }
+    </script>
+
+    <!-- Structured Data: ItemList — Seasonal Travel Guide (targets "best time to travel by train in Pakistan") -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Best Time to Travel by Train in Pakistan — Seasonal Guide 2026",
+      "description": "Month-by-month guide to train travel conditions across Pakistan. Covers weather, fog delays, Eid rush periods, and booking tips for each season.",
+      "url": "https://trackmytrain.pk/#seasonal-guide",
+      "numberOfItems": 4,
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Spring (March–May)", "description": "Best season for train travel. Perfect weather 15–30°C, no fog delays, trains run on schedule. Ideal for scenic Bolan Pass & northern routes. Rating: 5/5."},
+        {"@type": "ListItem", "position": 2, "name": "Summer (June–August)", "description": "Extreme heat 40–50°C in Sindh & Punjab. AC classes sell out fast — book 2 weeks early. Night departures preferred. Rating: 3/5."},
+        {"@type": "ListItem", "position": 3, "name": "Autumn (September–November)", "description": "Great value season. Monsoon may cause delays Aug–Sep but Oct–Nov has excellent weather. Lower demand, easier last-minute tickets. Rating: 4/5."},
+        {"@type": "ListItem", "position": 4, "name": "Winter (December–February)", "description": "Fog season with 3–8 hour delays in Punjab. Always check live delays before travel. Afternoon departures face less fog. Sindh & Balochistan less affected. Rating: 2/5."}
+      ]
+    }
+    </script>
+
+    <!-- Structured Data: ItemList — Top Express Trains (targets "best express trains pakistan") -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Top Express Trains in Pakistan 2026",
+      "description": "The most popular and highly-rated express trains on the Pakistan Railways network, ranked by speed, comfort, and passenger reviews.",
+      "url": "https://trackmytrain.pk/#top-trains",
+      "numberOfItems": 6,
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Green Line Express (101UP/102DN)", "url": "https://trackmytrain.pk/green-line-express", "description": "Pakistan's fastest train — Islamabad to Karachi in 18 hours. Premium AC Business, AC Standard & Economy with meals, WiFi, power outlets."},
+        {"@type": "ListItem", "position": 2, "name": "Tezgam Express (7UP/8DN)", "url": "https://trackmytrain.pk/train/7", "description": "Pakistan's most iconic express since 1973. Karachi to Rawalpindi in 22 hours with affordable Economy class."},
+        {"@type": "ListItem", "position": 3, "name": "Karakoram Express (11UP/12DN)", "url": "https://trackmytrain.pk/train/11", "description": "Most popular Karachi–Lahore service. 22 hours with Sleeper, AC Standard, and Economy classes."},
+        {"@type": "ListItem", "position": 4, "name": "Khyber Mail (1UP/2DN)", "url": "https://trackmytrain.pk/train/1", "description": "Longest daily service covering entire Main Line 1 — Karachi to Peshawar, 1,680 km through all four provinces."},
+        {"@type": "ListItem", "position": 5, "name": "Business Express (5UP/6DN)", "url": "https://trackmytrain.pk/train/5", "description": "Karachi to Lahore in 20 hours. AC Sleeper, AC Parlour with on-board refreshments for business travelers."},
+        {"@type": "ListItem", "position": 6, "name": "Jaffar Express (39UP/40DN)", "url": "https://trackmytrain.pk/train/39", "description": "Quetta to Peshawar through dramatic Bolan Pass — Pakistan's most scenic train journey."}
+      ]
+    }
+    </script>
+  </head>
+
+  <body>
+    <!-- Skip Links (ARIA) -->
+    <div class="ssr-skip-links" role="navigation" aria-label="Skip links">
+      <a href="#main-content" class="ssr-skip-link">Skip to main content</a>
+      <a href="#navigation" class="ssr-skip-link">Skip to navigation</a>
+      <a href="#search" class="ssr-skip-link">Skip to search</a>
+    </div>
+
+    <!-- React mount point -->
+    <div id="root"></div>
+
+    <!-- SSR-like prerendered shell (hidden once React hydrates) -->
+    <div class="ssr-shell" aria-hidden="true">
+      <!-- Prerendered Header -->
+      <header class="ssr-header" role="banner">
+        <nav class="ssr-nav" id="navigation" role="navigation" aria-label="Main navigation">
+          <a href="/" class="ssr-logo" aria-label="Track My Train - Home">
+            <div class="ssr-logo-icon" aria-hidden="true">🚂</div>
+            <div>
+              <div class="ssr-logo-text">Track <span>My</span> Train</div>
+              <div class="ssr-logo-sub">Live Railway Tracker</div>
+            </div>
+          </a>
+        </nav>
+      </header>
+
+      <!-- Prerendered Hero -->
+      <main class="ssr-main" id="main-content" role="main">
+        <section class="ssr-hero" aria-label="Hero section">
+          <div class="ssr-badge" role="status" aria-live="polite">
+            <span class="ssr-badge-dot" aria-hidden="true"></span>
+            LIVE GPS TRACKING • UPDATED EVERY 5 SECONDS
+          </div>
+          <h1 class="ssr-h1">Track My Train — <em>Live Railway GPS Tracker</em></h1>
+          <p class="ssr-desc">See exactly where your Pakistan Railways train is right now. Live GPS positions, up-to-the-second delay info, and accurate ETAs for 116+ trains across 42+ stations — completely free, no signup needed.</p>
+          <div class="ssr-ctas">
+            <a href="/train" class="ssr-cta ssr-cta-primary" role="button">🚂 Open Live Tracker →</a>
+            <a href="/find-my-train" class="ssr-cta ssr-cta-secondary">📍 Find My Train (GPS)</a>
+            <a href="/schedule" class="ssr-cta ssr-cta-secondary">🕐 View Schedules</a>
+          </div>
+          <div class="ssr-stats" role="group" aria-label="Network statistics">
+            <div class="ssr-stat" role="status">
+              <div class="ssr-stat-num">38</div>
+              <div class="ssr-stat-label">Moving</div>
+            </div>
+            <div class="ssr-stat" role="status">
+              <div class="ssr-stat-num">65</div>
+              <div class="ssr-stat-label">At Station</div>
+            </div>
+            <div class="ssr-stat" role="status">
+              <div class="ssr-stat-num">103</div>
+              <div class="ssr-stat-label">Total</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Prerendered Search -->
+        <section class="ssr-search" id="search" aria-label="Train search">
+          <div class="ssr-search-box">
+            <div class="ssr-search-title">Search Any Train</div>
+            <div class="ssr-search-sub">Enter train number, name, or route to start tracking</div>
+            <input class="ssr-search-input" type="search" placeholder="Search train by name or number (e.g., Tezgam, 7UP)..." aria-label="Search trains" disabled />
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- Loading indicator (fades out when React mounts) -->
+    <div class="ssr-loader-wrap" aria-hidden="true">
+      <div class="ssr-loader">
+        <span class="ssr-loader-dot"></span>
+        <span class="ssr-loader-dot"></span>
+        <span class="ssr-loader-dot"></span>
+        Loading app…
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+{
+  "name": "Track My Train — Live Pakistan Railway Tracker",
+  "short_name": "Track My Train",
+  "description": "Real-time GPS tracking for 164+ Pakistan Railways trains across 342+ stations. Live location, speed, delays, ETAs, journey planner, and complete schedules — free, no signup.",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#fafafa",
+  "theme_color": "#1a6b4a",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["travel", "navigation", "transportation"],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "apple touch icon"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Live Train Tracker",
+      "short_name": "Live Trains",
+      "url": "/train",
+      "description": "Track any Pakistan Railways train in real-time with GPS",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Journey Planner",
+      "short_name": "Planner",
+      "url": "/planner",
+      "description": "Find the best train between any two stations",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Check Delays",
+      "short_name": "Delays",
+      "url": "/check-delays",
+      "description": "See which trains are delayed right now",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Train Schedule",
+      "short_name": "Schedule",
+      "url": "/schedule",
+      "description": "Full Pakistan Railways timetable 2026",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}

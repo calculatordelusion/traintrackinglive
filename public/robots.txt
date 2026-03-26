@@ -1,0 +1,86 @@
+# https://trackmytrain.pk robots.txt
+# Pakistan's #1 Live Train Tracking Platform
+# Last updated: 2026-03-25
+
+# Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Googlebot-Image
+Allow: /
+Crawl-delay: 2
+
+User-agent: Googlebot-News
+Allow: /blog/
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+User-agent: msnbot
+Allow: /
+Crawl-delay: 2
+
+# Social Media Crawlers
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+# Other Search Engines
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 3
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 5
+
+# AI Search Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# Default
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /supabase/
+Disallow: /_next/
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: /*.js$
+Disallow: /*.css$
+
+# Sitemap Index (contains 6 sub-sitemaps)
+Sitemap: https://trackmytrain.pk/sitemap-index.xml
+
+# Legacy sitemap (kept for backward compatibility)
+Sitemap: https://trackmytrain.pk/sitemap.xml
+
+# Host
+Host: https://trackmytrain.pk

@@ -122,7 +122,7 @@ export default function UrduStationDetail() {
         </div>
       </div>
 
-      <RelatedLinks context="station" currentName={station.name} />
+      <UrduRelatedLinks context="station" currentName={station.nameUrdu || station.name} />
     </div>
   );
 }

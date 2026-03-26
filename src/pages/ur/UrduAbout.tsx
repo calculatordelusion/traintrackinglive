@@ -132,6 +132,8 @@ export default function UrduAboutPage() {
         </div>
       </section>
 
+      <UrduRelatedLinks context="general" />
+
       {/* Language switch */}
       <div className="bg-card border-t py-4 text-center">
         <p className="text-sm text-muted-foreground">

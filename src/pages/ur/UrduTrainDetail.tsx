@@ -177,7 +177,7 @@ export default function UrduTrainDetail() {
         </div>
       </div>
 
-      <RelatedLinks context="train" currentName={train.name} />
+      <UrduRelatedLinks context="train" currentName={train.nameUrdu || train.name} />
     </div>
   );
 }

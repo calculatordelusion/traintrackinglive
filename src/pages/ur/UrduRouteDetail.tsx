@@ -122,6 +122,8 @@ export default function UrduRouteDetail() {
             <Link to="/ur/schedule"><Button variant="outline" className="border-primary-foreground/30 text-primary-foreground bg-transparent rounded-xl">مکمل شیڈول</Button></Link>
           </div>
         </div>
+
+        <UrduRelatedLinks context="route" currentName={`${translateStationName(route.from)}–${translateStationName(route.to)}`} />
       </div>
     </div>
   );

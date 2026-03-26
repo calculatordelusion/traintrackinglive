@@ -182,6 +182,8 @@ export default function UrduBlogPost() {
             })}
           </div>
         </section>
+
+        <UrduRelatedLinks context="blog" />
       </div>
     </div>
   );

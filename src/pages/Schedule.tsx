@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Calendar, Search, ArrowRight, HelpCircle, Train, Clock, MapPin, Zap, Navigation, CreditCard } from "lucide-react";
+import PremiumHero from "@/components/PremiumHero";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import SEOHead from "@/components/SEOHead";
 import RelatedLinks from "@/components/RelatedLinks";
@@ -102,34 +103,14 @@ export default function SchedulePage() {
           }))
         }]}
       />
-      {/* Hero */}
-      <section className="relative overflow-hidden bg-hero-gradient text-primary-foreground py-12 sm:py-16 md:py-20">
-        <div className="absolute inset-0 bg-[url('https://traintracking.pk/_next/image?url=%2FTrainTrackingpk-TrackLiveTrains.webp&w=2048&q=75')] bg-cover bg-center opacity-15" />
-        <div className="relative container mx-auto px-4">
-          <div className="flex items-center gap-2 text-sm mb-3">
-            <Link to="/" className="opacity-70 hover:opacity-100">Home</Link>
-            <span className="opacity-50">›</span>
-            <span>Train Schedule</span>
-          </div>
-          <div className="text-center">
-            <div className="inline-flex items-center gap-2.5 bg-[hsl(152_55%_40%/0.15)] backdrop-blur-sm border border-[hsl(152_55%_40%/0.3)] rounded-full px-5 py-2.5 text-sm mb-6">
-              <span className="relative flex h-3 w-3">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[hsl(152_55%_45%)] opacity-75" />
-                <span className="relative inline-flex rounded-full h-3 w-3 bg-[hsl(152_55%_45%)]" />
-              </span>
-              <span className="font-semibold tracking-wider text-[hsl(152_55%_45%)]">OFFICIAL TIMETABLES • UPDATED 2026</span>
-            </div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black mb-4 leading-tight">
-              Pakistan Railways{" "}
-              <span className="text-gradient-gold">Schedule & Timetables</span>
-            </h1>
-            <p className="text-base sm:text-lg opacity-90 max-w-2xl mx-auto mt-4">
-              Browse complete train schedules, departure times, and routes for all {allTrains.length || 164}+ Pakistan Railways trains across 342+ stations.
-            </p>
-            <p className="opacity-60 text-sm mt-2">پاکستان ریلوے ٹرین شیڈول اور ٹائم ٹیبل ۲۰۲۶</p>
-          </div>
-        </div>
-      </section>
+      <PremiumHero
+        breadcrumbs={[{ label: "Home", to: "/" }, { label: "Train Schedule" }]}
+        badge="OFFICIAL TIMETABLES • UPDATED 2026"
+        title={<>Pakistan Railways{" "}<span className="text-gradient-gold">Schedule & Timetables</span></>}
+        subtitle={`Browse complete train schedules, departure times, and routes for all ${allTrains.length || 164}+ Pakistan Railways trains across 342+ stations.`}
+        subtitleUrdu="پاکستان ریلوے ٹرین شیڈول اور ٹائم ٹیبل ۲۰۲۶"
+        centered
+      />
 
       {/* Floating Stats */}
       <div className="container mx-auto px-4 -mt-6 relative z-10">

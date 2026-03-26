@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Train, Clock, MapPin, Star, Zap, Shield, Wifi, Utensils, BatteryCharging, ArrowRight, Navigation, CreditCard, HelpCircle, Users, Gauge, Route, Calendar } from "lucide-react";
+import PremiumHero from "@/components/PremiumHero";
 import { fetchTrainDetail, type TrainDetail } from "@/lib/trainApi";
 import SEOHead from "@/components/SEOHead";
 
@@ -96,51 +97,27 @@ export default function GreenLinePage() {
           }))
         }]}
       />
-      {/* Hero */}
-      <section className="relative overflow-hidden bg-hero-gradient text-primary-foreground py-12 sm:py-16 md:py-20">
-        <div className="absolute inset-0 bg-[url('https://traintracking.pk/_next/image?url=%2FTrainTrackingpk-TrackLiveTrains.webp&w=2048&q=75')] bg-cover bg-center opacity-15" />
-        <div className="relative container mx-auto px-4">
-          <div className="flex items-center gap-2 text-sm mb-3">
-            <Link to="/" className="opacity-70 hover:opacity-100">Home</Link>
-            <span className="opacity-50">›</span>
-            <Link to="/express-trains" className="opacity-70 hover:opacity-100">Express Trains</Link>
-            <span className="opacity-50">›</span>
-            <span>Green Line Express</span>
-          </div>
-          <div className="text-center">
-            <div className="inline-flex items-center gap-2.5 bg-[hsl(152_55%_40%/0.15)] backdrop-blur-sm border border-[hsl(152_55%_40%/0.3)] rounded-full px-5 py-2.5 text-sm mb-6">
-              <span className="relative flex h-3 w-3">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[hsl(152_55%_45%)] opacity-75" />
-                <span className="relative inline-flex rounded-full h-3 w-3 bg-[hsl(152_55%_45%)]" />
-              </span>
-              <span className="font-semibold tracking-wider text-[hsl(152_55%_45%)]">PAKISTAN'S #1 PREMIUM TRAIN</span>
-            </div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black mb-4 leading-tight">
-              Green Line Express{" "}
-              <span className="text-gradient-gold">5UP / 6DN</span>
-              <br />
-              <span className="text-xl sm:text-2xl md:text-3xl font-bold opacity-80">Complete Guide 2026</span>
-            </h1>
-            <p className="text-base sm:text-lg opacity-90 max-w-2xl mx-auto mt-4">
-              Pakistan Railways' flagship premium train — Karachi Cantt to Margala (Islamabad). 
-              AC Business class, complimentary meals, free WiFi, and real-time GPS tracking.
-            </p>
-            <p className="opacity-60 text-sm mt-2">گرین لائن ایکسپریس — کراچی سے اسلام آباد</p>
-            <div className="flex flex-col sm:flex-row justify-center gap-3 mt-8">
-              <Link to="/train/5">
-                <Button size="lg" className="w-full sm:w-auto bg-primary-foreground text-primary hover:bg-primary-foreground/90 rounded-xl font-semibold gap-2">
-                  <Navigation className="w-4 h-4" /> Track Green Line Live
-                </Button>
-              </Link>
-              <Link to="/ticket-pricing">
-                <Button size="lg" variant="outline" className="w-full sm:w-auto border-[hsl(0_0%_100%/0.3)] text-primary-foreground hover:bg-[hsl(0_0%_100%/0.1)] rounded-xl gap-2">
-                  <CreditCard className="w-4 h-4" /> View Ticket Prices
-                </Button>
-              </Link>
-            </div>
-          </div>
+      <PremiumHero
+        breadcrumbs={[{ label: "Home", to: "/" }, { label: "Express Trains", to: "/express-trains" }, { label: "Green Line Express" }]}
+        badge="PAKISTAN'S #1 PREMIUM TRAIN"
+        title={<>Green Line Express{" "}<span className="text-gradient-gold">5UP / 6DN</span><br /><span className="text-xl sm:text-2xl md:text-3xl font-bold opacity-80">Complete Guide 2026</span></>}
+        subtitle="Pakistan Railways' flagship premium train — Karachi Cantt to Margala (Islamabad). AC Business class, complimentary meals, free WiFi, and real-time GPS tracking."
+        subtitleUrdu="گرین لائن ایکسپریس — کراچی سے اسلام آباد"
+        centered
+      >
+        <div className="flex flex-col sm:flex-row justify-center gap-3 mt-8">
+          <Link to="/train/5">
+            <Button size="lg" className="w-full sm:w-auto bg-primary-foreground text-primary hover:bg-primary-foreground/90 rounded-xl font-semibold gap-2">
+              <Navigation className="w-4 h-4" /> Track Green Line Live
+            </Button>
+          </Link>
+          <Link to="/ticket-pricing">
+            <Button size="lg" variant="outline" className="w-full sm:w-auto border-[hsl(0_0%_100%/0.3)] bg-transparent text-primary-foreground hover:bg-[hsl(0_0%_100%/0.1)] rounded-xl gap-2">
+              <CreditCard className="w-4 h-4" /> View Ticket Prices
+            </Button>
+          </Link>
         </div>
-      </section>
+      </PremiumHero>
 
       {/* Floating Stats */}
       <div className="container mx-auto px-4 -mt-6 relative z-10">

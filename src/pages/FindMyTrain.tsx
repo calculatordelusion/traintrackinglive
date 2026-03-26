@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Navigation, Shield, Smartphone, Globe, Loader2, AlertTriangle, HelpCircle, MapPin, Zap, Clock, Users, Radio, Train, ArrowRight, Gauge, Eye, Share2, Fingerprint, Satellite } from "lucide-react";
+import PremiumHero from "@/components/PremiumHero";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import SEOHead from "@/components/SEOHead";
 import { findMyTrain, fetchLivePositions, type LiveStats } from "@/lib/trainApi";
@@ -88,43 +89,28 @@ export default function FindMyTrainPage() {
           "description": "Automatically detect which Pakistan Railways train you're on using your phone's GPS"
         }]}
       />
-      {/* Hero */}
-      <section className="bg-hero-gradient text-primary-foreground py-10 sm:py-14">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center gap-2 text-sm mb-3">
-            <Link to="/" className="opacity-70 hover:opacity-100">Home</Link>
-            <span className="opacity-50">›</span>
-            <span>Find My Train</span>
-          </div>
-          <div className="inline-flex items-center gap-2 bg-primary-foreground/10 backdrop-blur-sm rounded-full px-4 py-1.5 text-sm mb-4">
-            <span className="relative flex h-2.5 w-2.5">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[hsl(152_55%_45%)] opacity-75" />
-              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[hsl(152_55%_45%)]" />
-            </span>
-            <span className="font-semibold tracking-wider text-[hsl(152_55%_45%)]">GPS AUTO-DETECTION • LIVE</span>
-          </div>
-          <h1 className="text-3xl md:text-5xl font-black mb-3">Find My Train — GPS Detection</h1>
-          <p className="text-base sm:text-lg opacity-80 max-w-2xl">
-            Automatically detect which Pakistan Railway train you're on using your device's GPS. No searching, no train numbers — just tap and we'll find your train instantly with real-time tracking.
-          </p>
-          <p className="opacity-60 text-sm mt-2">اپنی ٹرین تلاش کریں - جی پی ایس آٹو ڈیٹیکشن</p>
-
-          {/* Live stats in hero */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-8">
-            {[
-              { value: stats.running || stats.liveCount || stats.moving, label: "Trains Moving", color: "text-emerald-400" },
-              { value: stats.atStation, label: "At Stations", color: "text-amber-400" },
-              { value: stats.total, label: "Total Trackable", color: "text-blue-400" },
-              { value: "500m", label: "Detection Range", color: "text-purple-400" },
-            ].map((s, i) => (
-              <div key={i} className="bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-3 text-center border border-primary-foreground/10">
-                <div className={`text-2xl font-bold stat-counter ${s.color}`}>{s.value}</div>
-                <div className="text-xs opacity-70">{s.label}</div>
-              </div>
-            ))}
-          </div>
+      <PremiumHero
+        breadcrumbs={[{ label: "Home", to: "/" }, { label: "Find My Train" }]}
+        badge="GPS AUTO-DETECTION • LIVE"
+        title={<>Find My Train — <span className="text-gradient-gold">GPS Detection</span></>}
+        subtitle="Automatically detect which Pakistan Railway train you're on using your device's GPS. No searching, no train numbers — just tap and we'll find your train instantly with real-time tracking."
+        subtitleUrdu="اپنی ٹرین تلاش کریں - جی پی ایس آٹو ڈیٹیکشن"
+      >
+        {/* Live stats in hero */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-8">
+          {[
+            { value: stats.running || stats.liveCount || stats.moving, label: "Trains Moving", color: "text-emerald-400" },
+            { value: stats.atStation, label: "At Stations", color: "text-amber-400" },
+            { value: stats.total, label: "Total Trackable", color: "text-blue-400" },
+            { value: "500m", label: "Detection Range", color: "text-purple-400" },
+          ].map((s, i) => (
+            <div key={i} className="bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-3 text-center border border-primary-foreground/10">
+              <div className={`text-2xl font-bold stat-counter ${s.color}`}>{s.value}</div>
+              <div className="text-xs opacity-70">{s.label}</div>
+            </div>
+          ))}
         </div>
-      </section>
+      </PremiumHero>
 
       <div className="container mx-auto px-4 py-8 sm:py-12">
         {/* Detection Card - Main CTA */}

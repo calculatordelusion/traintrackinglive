@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Train, Clock, AlertTriangle, CheckCircle, ArrowRight, Navigation, HelpCircle, TrendingUp, Timer, Search, XCircle, Activity } from "lucide-react";
+import PremiumHero from "@/components/PremiumHero";
 import SEOHead from "@/components/SEOHead";
 import { fetchLivePositions, type LiveTrainPosition } from "@/lib/trainApi";
 
@@ -118,30 +119,15 @@ export default function CheckDelays() {
           "description": "Real-time delay status checker for all Pakistan Railways trains with GPS-based accuracy"
         }]}
       />
-      {/* Hero */}
-      <section className="bg-hero-gradient text-primary-foreground py-12 sm:py-16">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center gap-2 text-sm mb-3">
-            <Link to="/" className="opacity-70 hover:opacity-100">Home</Link>
-            <span className="opacity-50">›</span>
-            <span>Check Delays</span>
-          </div>
-          <div className="text-center">
-            <div className="inline-flex items-center gap-2 bg-primary-foreground/10 backdrop-blur-sm rounded-full px-4 py-1.5 text-sm mb-4">
-              <Activity className="w-4 h-4" /> Real-Time Delay Monitor
-            </div>
-            <h1 className="text-3xl md:text-5xl font-black mb-3">
-              Pakistan Railways<br />
-              <span className="text-gradient-gold">Train Delay Status — Live</span>
-            </h1>
-            <p className="text-base sm:text-lg opacity-80 max-w-2xl mx-auto mt-4">
-              Check real-time delay status of all running Pakistan Railways trains. 
-              Live GPS-based tracking updated every 5 seconds with accurate ETAs and delay calculations.
-            </p>
-            <p className="opacity-60 text-sm mt-2">پاکستان ریلوے ٹرین تاخیر کی صورتحال — لائیو</p>
-          </div>
-        </div>
-      </section>
+      <PremiumHero
+        breadcrumbs={[{ label: "Home", to: "/" }, { label: "Check Delays" }]}
+        badge="REAL-TIME DELAY MONITOR"
+        badgeIcon={<Activity className="w-3.5 h-3.5 text-[hsl(152_55%_45%)]" />}
+        title={<>Pakistan Railways<br /><span className="text-gradient-gold">Train Delay Status — Live</span></>}
+        subtitle="Check real-time delay status of all running Pakistan Railways trains. Live GPS-based tracking updated every 5 seconds with accurate ETAs and delay calculations."
+        subtitleUrdu="پاکستان ریلوے ٹرین تاخیر کی صورتحال — لائیو"
+        centered
+      />
 
       {/* Floating Stats */}
       <div className="container mx-auto px-4 -mt-6 relative z-10">

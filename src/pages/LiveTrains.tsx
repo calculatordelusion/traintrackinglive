@@ -1,6 +1,7 @@
 import { useState, useEffect, useMemo } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Search, Train } from "lucide-react";
+import PremiumHero from "@/components/PremiumHero";
 import { Input } from "@/components/ui/input";
 import SEOHead from "@/components/SEOHead";
 import { Card, CardContent } from "@/components/ui/card";
@@ -99,40 +100,20 @@ export default function LiveTrainsPage() {
           }))
         }]}
       />
-      {/* Hero Section */}
-      <section className="relative overflow-hidden bg-hero-gradient text-primary-foreground py-12 sm:py-16 md:py-20">
-        <div className="absolute inset-0 bg-[url('https://traintracking.pk/_next/image?url=%2FTrainTrackingpk-TrackLiveTrains.webp&w=2048&q=75')] bg-cover bg-center opacity-15" />
-        <div className="relative container mx-auto px-4">
-          <div className="flex items-center gap-2 text-sm mb-3">
-            <Link to="/" className="opacity-70 hover:opacity-100">Home</Link>
-            <span className="opacity-50">›</span>
-            <span>Live Trains</span>
-          </div>
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2.5 bg-[hsl(152_55%_40%/0.15)] backdrop-blur-sm border border-[hsl(152_55%_40%/0.3)] rounded-full px-5 py-2.5 text-sm mb-6">
-              <span className="relative flex h-3 w-3">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[hsl(152_55%_45%)] opacity-75" />
-                <span className="relative inline-flex rounded-full h-3 w-3 bg-[hsl(152_55%_45%)]" />
-              </span>
-              <span className="font-semibold tracking-wider text-[hsl(152_55%_45%)]">LIVE GPS TRACKING • UPDATED EVERY 5 SECONDS</span>
-            </div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black mb-4 leading-tight">
-              Track All{" "}
-              <span className="text-gradient-gold">Pakistan Railways Trains</span>
-            </h1>
-            <p className="text-base sm:text-lg opacity-90 mb-2 max-w-2xl">
-              Monitor {stats.total || 164}+ trains in real-time with GPS accuracy. View live speed, delay status, and estimated arrival times across {categoryFilter === "express" ? "express" : categoryFilter === "passenger" ? "passenger" : "all"} trains.
-            </p>
-            <p className="opacity-60 text-sm">پاکستان ریلوے کی تمام ٹرینوں کو لائیو ٹریک کریں</p>
-          </div>
-          <div className="flex flex-wrap items-center gap-2 mt-6">
-            <Link to="/trains/express" className="px-4 py-2 rounded-full bg-[hsl(0_0%_100%/0.1)] hover:bg-[hsl(0_0%_100%/0.2)] backdrop-blur-sm border border-[hsl(0_0%_100%/0.1)] text-sm font-medium transition-colors">Express Trains</Link>
-            <Link to="/trains/passenger" className="px-4 py-2 rounded-full bg-[hsl(0_0%_100%/0.1)] hover:bg-[hsl(0_0%_100%/0.2)] backdrop-blur-sm border border-[hsl(0_0%_100%/0.1)] text-sm font-medium transition-colors">Passenger Trains</Link>
-            <Link to="/schedule" className="px-4 py-2 rounded-full bg-[hsl(0_0%_100%/0.1)] hover:bg-[hsl(0_0%_100%/0.2)] backdrop-blur-sm border border-[hsl(0_0%_100%/0.1)] text-sm font-medium transition-colors">Schedules</Link>
-            <Link to="/stations" className="px-4 py-2 rounded-full bg-[hsl(0_0%_100%/0.1)] hover:bg-[hsl(0_0%_100%/0.2)] backdrop-blur-sm border border-[hsl(0_0%_100%/0.1)] text-sm font-medium transition-colors">Stations</Link>
-          </div>
+      <PremiumHero
+        breadcrumbs={[{ label: "Home", to: "/" }, { label: "Live Trains" }]}
+        badge="LIVE GPS TRACKING • UPDATED EVERY 5 SECONDS"
+        title={<>Track All{" "}<span className="text-gradient-gold">Pakistan Railways Trains</span></>}
+        subtitle={`Monitor ${stats.total || 164}+ trains in real-time with GPS accuracy. View live speed, delay status, and estimated arrival times across ${categoryFilter === "express" ? "express" : categoryFilter === "passenger" ? "passenger" : "all"} trains.`}
+        subtitleUrdu="پاکستان ریلوے کی تمام ٹرینوں کو لائیو ٹریک کریں"
+      >
+        <div className="flex flex-wrap items-center gap-2 mt-6">
+          <Link to="/trains/express" className="px-4 py-2 rounded-full bg-[hsl(0_0%_100%/0.1)] hover:bg-[hsl(0_0%_100%/0.2)] backdrop-blur-sm border border-[hsl(0_0%_100%/0.1)] text-sm font-medium transition-colors">Express Trains</Link>
+          <Link to="/trains/passenger" className="px-4 py-2 rounded-full bg-[hsl(0_0%_100%/0.1)] hover:bg-[hsl(0_0%_100%/0.2)] backdrop-blur-sm border border-[hsl(0_0%_100%/0.1)] text-sm font-medium transition-colors">Passenger Trains</Link>
+          <Link to="/schedule" className="px-4 py-2 rounded-full bg-[hsl(0_0%_100%/0.1)] hover:bg-[hsl(0_0%_100%/0.2)] backdrop-blur-sm border border-[hsl(0_0%_100%/0.1)] text-sm font-medium transition-colors">Schedules</Link>
+          <Link to="/stations" className="px-4 py-2 rounded-full bg-[hsl(0_0%_100%/0.1)] hover:bg-[hsl(0_0%_100%/0.2)] backdrop-blur-sm border border-[hsl(0_0%_100%/0.1)] text-sm font-medium transition-colors">Stations</Link>
         </div>
-      </section>
+      </PremiumHero>
 
       <div className="container mx-auto px-4 py-8">
         {/* Stats bar - live data with gradient cards */}

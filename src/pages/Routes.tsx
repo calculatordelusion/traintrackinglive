@@ -161,8 +161,7 @@ export default function RoutesPage() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
+      </PremiumHero>
 
       <div className="container mx-auto px-4 py-8 sm:py-12">
         {/* Major Railway Corridors - Gradient Cards */}

@@ -102,11 +102,11 @@ export default function FloatingButtons() {
       <button
         onClick={() => setShowDisclaimer(true)}
         className="fixed bottom-4 left-3 sm:bottom-5 sm:left-5 z-50 flex items-center gap-1.5 px-2.5 py-2.5 sm:px-4 sm:py-2.5 rounded-full bg-accent text-accent-foreground text-xs sm:text-sm font-bold shadow-lg shadow-accent/30 hover:shadow-xl hover:shadow-accent/40 transition-all duration-200 hover:scale-105 active:scale-95 ring-2 ring-accent/50"
-        aria-label="View Disclaimer"
+        aria-label={isUrdu ? "اعلان دستبرداری دیکھیں" : "View Disclaimer"}
       >
         <span className="sm:hidden w-5 h-5 flex items-center justify-center rounded-full bg-accent-foreground/20 text-accent-foreground font-black text-sm leading-none">!</span>
         <AlertTriangle className="hidden sm:block w-4 h-4" />
-        <span className="hidden sm:inline">Disclaimer</span>
+        <span className="hidden sm:inline">{isUrdu ? "دستبرداری" : "Disclaimer"}</span>
       </button>
 
       {/* Accessibility - Bottom Right */}

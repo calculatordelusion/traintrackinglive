@@ -42,6 +42,9 @@ interface UrduPageShellProps {
   ctaLabel?: string;
   /** Language switch */
   englishPath: string;
+  /** Internal linking context */
+  linkContext?: UrduLinkContext;
+  linkContextName?: string;
 }
 
 export default function UrduPageShell({

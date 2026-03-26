@@ -94,40 +94,27 @@ export default function StationsPage() {
           }))
         }]}
       />
-      {/* Hero */}
-      <section className="bg-hero-gradient text-primary-foreground py-12 sm:py-16">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center gap-2 text-sm mb-4">
-            <Link to="/" className="opacity-70 hover:opacity-100">Home</Link>
-            <span className="opacity-50">›</span>
-            <span>Railway Stations</span>
-          </div>
-          <div className="text-center">
-            <div className="inline-flex items-center gap-2 bg-primary-foreground/10 backdrop-blur-sm rounded-full px-4 py-1.5 text-sm mb-4">
-              <MapPin className="w-4 h-4" /> {stations.length}+ Railway Stations Across Pakistan
-            </div>
-            <h1 className="text-3xl md:text-5xl font-black mb-3">
-              Pakistan Railway Stations<br />
-              <span className="text-gradient-gold">Complete Directory & Search</span>
-            </h1>
-            <p className="text-base sm:text-lg opacity-80 max-w-2xl mx-auto mt-4">
-              Find any railway station in Pakistan. Search by name, city, or province. View station details, trains stopping at each station, and nearby facilities.
-            </p>
-            <p className="opacity-60 text-sm mt-2">پاکستان ریلوے اسٹیشنز - مکمل ڈائریکٹری اور تلاش</p>
-            <div className="max-w-xl mx-auto mt-6">
-              <div className="relative">
-                <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 opacity-60" />
-                <Input
-                  value={search}
-                  onChange={(e) => { setSearch(e.target.value); setLetter(null); }}
-                  placeholder="Search station by name (e.g., Lahore, Karachi, Rawalpindi)..."
-                  className="pl-12 h-12 bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/50"
-                />
-              </div>
-            </div>
+      <PremiumHero
+        breadcrumbs={[{ label: "Home", to: "/" }, { label: "Railway Stations" }]}
+        badge={`${stations.length}+ RAILWAY STATIONS ACROSS PAKISTAN`}
+        badgeIcon={<MapPin className="w-3.5 h-3.5 text-[hsl(152_55%_45%)]" />}
+        title={<>Pakistan Railway Stations<br /><span className="text-gradient-gold">Complete Directory & Search</span></>}
+        subtitle="Find any railway station in Pakistan. Search by name, city, or province. View station details, trains stopping at each station, and nearby facilities."
+        subtitleUrdu="پاکستان ریلوے اسٹیشنز - مکمل ڈائریکٹری اور تلاش"
+        centered
+      >
+        <div className="max-w-xl mx-auto mt-6">
+          <div className="relative">
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 opacity-60" />
+            <Input
+              value={search}
+              onChange={(e) => { setSearch(e.target.value); setLetter(null); }}
+              placeholder="Search station by name (e.g., Lahore, Karachi, Rawalpindi)..."
+              className="pl-12 h-12 bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/50"
+            />
           </div>
         </div>
-      </section>
+      </PremiumHero>
 
       {/* Stats cards floating */}
       <div className="container mx-auto px-4 -mt-6 relative z-10">

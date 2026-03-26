@@ -190,6 +190,9 @@ export default function UrduPageShell({
         </div>
       </section>
 
+      {/* Internal Links */}
+      <UrduRelatedLinks context={linkContext} currentName={linkContextName} />
+
       {/* CTA — Gradient section with decorative elements */}
       {ctaTitle && (
         <section className="relative bg-hero-gradient text-primary-foreground py-14 sm:py-20 overflow-hidden">

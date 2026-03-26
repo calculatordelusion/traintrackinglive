@@ -28,6 +28,7 @@ import { stations } from "@/data/stations";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { fetchLivePositions, type LiveStats } from "@/lib/trainApi";
 import { useNetworkStats } from "@/hooks/useNetworkStats";
+import heroTrainBg from "@/assets/hero-train-bg.webp";
 
 export default function HomePage() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -115,7 +116,9 @@ export default function HomePage() {
     <div>
       {/* Hero Section */}
       <section aria-label="Hero — Live train tracking" className="relative overflow-hidden bg-hero-gradient text-primary-foreground">
-        <div className="absolute inset-0 bg-[url('https://traintracking.pk/_next/image?url=%2FTrainTrackingpk-TrackLiveTrains.webp&w=2048&q=75')] bg-cover bg-center opacity-15" />
+        <div className="absolute inset-0">
+          <img src={heroTrainBg} alt="" aria-hidden="true" className="w-full h-full object-cover opacity-20" width={1920} height={1080} />
+        </div>
         <div className="relative container mx-auto px-4 py-12 sm:py-16 md:py-24">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2.5 bg-[hsl(152_55%_40%/0.15)] backdrop-blur-sm border border-[hsl(152_55%_40%/0.3)] rounded-full px-5 py-2.5 text-sm mb-6">

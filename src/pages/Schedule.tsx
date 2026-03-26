@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Calendar, Search, ArrowRight, HelpCircle, Train, Clock, MapPin, Zap, Navigation, CreditCard } from "lucide-react";
+import PremiumHero from "@/components/PremiumHero";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import SEOHead from "@/components/SEOHead";
 import RelatedLinks from "@/components/RelatedLinks";

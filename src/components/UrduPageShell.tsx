@@ -4,6 +4,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Globe, type LucideIcon } from "lucide-react";
 import type { ReactNode } from "react";
+import UrduRelatedLinks, { type UrduLinkContext } from "@/components/ur/UrduRelatedLinks";
 import heroTrainBg from "@/assets/hero-train-bg.webp";
 
 interface FAQ {

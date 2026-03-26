@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { Heart, Target, Users, Shield, Globe, Zap, Train, Navigation, Eye, Smartphone, Clock, MapPin } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import heroTrainBg from "@/assets/hero-train-bg.webp";
 
 const aboutFaqs = [
   { q: "کیا ٹریک مائی ٹرین پاکستان ریلوے سے وابستہ ہے؟", a: "نہیں۔ ٹریک مائی ٹرین ایک مکمل طور پر آزاد پلیٹ فارم ہے۔ ہم پاکستان ریلوے یا کسی سرکاری ادارے سے وابستہ، تائید شدہ، یا منسلک نہیں ہیں۔" },
@@ -50,34 +51,40 @@ export default function UrduAboutPage() {
       />
 
       {/* Hero */}
-      <section className="bg-hero-gradient text-primary-foreground py-12 sm:py-16">
-        <div className="container mx-auto px-4 text-center">
-          <div className="inline-flex items-center gap-2 bg-primary-foreground/10 backdrop-blur-sm rounded-full px-4 py-1.5 text-sm mb-4">
+      <section className="relative overflow-hidden bg-hero-gradient text-primary-foreground py-14 sm:py-20">
+        <div className="absolute inset-0">
+          <img src={heroTrainBg} alt="" aria-hidden="true" className="w-full h-full object-cover opacity-10" width={1920} height={1080} />
+        </div>
+        <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-[hsl(152_55%_40%/0.08)] blur-3xl" />
+        <div className="relative container mx-auto px-4 text-center">
+          <div className="inline-flex items-center gap-2.5 bg-[hsl(152_55%_40%/0.15)] backdrop-blur-sm border border-[hsl(152_55%_40%/0.3)] rounded-full px-5 py-2.5 text-sm mb-6 shadow-lg shadow-[hsl(152_55%_40%/0.1)]">
             <Shield className="w-4 h-4" /> پاکستان کا نمبر 1 آزاد ٹرین ٹریکر
           </div>
-          <h1 className="text-3xl md:text-5xl font-black mb-3">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-4 drop-shadow-sm">
             ہمارے <span className="text-gradient-gold">بارے میں</span>
           </h1>
-          <p className="text-base sm:text-lg opacity-80 max-w-2xl mx-auto mt-4">
+          <p className="text-base sm:text-lg md:text-xl opacity-85 max-w-2xl mx-auto mt-5 leading-relaxed">
             پاکستان کا آزاد، کمیونٹی پر مبنی پلیٹ فارم جو لاکھوں مسافروں کے لیے ریلوے سفر کو آسان بنانے کے لیے وقف ہے۔ مفت، درست، اور محبت سے بنایا گیا۔
           </p>
         </div>
       </section>
 
       {/* Stats */}
-      <div className="container mx-auto px-4 -mt-6 relative z-10">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
+      <div className="container mx-auto px-4 -mt-8 relative z-10">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
           {[
             { value: "164+", label: "ٹرینیں ٹریک", icon: Train, gradient: "gradient-card-emerald" },
             { value: "342+", label: "اسٹیشنز", icon: MapPin, gradient: "gradient-card-amber" },
             { value: "5s", label: "اپڈیٹ فریکوئنسی", icon: Clock, gradient: "gradient-card-blue" },
             { value: "مفت", label: "ہمیشہ مفت", icon: Heart, gradient: "gradient-card-rose" },
           ].map((s) => (
-            <Card key={s.label} className={`${s.gradient} border`}>
-              <CardContent className="p-4 text-center">
-                <s.icon className="w-6 h-6 mx-auto mb-2 text-primary" />
-                <div className="text-2xl font-black">{s.value}</div>
-                <div className="text-xs text-muted-foreground">{s.label}</div>
+            <Card key={s.label} className={`${s.gradient} border hover-lift shadow-lg`}>
+              <CardContent className="p-5 text-center">
+                <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-3">
+                  <s.icon className="w-5 h-5 text-primary" />
+                </div>
+                <div className="text-2xl sm:text-3xl font-black tracking-tight">{s.value}</div>
+                <div className="text-xs sm:text-sm text-muted-foreground mt-1">{s.label}</div>
               </CardContent>
             </Card>
           ))}
@@ -85,13 +92,16 @@ export default function UrduAboutPage() {
       </div>
 
       {/* Values */}
-      <section className="container mx-auto px-4 py-12 sm:py-16">
+      <section className="container mx-auto px-4 py-14 sm:py-20">
         <h2 className="text-2xl sm:text-3xl font-black text-center mb-8">ہماری <span className="text-gradient-green">اقدار</span></h2>
         <div className="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {teamValues.map((v) => (
-            <Card key={v.title} className={`${v.gradient} border hover-lift`}>
-              <CardContent className="p-6">
-                <v.icon className="w-10 h-10 text-primary mb-4" />
+              <Card key={v.title} className={`${v.gradient} border hover-lift shadow-md group relative overflow-hidden`}>
+                <div className="absolute top-0 right-0 w-24 h-24 rounded-full bg-primary/5 -translate-y-8 translate-x-8 group-hover:scale-150 transition-transform duration-500" />
+                <CardContent className="p-6 sm:p-7 relative">
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                    <v.icon className="w-6 h-6 text-primary" />
+                  </div>
                 <h3 className="font-bold text-lg mb-2">{v.title}</h3>
                 <p className="text-sm text-muted-foreground">{v.desc}</p>
               </CardContent>
@@ -101,16 +111,20 @@ export default function UrduAboutPage() {
       </section>
 
       {/* FAQs */}
-      <section className="bg-muted/50 py-12 sm:py-16">
+      <section className="bg-muted/50 py-14 sm:py-20">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-2xl sm:text-3xl font-black text-center mb-8">
+          <div className="flex items-center gap-3 justify-center mb-10">
+            <div className="h-px flex-1 max-w-16 bg-accent/30" />
+          <h2 className="text-2xl sm:text-3xl font-black text-center">
             اکثر پوچھے جانے والے <span className="text-gradient-gold">سوالات</span>
           </h2>
+            <div className="h-px flex-1 max-w-16 bg-accent/30" />
+          </div>
           <Accordion type="single" collapsible className="space-y-3">
             {aboutFaqs.map((faq, i) => (
-              <AccordionItem key={i} value={`faq-${i}`} className="border rounded-xl px-4">
-                <AccordionTrigger className="text-right font-semibold text-sm sm:text-base py-4">{faq.q}</AccordionTrigger>
-                <AccordionContent className="text-muted-foreground text-sm leading-relaxed pb-4">{faq.a}</AccordionContent>
+              <AccordionItem key={i} value={`faq-${i}`} className="border rounded-xl px-5 shadow-sm hover:shadow-md transition-shadow">
+                <AccordionTrigger className="text-right font-semibold text-sm sm:text-base py-5">{faq.q}</AccordionTrigger>
+                <AccordionContent className="text-muted-foreground text-sm leading-relaxed pb-5">{faq.a}</AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>

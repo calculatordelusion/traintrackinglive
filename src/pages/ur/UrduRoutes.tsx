@@ -63,6 +63,7 @@ export default function UrduRoutes() {
         ctaTitle="ابھی روٹ تلاش کریں"
         ctaDesc="اوپر سے اپنا مطلوبہ روٹ منتخب کریں اور تمام دستیاب ٹرینیں، اسٹاپس، اور فاصلے دیکھیں۔"
         englishPath="/routes"
+        linkContext="route"
       >
         <UrduRoutesExplorer />
       </UrduPageShell>

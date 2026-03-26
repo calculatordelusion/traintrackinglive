@@ -71,6 +71,7 @@ export default function UrduStations() {
         ctaTitle="ابھی اسٹیشن تلاش کریں"
         ctaDesc="اوپر سرچ باکس میں اسٹیشن کا نام ٹائپ کریں اور مکمل تفصیلات دیکھیں۔"
         englishPath="/stations"
+        linkContext="station"
       >
         <UrduStationsDirectory />
       </UrduPageShell>

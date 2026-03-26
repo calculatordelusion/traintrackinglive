@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import SEOHead from "@/components/SEOHead";
-import RelatedLinks from "@/components/RelatedLinks";
+import UrduRelatedLinks from "@/components/ur/UrduRelatedLinks";
 import { fetchTrainDetail, type TrainDetail } from "@/lib/trainApi";
 
 export default function UrduTrainDetail() {
@@ -177,7 +177,7 @@ export default function UrduTrainDetail() {
         </div>
       </div>
 
-      <RelatedLinks context="train" currentName={train.name} />
+      <UrduRelatedLinks context="train" currentName={train.nameUrdu || train.name} />
     </div>
   );
 }

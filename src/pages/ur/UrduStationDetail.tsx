@@ -2,7 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import SEOHead from "@/components/SEOHead";
-import RelatedLinks from "@/components/RelatedLinks";
+import UrduRelatedLinks from "@/components/ur/UrduRelatedLinks";
 import { getStationBySlug } from "@/data/stations";
 import { trains } from "@/data/trains";
 
@@ -122,7 +122,7 @@ export default function UrduStationDetail() {
         </div>
       </div>
 
-      <RelatedLinks context="station" currentName={station.name} />
+      <UrduRelatedLinks context="station" currentName={station.nameUrdu || station.name} />
     </div>
   );
 }

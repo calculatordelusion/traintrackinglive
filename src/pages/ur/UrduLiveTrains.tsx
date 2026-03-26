@@ -69,6 +69,7 @@ export default function UrduLiveTrains() {
         ctaTitle="ابھی لائیو ٹرینیں دیکھیں"
         ctaDesc="اوپر نقشے پر تمام فعال ٹرینوں کی ریئل ٹائم GPS پوزیشنز دیکھیں۔ مفت، سائن اپ کی ضرورت نہیں۔"
         englishPath="/train"
+        linkContext="train"
       >
         <UrduLiveTrainsTool />
       </UrduPageShell>

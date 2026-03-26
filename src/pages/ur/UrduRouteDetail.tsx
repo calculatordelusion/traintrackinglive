@@ -6,6 +6,7 @@ import SEOHead from "@/components/SEOHead";
 import { getRouteBySlug } from "@/data/routeDetails";
 import NotFound from "@/pages/NotFound";
 import { formatFareUrdu, getRouteUrduDetailContent, getRouteUrduFaqs, getRouteUrduSummary, getRouteUrduTravelTips, translateStationName, translateTrainName, translateTrainType } from "@/lib/urduContent";
+import UrduRelatedLinks from "@/components/ur/UrduRelatedLinks";
 
 export default function UrduRouteDetail() {
   const { slug } = useParams<{ slug: string }>();
@@ -121,6 +122,8 @@ export default function UrduRouteDetail() {
             <Link to="/ur/schedule"><Button variant="outline" className="border-primary-foreground/30 text-primary-foreground bg-transparent rounded-xl">مکمل شیڈول</Button></Link>
           </div>
         </div>
+
+        <UrduRelatedLinks context="route" currentName={`${translateStationName(route.from)}–${translateStationName(route.to)}`} />
       </div>
     </div>
   );

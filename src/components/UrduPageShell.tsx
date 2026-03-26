@@ -4,6 +4,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Globe, type LucideIcon } from "lucide-react";
 import type { ReactNode } from "react";
+import UrduRelatedLinks, { type UrduLinkContext } from "@/components/ur/UrduRelatedLinks";
 import heroTrainBg from "@/assets/hero-train-bg.webp";
 
 interface FAQ {
@@ -41,6 +42,9 @@ interface UrduPageShellProps {
   ctaLabel?: string;
   /** Language switch */
   englishPath: string;
+  /** Internal linking context */
+  linkContext?: UrduLinkContext;
+  linkContextName?: string;
 }
 
 export default function UrduPageShell({
@@ -61,6 +65,8 @@ export default function UrduPageShell({
   ctaLink,
   ctaLabel,
   englishPath,
+  linkContext = "general",
+  linkContextName,
 }: UrduPageShellProps) {
   return (
     <div>
@@ -183,6 +189,9 @@ export default function UrduPageShell({
           </Accordion>
         </div>
       </section>
+
+      {/* Internal Links */}
+      <UrduRelatedLinks context={linkContext} currentName={linkContextName} />
 
       {/* CTA — Gradient section with decorative elements */}
       {ctaTitle && (

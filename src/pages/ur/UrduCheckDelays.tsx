@@ -66,6 +66,7 @@ export default function UrduCheckDelays() {
         ctaTitle="ابھی اپنی ٹرین کی تاخیر چیک کریں"
         ctaDesc="اوپر اپنی ٹرین تلاش کریں اور ریئل ٹائم تاخیر اسٹیٹس فوری طور پر دیکھیں۔"
         englishPath="/check-delays"
+        linkContext="train"
       >
         <UrduDelayChecker />
       </UrduPageShell>

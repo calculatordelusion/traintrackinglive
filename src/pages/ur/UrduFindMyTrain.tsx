@@ -39,6 +39,7 @@ export default function UrduFindMyTrain() {
         ]}
         faqs={faqs}
         englishPath="/find-my-train"
+        linkContext="train"
       >
         <UrduFindMyTrainTool />
       </UrduPageShell>

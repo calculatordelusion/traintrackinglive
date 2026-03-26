@@ -71,6 +71,7 @@ export default function UrduExpressTrains() {
         ctaTitle="ایکسپریس ٹرین تلاش کریں"
         ctaDesc="اوپر سے اپنی پسندیدہ ایکسپریس ٹرین منتخب کریں اور شیڈول، کرایہ، اور لائیو ٹریکنگ دیکھیں۔"
         englishPath="/express-trains"
+        linkContext="train"
       >
         <UrduExpressTrainsTool />
       </UrduPageShell>

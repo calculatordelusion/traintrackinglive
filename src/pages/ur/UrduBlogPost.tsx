@@ -6,12 +6,14 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import SEOHead from "@/components/SEOHead";
 import { blogPosts } from "@/data/blogPosts";
 import { getUrduBlogPostBySlug, urduBlogPosts } from "@/data/urduBlogPosts";
+import { urduBlogEnhancements } from "@/data/urduBlogEnhancements";
 
 export default function UrduBlogPost() {
   const { slug } = useParams();
   const urduPost = getUrduBlogPostBySlug(slug || "");
   const englishPost = blogPosts.find((post) => post.slug === slug);
   const relatedPosts = urduBlogPosts.filter((post) => post.slug !== slug).slice(0, 3);
+  const enhancement = slug ? urduBlogEnhancements[slug] : undefined;
 
   if (!urduPost || !englishPost) {
     return (
@@ -93,6 +95,46 @@ export default function UrduBlogPost() {
           <p className="text-lg font-medium text-foreground">{urduPost.excerpt}</p>
           {urduPost.content.map((paragraph, index) => <p key={index}>{paragraph}</p>)}
         </article>
+
+        {enhancement && (
+          <>
+            <section className="grid md:grid-cols-3 gap-5">
+              {enhancement.heroCards.map((card) => (
+                <Card key={card.title} className={`${card.gradient} border hover-lift`}>
+                  <CardContent className="p-5 space-y-2">
+                    <div className="text-xs font-bold text-primary">{card.title}</div>
+                    <div className="text-2xl font-black">{card.value}</div>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{card.desc}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </section>
+
+            <section className="space-y-6">
+              {enhancement.sections.map((section) => (
+                <Card key={section.title} className="border">
+                  <CardContent className="p-6 sm:p-7 space-y-4">
+                    <h2 className="text-2xl font-black">{section.title}</h2>
+                    {section.paragraphs.map((paragraph) => (
+                      <p key={paragraph} className="text-muted-foreground leading-8">{paragraph}</p>
+                    ))}
+                  </CardContent>
+                </Card>
+              ))}
+            </section>
+
+            <Card className="border bg-muted/30">
+              <CardContent className="p-6 sm:p-7">
+                <h2 className="text-2xl font-black mb-4">مختصر چیک لسٹ</h2>
+                <div className="grid sm:grid-cols-2 gap-3">
+                  {enhancement.checklist.map((item) => (
+                    <div key={item} className="rounded-xl bg-card border p-4 text-sm text-muted-foreground">• {item}</div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          </>
+        )}
 
         <section>
           <h2 className="text-2xl font-black mb-4">اکثر پوچھے جانے والے سوالات</h2>

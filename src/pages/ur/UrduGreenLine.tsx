@@ -1,6 +1,6 @@
 import SEOHead from "@/components/SEOHead";
 import UrduPageShell from "@/components/UrduPageShell";
-import GreenLine from "@/pages/GreenLine";
+import UrduGreenLineGuide from "@/components/ur/UrduGreenLineGuide";
 import { Star, Train, Clock, CreditCard, MapPin, Zap } from "lucide-react";
 
 const faqs = [
@@ -75,7 +75,7 @@ export default function UrduGreenLine() {
         ctaLabel="لائیو ٹریکنگ دیکھیں"
         englishPath="/green-line-express"
       >
-        <GreenLine />
+        <UrduGreenLineGuide />
       </UrduPageShell>
     </div>
   );

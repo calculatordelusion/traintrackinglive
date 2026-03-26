@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
 import { routeDetails } from "@/data/routeDetails";
+import { formatFareUrdu, getRouteUrduSummary } from "@/lib/urduContent";
 
 export default function UrduRoutesExplorer() {
   const [search, setSearch] = useState("");
@@ -32,11 +33,11 @@ export default function UrduRoutesExplorer() {
                   </div>
                   <span className="text-xs px-3 py-1 rounded-full bg-primary/10 text-primary font-bold">{route.distance}</span>
                 </div>
-                <p className="text-sm text-muted-foreground leading-relaxed">{route.quickAnswer}</p>
+                <p className="text-sm text-muted-foreground leading-relaxed">{getRouteUrduSummary(route)}</p>
                 <div className="grid grid-cols-3 gap-3 text-center text-xs">
                   <div className="rounded-lg bg-muted p-3"><div className="text-muted-foreground mb-1">تیز ترین</div><div className="font-bold">{route.fastestDuration}</div></div>
                   <div className="rounded-lg bg-muted p-3"><div className="text-muted-foreground mb-1">روزانہ</div><div className="font-bold">{route.dailyTrains}+</div></div>
-                  <div className="rounded-lg bg-muted p-3"><div className="text-muted-foreground mb-1">کرایہ</div><div className="font-bold">{route.fareFrom}</div></div>
+                  <div className="rounded-lg bg-muted p-3"><div className="text-muted-foreground mb-1">کرایہ</div><div className="font-bold">{formatFareUrdu(route.fareFrom)}</div></div>
                 </div>
               </CardContent>
             </Card>

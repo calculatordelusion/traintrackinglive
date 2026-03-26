@@ -2,6 +2,7 @@ import SEOHead from "@/components/SEOHead";
 import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { Heart, Target, Users, Shield, Globe, Zap, Train, Navigation, Eye, Smartphone, Clock, MapPin } from "lucide-react";
+import UrduRelatedLinks from "@/components/ur/UrduRelatedLinks";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import heroTrainBg from "@/assets/hero-train-bg.webp";
 

@@ -1,7 +1,10 @@
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 import { Accessibility, AlertTriangle, X, Type, ZoomIn, ZoomOut, MousePointer2, Underline, Contrast, LetterText, RotateCcw, Eye, ScanSearch, PauseCircle } from "lucide-react";
 
 export default function FloatingButtons() {
+  const location = useLocation();
+  const isUrdu = location.pathname.startsWith("/ur");
   const [showAccessibility, setShowAccessibility] = useState(false);
   const [showDisclaimer, setShowDisclaimer] = useState(false);
   const [textSize, setTextSize] = useState(100);
@@ -99,11 +102,11 @@ export default function FloatingButtons() {
       <button
         onClick={() => setShowDisclaimer(true)}
         className="fixed bottom-4 left-3 sm:bottom-5 sm:left-5 z-50 flex items-center gap-1.5 px-2.5 py-2.5 sm:px-4 sm:py-2.5 rounded-full bg-accent text-accent-foreground text-xs sm:text-sm font-bold shadow-lg shadow-accent/30 hover:shadow-xl hover:shadow-accent/40 transition-all duration-200 hover:scale-105 active:scale-95 ring-2 ring-accent/50"
-        aria-label="View Disclaimer"
+        aria-label={isUrdu ? "اعلان دستبرداری دیکھیں" : "View Disclaimer"}
       >
         <span className="sm:hidden w-5 h-5 flex items-center justify-center rounded-full bg-accent-foreground/20 text-accent-foreground font-black text-sm leading-none">!</span>
         <AlertTriangle className="hidden sm:block w-4 h-4" />
-        <span className="hidden sm:inline">Disclaimer</span>
+        <span className="hidden sm:inline">{isUrdu ? "دستبرداری" : "Disclaimer"}</span>
       </button>
 
       {/* Accessibility - Bottom Right */}
@@ -119,32 +122,54 @@ export default function FloatingButtons() {
       {showDisclaimer && (
         <>
           <div className="fixed inset-0 z-[100] bg-black/50 backdrop-blur-sm" onClick={() => setShowDisclaimer(false)} role="presentation" />
-          <div role="dialog" aria-modal="true" aria-labelledby="disclaimer-title" className="fixed inset-x-3 sm:inset-x-4 top-1/2 -translate-y-1/2 z-[101] max-w-lg mx-auto bg-card rounded-2xl shadow-2xl border overflow-hidden animate-in fade-in zoom-in-95 duration-200 max-h-[85vh] flex flex-col">
+          <div role="dialog" aria-modal="true" aria-labelledby="disclaimer-title" dir={isUrdu ? "rtl" : "ltr"} className={`fixed inset-x-3 sm:inset-x-4 top-1/2 -translate-y-1/2 z-[101] max-w-lg mx-auto bg-card rounded-2xl shadow-2xl border overflow-hidden animate-in fade-in zoom-in-95 duration-200 max-h-[85vh] flex flex-col ${isUrdu ? "font-urdu" : ""}`}>
             <div className="bg-destructive px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between shrink-0">
               <h2 id="disclaimer-title" className="text-destructive-foreground font-bold text-base sm:text-lg flex items-center gap-2">
                 <AlertTriangle className="w-5 h-5" aria-hidden="true" />
-                Disclaimer
+                {isUrdu ? "اعلان دستبرداری" : "Disclaimer"}
               </h2>
-              <button onClick={() => setShowDisclaimer(false)} className="text-destructive-foreground/80 hover:text-destructive-foreground p-1" aria-label="Close disclaimer">
+              <button onClick={() => setShowDisclaimer(false)} className="text-destructive-foreground/80 hover:text-destructive-foreground p-1" aria-label={isUrdu ? "بند کریں" : "Close disclaimer"}>
                 <X className="w-5 h-5" aria-hidden="true" />
               </button>
             </div>
-            <div className="p-4 sm:p-6 space-y-3 sm:space-y-4 text-sm text-muted-foreground leading-relaxed overflow-y-auto">
-              <p>
-                <strong className="text-foreground">Track My Train</strong> is an <strong className="text-foreground">independent, community-driven platform</strong> and is <strong className="text-foreground">not affiliated with, endorsed by, or officially connected to Pakistan Railways</strong> or any government entity.
-              </p>
-              <p>
-                All train tracking data, schedules, and status information displayed on this website are sourced from publicly available data and third-party APIs. While we strive for maximum accuracy, real-time data may occasionally differ from actual train positions due to GPS signal delays, network latency, or reporting gaps.
-              </p>
-              <p>
-                <strong className="text-foreground">We do not guarantee</strong> the accuracy, completeness, or timeliness of any information provided. Users should always verify critical travel information directly with Pakistan Railways official channels before making travel decisions.
-              </p>
-              <p>
-                This service is provided <strong className="text-foreground">free of charge</strong> for informational purposes only. Track My Train assumes no liability for any losses, delays, or inconveniences resulting from the use of information on this platform.
-              </p>
-              <p className="text-xs border-t pt-3 text-muted-foreground/70">
-                For official Pakistan Railways information, contact the PR helpline at <strong>117</strong> or visit the official Pakistan Railways website.
-              </p>
+            <div className={`p-4 sm:p-6 space-y-3 sm:space-y-4 text-sm text-muted-foreground overflow-y-auto ${isUrdu ? "leading-[2]" : "leading-relaxed"}`}>
+              {isUrdu ? (
+                <>
+                  <p>
+                    <strong className="text-foreground">ٹریک مائی ٹرین</strong> ایک <strong className="text-foreground">آزاد، کمیونٹی پر مبنی پلیٹ فارم</strong> ہے اور <strong className="text-foreground">پاکستان ریلوے</strong> یا کسی بھی سرکاری ادارے سے وابستہ، منظور شدہ، یا سرکاری طور پر منسلک <strong className="text-foreground">نہیں</strong> ہے۔
+                  </p>
+                  <p>
+                    اس ویب سائٹ پر دکھائے گئے تمام ٹرین ٹریکنگ ڈیٹا، شیڈولز، اور اسٹیٹس کی معلومات عوامی طور پر دستیاب ڈیٹا اور فریق ثالث APIs سے حاصل کی گئی ہیں۔ اگرچہ ہم زیادہ سے زیادہ درستگی کی کوشش کرتے ہیں، لیکن ریئل ٹائم ڈیٹا بعض اوقات GPS سگنل میں تاخیر، نیٹ ورک لیٹنسی، یا رپورٹنگ میں خلا کی وجہ سے اصل ٹرین پوزیشنز سے مختلف ہو سکتا ہے۔
+                  </p>
+                  <p>
+                    ہم فراہم کردہ کسی بھی معلومات کی درستگی، مکمل ہونے، یا بروقت ہونے کی <strong className="text-foreground">ضمانت نہیں دیتے</strong>۔ صارفین کو سفر کے فیصلے کرنے سے پہلے ہمیشہ اہم سفری معلومات کی براہ راست پاکستان ریلوے کے سرکاری ذرائع سے تصدیق کرنی چاہیے۔
+                  </p>
+                  <p>
+                    یہ سروس صرف معلوماتی مقاصد کے لیے <strong className="text-foreground">مفت فراہم</strong> کی جاتی ہے۔ ٹریک مائی ٹرین اس پلیٹ فارم پر موجود معلومات کے استعمال سے ہونے والے کسی بھی نقصان، تاخیر، یا تکلیف کی ذمہ داری قبول نہیں کرتا۔
+                  </p>
+                  <p className="text-xs border-t pt-3 text-muted-foreground/70">
+                    پاکستان ریلوے کی سرکاری معلومات کے لیے، PR ہیلپ لائن <strong>۱۱۷</strong> پر رابطہ کریں یا پاکستان ریلوے کی سرکاری ویب سائٹ پر جائیں۔
+                  </p>
+                </>
+              ) : (
+                <>
+                  <p>
+                    <strong className="text-foreground">Track My Train</strong> is an <strong className="text-foreground">independent, community-driven platform</strong> and is <strong className="text-foreground">not affiliated with, endorsed by, or officially connected to Pakistan Railways</strong> or any government entity.
+                  </p>
+                  <p>
+                    All train tracking data, schedules, and status information displayed on this website are sourced from publicly available data and third-party APIs. While we strive for maximum accuracy, real-time data may occasionally differ from actual train positions due to GPS signal delays, network latency, or reporting gaps.
+                  </p>
+                  <p>
+                    <strong className="text-foreground">We do not guarantee</strong> the accuracy, completeness, or timeliness of any information provided. Users should always verify critical travel information directly with Pakistan Railways official channels before making travel decisions.
+                  </p>
+                  <p>
+                    This service is provided <strong className="text-foreground">free of charge</strong> for informational purposes only. Track My Train assumes no liability for any losses, delays, or inconveniences resulting from the use of information on this platform.
+                  </p>
+                  <p className="text-xs border-t pt-3 text-muted-foreground/70">
+                    For official Pakistan Railways information, contact the PR helpline at <strong>117</strong> or visit the official Pakistan Railways website.
+                  </p>
+                </>
+              )}
             </div>
           </div>
         </>

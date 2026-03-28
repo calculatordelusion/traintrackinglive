@@ -40,7 +40,7 @@ export default function AboutPage() {
         title="About TrackMyTrain.pk — Our Story & Mission"
         description="TrackMyTrain.pk is Pakistan's free, independent train tracker for 164+ trains. Learn about our mission, team, and commitment to accurate railway info."
         canonical="/about"
-        keywords="about trackmytrain.pk, who made track my train, trackmytrain team, pakistan train tracker about, train tracking platform pakistan, railway travel mission pakistan, independent railway service pakistan"
+        keywords="about trackmytrain, track my train team, who made trackmytrain, pakistan train tracker, trackmytrain mission, independent railway tracker, free train tracking pakistan"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "About Us", url: "/about" }]}
         faqSchema={aboutFaqs}
         additionalSchemas={[{

@@ -211,7 +211,7 @@ export default function JourneyPlannerPage() {
         title="Pakistan Railways Journey Planner — Find Trains"
         description={`Plan your journey between ${meta.totalStations}+ stations. Compare ${meta.totalTrains}+ trains by duration, class, and fare. Free planner, no signup needed.`}
         canonical="/planner"
-        keywords="pakistan railway journey planner, find train between stations, train route finder, karachi to lahore train search, lahore to rawalpindi train, railway route search pakistan, train planner 2026, best train finder pakistan"
+        keywords="journey planner pakistan railway, find train between stations, train route finder, station to station train, karachi to lahore train, lahore to rawalpindi train, train search, best train for journey, train planner, compare trains, which train to take, plan train travel"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Journey Planner", url: "/planner" }]}
         faqSchema={plannerFaqs}
         howToSchema={{

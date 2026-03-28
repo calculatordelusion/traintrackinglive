@@ -78,7 +78,7 @@ export default function SchedulePage() {
         title="Pakistan Railways Schedule 2026 — All 164+ Trains"
         description={`Complete Pakistan Railways timetable. Departure and arrival times for ${allTrains.length || 164}+ trains. Express, AC, and Passenger schedules. Updated 2026.`}
         canonical="/schedule"
-        keywords="pakistan railway schedule 2026, train schedule pakistan, pakistan train timetable, railway time table, train timing today, pakistan railways departure time, express train schedule, train timetable updated, pakistan railway time table today"
+        keywords="pakistan railway schedule, train schedule pakistan, pakistan train timetable 2026, railway time table today, train timing, train departure time, train arrival time, pakistan railways timetable, railway schedule today, all trains timing, express train timing, train time table pakistan railways"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Train Schedule", url: "/schedule" }]}
         faqSchema={scheduleFaqs}
         additionalSchemas={[{

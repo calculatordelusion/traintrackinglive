@@ -23,7 +23,7 @@ export default function UrduPlanner() {
         canonical="/ur/planner"
         lang="ur"
         alternateEnglish="/planner"
-        keywords="سفر کا منصوبہ بنائیں, جرنی پلانر, پاکستان ریلوے پلانر, ٹرین سفر منصوبہ, دو اسٹیشنوں کے درمیان ٹرین, بہترین ٹرین تلاش, اسٹیشن سے اسٹیشن سفر"
+        keywords="جرنی پلانر, سفر منصوبہ, ٹرین تلاش, اسٹیشن سے اسٹیشن, کراچی لاہور ٹرین, لاہور راولپنڈی ٹرین, بہترین ٹرین, ٹرینوں کا موازنہ, سفری منصوبہ بندی, ٹرین روٹ فائنڈر"
         breadcrumbs={[{ name: "ہوم", url: "/ur" }, { name: "سفر کا منصوبہ", url: "/ur/planner" }]}
         faqSchema={faqs}
         additionalSchemas={[{

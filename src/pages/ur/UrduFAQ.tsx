@@ -48,7 +48,7 @@ export default function UrduFAQPage() {
         canonical="/ur/faq"
         lang="ur"
         alternateEnglish="/faq"
-        keywords="پاکستان ریلوے سوالات, عمومی سوالات جوابات, ریلوے سفر مدد, پہلی بار ٹرین سفر اردو"
+        keywords="ریلوے سوالات جوابات, عمومی سوالات, ٹرین سفر مدد, پہلی بار ٹرین سفر, سامان کی حد, خواتین ڈبہ, وہیل چیئر سہولت, پلیٹ فارم ٹکٹ, شکایت نمبر, ریلوے قواعد"
         breadcrumbs={[{ name: "ہوم", url: "/ur" }, { name: "عمومی سوالات", url: "/ur/faq" }]}
         faqSchema={faqCategories.flatMap(c => c.faqs)}
       />

@@ -105,7 +105,7 @@ export default function CheckDelays() {
         title="Train Delay Checker — Is My Train Late? 2026"
         description="Check Pakistan Railways train delays in real time. See late minutes, revised ETAs, and delay status for all running trains. Essential for fog season."
         canonical="/check-delays"
-        keywords="train delay checker pakistan, is my train late today, pakistan train delay, check train delay pakistan, pakistan railways delay status, train late today, tezgam delay, green line express late, fog delay trains pakistan, winter train delay 2026"
+        keywords="train delay checker, is my train late, train delay status pakistan, check train delay, train late today pakistan, train running late, fog delay trains, tezgam delay today, green line delay, train cancelled today, pakistan railway delay report, train delay minutes"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Check Delays", url: "/check-delays" }]}
         faqSchema={delayFaqs}
         additionalSchemas={[{

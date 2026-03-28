@@ -25,7 +25,7 @@ export default function UrduTicketPricing() {
         canonical="/ur/ticket-pricing"
         lang="ur"
         alternateEnglish="/ticket-pricing"
-        keywords="پاکستان ریلوے کرایہ 2026, کرایہ چارٹ ریلوے, ٹرین کرایہ فہرست, AC پارلر کرایہ, اکانومی کلاس قیمت, طلباء رعایت ریلوے, بزنس کلاس کرایہ, سلیپر کلاس قیمت"
+        keywords="ریلوے کرایہ, ٹکٹ قیمت, کرایہ چارٹ, اکانومی کلاس کرایہ, بزنس کلاس قیمت, AC سلیپر کرایہ, پارلر کلاس, کراچی لاہور کرایہ, سستی ٹرین ٹکٹ, طلباء رعایت, AC اسٹینڈرڈ کرایہ"
         breadcrumbs={[{ name: "ہوم", url: "/ur" }, { name: "ٹکٹ کی قیمتیں", url: "/ur/ticket-pricing" }]}
         faqSchema={faqs}
         additionalSchemas={[{

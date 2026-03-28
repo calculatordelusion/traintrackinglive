@@ -25,7 +25,7 @@ export default function UrduRoutes() {
         canonical="/ur/routes"
         lang="ur"
         alternateEnglish="/routes"
-        keywords="پاکستان ریلوے روٹس, ریلوے لائنز, کراچی لاہور روٹ, ٹرین روٹ نقشہ, مین لائن ریلوے, کوئٹہ ٹرین روٹ, پاکستان ریلوے نیٹ ورک"
+        keywords="ریلوے روٹس, ٹرین روٹ نقشہ, ریلوے لائنز, کراچی لاہور روٹ, مین لائن ریلوے, کوئٹہ روٹ, ٹرین روٹ اسٹاپس, شہر سے شہر ٹرین, ریلوے نیٹ ورک, ML-1 کوریڈور, تمام ٹرین روٹس"
         breadcrumbs={[{ name: "ہوم", url: "/ur" }, { name: "روٹس", url: "/ur/routes" }]}
         faqSchema={faqs}
         additionalSchemas={[{

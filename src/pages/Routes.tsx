@@ -117,7 +117,7 @@ export default function RoutesPage() {
         title="Pakistan Railway Routes — Map & Corridors 2026"
         description={`Explore ${routeGroups.length} Pakistan Railways routes with stops, distances, and train options across ${stations.length}+ stations. ML-1 corridor maps included.`}
         canonical="/routes"
-        keywords="pakistan railway route map, pakistan railway routes, train routes with stops, karachi to lahore train route, pakistan railways route map, railway network map pakistan, ML-1 route, pakistan railway corridors, city to city train routes pakistan"
+        keywords="pakistan railway routes, train route map pakistan, railway route with stops, karachi to lahore route, lahore to islamabad train route, ML-1 railway corridor, pakistan railway network, train routes and stops, city to city train, main line railway pakistan, railway line map, all train routes"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Train Routes", url: "/routes" }]}
         faqSchema={routeFaqs}
         additionalSchemas={[{

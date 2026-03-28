@@ -112,12 +112,12 @@ export default function RoutesPage() {
   }, [searchQuery, routeGroups]);
 
   return (
-    <div>
+    <main>
       <SEOHead
-        title="Pakistan Railway Routes & Maps 2026 — All Train Routes, Corridors & Distances"
-        description={`Explore ${routeGroups.length} Pakistan Railways routes connecting cities with ${trains.length} trains and ${stations.length}+ stations. Compare routes, journey times, and find the best train for your trip.`}
+        title="Pakistan Railway Routes & Maps 2026 — All Train Routes, Corridors & Live Tracking"
+        description={`Explore ${routeGroups.length} Pakistan Railways routes connecting cities with ${trains.length} trains and ${stations.length}+ stations. Compare routes, distances, journey times. Live train tracking on every route.`}
         canonical="/routes"
-        keywords="pakistan railway routes, train route map pakistan, karachi to lahore train route, pakistan railways corridors, ML-1 route, train routes with stops, railway map pakistan 2026"
+        keywords="pakistan railway routes, train route map pakistan, karachi to lahore train route, pakistan railways route map, ML-1 route pakistan, train routes with stops, railway map pakistan 2026, pakistan railway corridors, train tracking live routes"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Train Routes", url: "/routes" }]}
         faqSchema={routeFaqs}
         additionalSchemas={[{
@@ -434,6 +434,6 @@ export default function RoutesPage() {
           "acceptedAnswer": { "@type": "Answer", "text": f.a }
         }))
       })}} />
-    </div>
+    </main>
   );
 }

@@ -68,12 +68,12 @@ export default function StationsPage() {
   }, []);
 
   return (
-    <div>
+    <main>
       <SEOHead
-        title="All Pakistan Railway Stations 2026 — Complete Directory with Search"
-        description={`Browse ${stations.length}+ Pakistan Railways stations. Search by name, city, or province. View station details, connecting trains, platform info, and facilities for every station in Pakistan.`}
+        title="All Pakistan Railway Stations 2026 — Complete Directory (${stations.length}+ Stations)"
+        description={`Browse ${stations.length}+ Pakistan Railways stations with search. View station details, connecting trains, platforms, facilities. Find any railway station in Pakistan — Lahore, Karachi, Rawalpindi & more.`}
         canonical="/stations"
-        keywords="pakistan railway stations, railway station list pakistan, lahore junction station, karachi cantt station, rawalpindi railway station, pakistan railway station search, station directory pakistan"
+        keywords="pakistan railway stations, railway station list pakistan, lahore junction station, karachi cantt station, rawalpindi railway station, all stations pakistan railways, station directory pakistan, train station near me pakistan, pakistan railway station search 2026"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Railway Stations", url: "/stations" }]}
         faqSchema={stationFaqs}
         additionalSchemas={[{
@@ -410,6 +410,6 @@ export default function StationsPage() {
           "acceptedAnswer": { "@type": "Answer", "text": f.a }
         }))
       })}} />
-    </div>
+    </main>
   );
 }

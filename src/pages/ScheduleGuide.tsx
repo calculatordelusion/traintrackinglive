@@ -87,12 +87,12 @@ const proTips = [
 
 export default function ScheduleGuide() {
   return (
-    <div>
+    <main>
       <SEOHead
-        title="Pakistan Railways Train Schedule 2026 — Complete Timetable Guide"
-        description="Complete Pakistan Railways timetable 2026 with accurate departure & arrival times for all 164+ trains. Green Line, Tezgam, Khyber Mail schedules. Route corridors, seasonal travel tips, and live tracking."
+        title="Pakistan Railways Schedule Guide 2026 — Complete Timetable, Routes & Seasonal Tips"
+        description="Complete Pakistan Railways timetable guide 2026. Accurate departure & arrival times for all 164+ trains. Green Line, Tezgam, Khyber Mail schedules, route corridors, fog season tips, and live tracking."
         canonical="/schedule-guide"
-        keywords="pakistan railways schedule 2026, train timetable pakistan, pakistan train timing today, green line express schedule, tezgam schedule, khyber mail timetable, lahore to rawalpindi train, karachi to lahore train time, pakistan railway time table, train schedule pakistan railways 2026"
+        keywords="pakistan railways schedule 2026, train timetable pakistan, train timing today pakistan, green line express schedule, tezgam schedule, khyber mail timetable, karachi to lahore train time, pakistan railway time table 2026, train schedule guide, railway timetable today"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Schedule Guide", url: "/schedule-guide" }]}
         faqSchema={scheduleFaqs}
         additionalSchemas={[{
@@ -528,6 +528,6 @@ export default function ScheduleGuide() {
           <Link to="/schedule" className="text-primary font-semibold hover:underline">Interactive Timetable →</Link>
         </p>
       </div>
-    </div>
+    </main>
   );
 }

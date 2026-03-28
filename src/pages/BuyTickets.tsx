@@ -107,12 +107,12 @@ const proTips = [
 
 export default function BuyTickets() {
   return (
-    <div>
+    <main>
       <SEOHead
-        title="How to Buy Train Tickets Online in Pakistan — Complete Booking Guide 2026"
-        description="Step-by-step guide to booking Pakistan Railways tickets online via RABTA app, website, or counter. Payment methods, cancellation policy, discounts, pro tips, and everything you need for hassle-free train ticket booking."
+        title="How to Buy Pakistan Railways Tickets Online 2026 — RABTA App Booking Guide"
+        description="Step-by-step guide to buying Pakistan Railways tickets online via RABTA app, website, or counter. JazzCash, Easypaisa payment. Cancellation policy, student discounts, and pro tips for hassle-free booking."
         canonical="/buy-tickets"
-        keywords="buy train tickets online pakistan, pakistan railways online booking, RABTA app booking, how to book train ticket pakistan, pakistan railway e ticket, train ticket booking 2026, JazzCash train ticket, easypaisa train booking, pakistan railways cancellation policy, train ticket price pakistan"
+        keywords="buy train tickets online pakistan, pakistan railways online booking, RABTA app booking, how to book train ticket pakistan, pakistan railway e ticket, train ticket booking 2026, JazzCash train ticket, easypaisa train booking, railway ticket cancellation, train ticket price pakistan"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Buy Tickets Online", url: "/buy-tickets" }]}
         faqSchema={bookingFaqs}
         howToSchema={{
@@ -618,6 +618,6 @@ export default function BuyTickets() {
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 }

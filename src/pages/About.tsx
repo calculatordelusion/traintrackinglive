@@ -35,12 +35,12 @@ const teamValues = [
 
 export default function AboutPage() {
   return (
-    <div>
+    <main>
       <SEOHead
-        title="About Track My Train — Pakistan's #1 Independent Train Tracking Platform"
-        description="Track My Train is Pakistan's most trusted independent railway tracking service. Learn about our mission, team values, and how we provide free real-time GPS tracking for 164+ Pakistan Railways trains across 342+ stations."
+        title="About Track My Train — Pakistan's #1 Independent Train Tracking Live Platform"
+        description="Track My Train is Pakistan's most trusted independent train tracking live service. Free real-time GPS tracking for 164+ Pakistan Railways trains across 342+ stations. Learn about our mission, values, and E-E-A-T commitment."
         canonical="/about"
-        keywords="about track my train, trackmytrain.pk, pakistan train tracking platform, pakistan railways independent tracker, who made trackmytrain, pakistan railway app, train tracker pakistan"
+        keywords="about track my train, trackmytrain.pk, pakistan train tracking platform, who made trackmytrain, train tracking live pakistan, pakistan railway independent tracker, train tracker app pakistan"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "About Us", url: "/about" }]}
         faqSchema={aboutFaqs}
         additionalSchemas={[{
@@ -355,6 +355,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 }

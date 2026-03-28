@@ -206,12 +206,12 @@ export default function JourneyPlannerPage() {
   };
 
   return (
-    <div>
+    <main>
       <SEOHead
-        title="Pakistan Railways Journey Planner 2026 — Find Trains Between Any Two Stations"
-        description={`Plan your Pakistan Railways journey between any two of ${meta.totalStations}+ stations. Compare ${meta.totalTrains}+ trains by duration, class, and schedule. Free journey planner with real-time data.`}
+        title="Pakistan Railways Journey Planner 2026 — Find Best Train Between Any Two Stations"
+        description={`Plan your Pakistan Railways journey between any two of ${meta.totalStations}+ stations. Compare ${meta.totalTrains}+ trains by duration, class, and schedule. Free journey planner with live train tracking data.`}
         canonical="/planner"
-        keywords="pakistan railway journey planner, find train between stations, train route finder pakistan, karachi to lahore train, lahore to rawalpindi train, pakistan railways route search"
+        keywords="pakistan railway journey planner, find train between stations, train route finder pakistan, karachi to lahore train, lahore to rawalpindi train, pakistan railways route search, train planner pakistan 2026, best train finder"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Journey Planner", url: "/planner" }]}
         faqSchema={plannerFaqs}
         howToSchema={{
@@ -617,6 +617,6 @@ export default function JourneyPlannerPage() {
           "acceptedAnswer": { "@type": "Answer", "text": f.a }
         }))
       })}} />
-    </div>
+    </main>
   );
 }

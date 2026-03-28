@@ -88,6 +88,20 @@ export default function RailwayHelpline() {
           { name: "Railway Helpline & Offices", url: "/railway-helpline" },
         ]}
         faqSchema={faqs}
+        additionalSchemas={[{
+          "@context": "https://schema.org",
+          "@type": "GovernmentService",
+          "name": "Pakistan Railways Helpline 117",
+          "serviceType": "Railway Customer Support",
+          "provider": { "@type": "GovernmentOrganization", "name": "Pakistan Railways" },
+          "areaServed": { "@type": "Country", "name": "Pakistan" },
+          "availableChannel": {
+            "@type": "ServiceChannel",
+            "servicePhone": "+92117",
+            "availableLanguage": ["English", "Urdu"],
+            "serviceUrl": "https://trackmytrain.pk/railway-helpline"
+          }
+        }]}
       />
 
       {/* Hero Section */}

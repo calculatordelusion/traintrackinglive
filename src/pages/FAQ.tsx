@@ -71,6 +71,15 @@ export default function FAQPage() {
         keywords="pakistan railways FAQ, train travel questions pakistan, wheelchair access pakistan railways, ladies compartment train, luggage limit pakistan railways, platform ticket price, train complaint number, pakistan railway rules, first time train travel tips"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "FAQ", url: "/faq" }]}
         faqSchema={allFaqs}
+        additionalSchemas={[{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Pakistan Railways FAQ",
+          "description": "25+ frequently asked questions about Pakistan Railways travel",
+          "url": "https://trackmytrain.pk/faq",
+          "mainEntity": { "@type": "FAQPage" },
+          "isPartOf": { "@type": "WebSite", "name": "Track My Train", "url": "https://trackmytrain.pk" }
+        }]}
       />
       {/* Hero */}
       <section className="bg-hero-gradient text-primary-foreground py-12 sm:py-16">

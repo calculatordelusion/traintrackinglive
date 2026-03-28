@@ -123,47 +123,6 @@ export default function HomePage() {
         ogImage="https://trackmytrain.pk/og-image.jpg"
         faqSchema={faqs}
         alternateUrdu="/ur"
-        additionalSchemas={[
-          {
-            "@context": "https://schema.org",
-            "@type": "WebApplication",
-            "name": "Track My Train — Live Train Tracking Pakistan",
-            "alternateName": ["TrackMyTrain.pk", "Train Tracking Live Pakistan", "ٹریک مائی ٹرین"],
-            "url": "https://trackmytrain.pk",
-            "applicationCategory": "TravelApplication",
-            "operatingSystem": "Web",
-            "browserRequirements": "Requires JavaScript",
-            "inLanguage": ["en", "ur"],
-            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "PKR", "availability": "https://schema.org/InStock" },
-            "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "ratingCount": "2450", "bestRating": "5" },
-            "featureList": ["Real-time GPS train tracking with 5-second updates", "Live delay alerts and accurate ETAs", "Journey planner covering 342+ stations", "164+ trains tracked", "Bilingual interface (English & Urdu)", "Find My Train GPS auto-detection", "Ticket pricing comparison"],
-            "author": { "@type": "Organization", "name": "Track My Train", "url": "https://trackmytrain.pk", "foundingDate": "2024", "foundingLocation": {"@type": "Place", "name": "Lahore, Pakistan"}, "areaServed": {"@type": "Country", "name": "Pakistan"} },
-            "dateModified": "2026-03-28",
-            "screenshot": "https://trackmytrain.pk/og-image.jpg"
-          },
-          {
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            "name": "Track My Train",
-            "alternateName": "TrackMyTrain.pk",
-            "url": "https://trackmytrain.pk",
-            "inLanguage": ["en", "ur"],
-            "potentialAction": { "@type": "SearchAction", "target": { "@type": "EntryPoint", "urlTemplate": "https://trackmytrain.pk/train?q={search_term_string}" }, "query-input": "required name=search_term_string" }
-          },
-          {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Track My Train",
-            "url": "https://trackmytrain.pk",
-            "logo": "https://trackmytrain.pk/logo.png",
-            "description": "Pakistan's #1 independent train tracking live platform. Free real-time GPS tracking for 164+ Pakistan Railways trains across 342+ stations.",
-            "foundingDate": "2024",
-            "foundingLocation": { "@type": "Place", "name": "Lahore, Pakistan" },
-            "areaServed": { "@type": "Country", "name": "Pakistan" },
-            "knowsAbout": ["Pakistan Railways", "Train Tracking Live", "GPS Navigation", "Railway Schedules", "Live Train Status", "Real-time Tracking"],
-            "contactPoint": { "@type": "ContactPoint", "email": "info@trackmytrain.pk", "contactType": "customer service", "availableLanguage": ["English", "Urdu"] }
-          }
-        ]}
       />
       {/* Hero Section */}
       <section aria-label="Hero — Live train tracking" className="relative overflow-hidden bg-hero-gradient text-primary-foreground">

@@ -89,8 +89,8 @@ export default function ScheduleGuide() {
   return (
     <main>
       <SEOHead
-        title="Pakistan Railways Schedule Guide 2026 — Complete Timetable, Routes & Seasonal Tips"
-        description="Complete Pakistan Railways timetable guide 2026. Accurate departure & arrival times for all 164+ trains. Green Line, Tezgam, Khyber Mail schedules, route corridors, fog season tips, and live tracking."
+        title="Pakistan Railways Schedule Guide — Tips & Routes"
+        description="How to read Pakistan Railways timetables. Green Line, Tezgam, Khyber Mail schedules, route corridors, fog season tips, and seasonal travel advice."
         canonical="/schedule-guide"
         keywords="pakistan railways schedule guide 2026, how to read train timetable, train timing guide pakistan, seasonal schedule changes railway, fog season train delays, eid special trains schedule, train timetable tips, railway schedule explained, best time to travel by train pakistan"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Schedule Guide", url: "/schedule-guide" }]}

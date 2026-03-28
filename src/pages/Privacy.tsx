@@ -48,7 +48,7 @@ export default function PrivacyPage() {
     <div>
       <SEOHead
         title="Privacy Policy — Track My Train | Zero Data Collection"
-        description="Read Track My Train's privacy policy. We collect zero personal data, require no accounts, and never sell information. Your GPS location stays in your browser. 100% HTTPS encrypted."
+        description="Track My Train collects zero personal data, requires no accounts, and never sells information. GPS stays in your browser. 100% HTTPS."
         canonical="/privacy"
         keywords="track my train privacy policy, train tracker privacy, pakistan railways app privacy, GPS location privacy, data protection train tracking"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Privacy Policy", url: "/privacy" }]}

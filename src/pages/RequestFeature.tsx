@@ -66,8 +66,8 @@ export default function RequestFeaturePage() {
   return (
     <div>
       <SEOHead
-        title="Request a Feature — Track My Train | Suggest Improvements"
-        description="Submit feature requests, improvement suggestions, or bug reports for Track My Train — Pakistan's #1 train tracking platform. Community-driven development."
+        title="Request a Feature — Track My Train"
+        description="Suggest features, report bugs, or request improvements for Track My Train. Community-driven development for Pakistan's train tracker."
         canonical="/request-feature"
         keywords="track my train feature request, train tracker suggestions, pakistan railways app feedback, report bug train tracker"
         breadcrumbs={[

@@ -114,8 +114,8 @@ export default function RoutesPage() {
   return (
     <main>
       <SEOHead
-        title="Pakistan Railway Route Map 2026 — Train Routes, Stops & Corridors"
-        description={`Explore ${routeGroups.length} Pakistan Railways routes with corridor maps, major stops, journey distances, and city-to-city train options across ${stations.length}+ stations.`}
+        title="Pakistan Railway Routes — Map & Corridors 2026"
+        description={`Explore ${routeGroups.length} Pakistan Railways routes with stops, distances, and train options across ${stations.length}+ stations. ML-1 corridor maps included.`}
         canonical="/routes"
         keywords="pakistan railway route map, pakistan railway routes, train routes with stops, karachi to lahore train route, pakistan railways route map, railway network map pakistan, ML-1 route, pakistan railway corridors, city to city train routes pakistan"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Train Routes", url: "/routes" }]}

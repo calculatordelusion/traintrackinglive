@@ -45,7 +45,7 @@ export default function ContactPage() {
         title="Contact Track My Train — Feedback, Bug Reports & Feature Requests"
         description="Get in touch with the Track My Train team. Report bugs, suggest features, or send feedback about Pakistan's #1 independent train tracking live platform. We respond within 2-3 business days."
         canonical="/contact"
-        keywords="contact trackmytrain, train tracking feedback, pakistan railways feedback, trackmytrain support, report train data issue, suggest feature pakistan train tracker, contact train tracker pakistan"
+        keywords="contact trackmytrain.pk, report train bug, suggest feature trackmytrain, pakistan railway feedback, trackmytrain support email, train data correction, contact railway tracker team"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Contact Us", url: "/contact" }]}
         faqSchema={contactFaqs}
         additionalSchemas={[{
@@ -277,7 +277,7 @@ export default function ContactPage() {
             ))}
           </div>
         </section>
-      </main>
+      </div>
     </main>
   );
 }

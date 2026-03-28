@@ -76,7 +76,7 @@ export default function ExpressTrainsPage() {
         title="Pakistan Railways Express Trains 2026 — Complete List, Schedule, Fares & Live Tracking"
         description="All Pakistan Railways express and AC trains — Green Line, Tezgam, Karakoram, Business Express. Live train tracking, schedules, routes, ticket prices, and booking info. Updated 2026."
         canonical="/express-trains"
-        keywords="pakistan express trains, green line express pakistan, tezgam express, karakoram express, business express pakistan, AC train pakistan, fastest train pakistan, express train schedule 2026, live train tracking express, pakistan railway express list"
+        keywords="pakistan express trains, green line express, tezgam express, karakoram express, business express pakistan, AC train pakistan, fastest train pakistan, express train schedule 2026, premium trains pakistan, pakistan railway express list"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Express Trains", url: "/express-trains" }]}
         faqSchema={expressFaqs}
         additionalSchemas={[{

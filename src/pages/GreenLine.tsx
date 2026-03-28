@@ -72,7 +72,7 @@ export default function GreenLinePage() {
         title="Green Line Express — Pakistan's #1 Train | Live Tracking, Schedule, Fares & Booking 2026"
         description="Complete guide to Green Line Express (5UP/6DN) — Pakistan Railways' premium train Karachi to Islamabad. Live GPS tracking, schedule, ticket prices Rs. 1,200–6,500, AC classes, meals, WiFi, and booking info."
         canonical="/green-line-express"
-        keywords="green line express, green line train pakistan, karachi islamabad train, green line express schedule, green line ticket price 2026, green line express live tracking, 5UP 6DN train, green line express booking, best train pakistan, green line express fare"
+        keywords="green line express, green line train pakistan, karachi islamabad train, green line express schedule 2026, green line ticket price, 5UP 6DN train, green line express booking, green line express fare, green line stops, green line express timing"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Express Trains", url: "/express-trains" }, { name: "Green Line Express", url: "/green-line-express" }]}
         faqSchema={greenLineFaqs}
         additionalSchemas={[{

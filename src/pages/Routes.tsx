@@ -114,10 +114,10 @@ export default function RoutesPage() {
   return (
     <main>
       <SEOHead
-        title="Pakistan Railway Routes & Maps 2026 — All Train Routes, Corridors & Live Tracking"
-        description={`Explore ${routeGroups.length} Pakistan Railways routes connecting cities with ${trains.length} trains and ${stations.length}+ stations. Compare routes, distances, journey times. Live train tracking on every route.`}
+        title="Pakistan Railway Routes & Map 2026 — All Train Corridors, Distances & Stops"
+        description={`Explore ${routeGroups.length} Pakistan Railways routes connecting cities with ${trains.length} trains and ${stations.length}+ stations. Compare distances, journey times, stops, and train options on each corridor.`}
         canonical="/routes"
-        keywords="pakistan railway routes, train route map pakistan, karachi to lahore train route, pakistan railways route map, ML-1 route pakistan, train routes with stops, railway map pakistan 2026, pakistan railway corridors, train tracking live routes"
+        keywords="pakistan railway routes, train route map pakistan, karachi to lahore train route, pakistan railways route map, ML-1 route, train routes with stops, railway map pakistan 2026, pakistan railway corridors, railway network map"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Train Routes", url: "/routes" }]}
         faqSchema={routeFaqs}
         additionalSchemas={[{

@@ -77,12 +77,12 @@ const faqs = [
 
 export default function RailwayHelpline() {
   return (
-    <div>
+    <main>
       <SEOHead
-        title="Pakistan Railways Helpline Numbers & Offices — Complete Contact Directory 2026"
-        description="Complete directory of Pakistan Railways helpline numbers (117, 1316), all 7 divisional offices, major station contacts, and online services. Verified, official contact information updated for 2026."
+        title="Pakistan Railways Helpline 117 & Contact Numbers — Complete Directory 2026"
+        description="Pakistan Railways helpline 117 (24/7 toll-free), Railway Police 1316, all 7 divisional offices, 10+ major station contacts. Verified official directory updated 2026."
         canonical="/railway-helpline"
-        keywords="pakistan railways helpline, railway helpline 117, pakistan railways contact number, railway police 1316, pakistan railways offices, divisional superintendent, railway station phone numbers, pakistan railways complaint, railway inquiry number, pakrail helpline"
+        keywords="pakistan railways helpline, railway helpline 117, pakistan railways contact number, railway police 1316, pakistan railways offices, divisional superintendent, railway station phone numbers, pakistan railway complaint number, railway inquiry number 2026"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "Railway Helpline & Offices", url: "/railway-helpline" },

@@ -40,12 +40,12 @@ export default function ContactPage() {
   };
 
   return (
-    <div>
+    <main>
       <SEOHead
         title="Contact Track My Train — Feedback, Bug Reports & Feature Requests"
-        description="Get in touch with the Track My Train team. Report bugs, suggest features, or send feedback about Pakistan's #1 independent train tracking platform. We respond within 2-3 business days."
+        description="Get in touch with the Track My Train team. Report bugs, suggest features, or send feedback about Pakistan's #1 independent train tracking live platform. We respond within 2-3 business days."
         canonical="/contact"
-        keywords="contact trackmytrain, train tracking feedback, pakistan railways feedback, trackmytrain support, report train data issue, suggest feature pakistan train tracker"
+        keywords="contact trackmytrain, train tracking feedback, pakistan railways feedback, trackmytrain support, report train data issue, suggest feature pakistan train tracker, contact train tracker pakistan"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Contact Us", url: "/contact" }]}
         faqSchema={contactFaqs}
         additionalSchemas={[{

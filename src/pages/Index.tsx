@@ -1,5 +1,6 @@
 import { useState, useEffect, useMemo } from "react";
 import { useStaggeredAnimation } from "@/hooks/useStaggeredAnimation";
+import SEOHead from "@/components/SEOHead";
 import { Link } from "react-router-dom";
 import { Search, Train, MapPin, Clock, ArrowRight, Wifi, Navigation, Globe, Shield, ChevronRight, Star, Quote, BookOpen, Zap, Users, Radio, Newspaper, BarChart3, Bell, Map, Route, Gauge, Eye, Landmark, CreditCard, Leaf, CheckCircle2, Info, AlertTriangle, TrendingUp, CalendarDays, Ticket, Package, Timer, FileText } from "lucide-react";
 

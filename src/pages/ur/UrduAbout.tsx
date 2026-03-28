@@ -33,7 +33,7 @@ export default function UrduAboutPage() {
         canonical="/ur/about"
         lang="ur"
         alternateEnglish="/about"
-        keywords="ٹریک مائی ٹرین کے بارے میں, پاکستان آزاد ریلوے ٹریکر, ہماری ٹیم, ٹریک مائی ٹرین مشن"
+        keywords="ٹریک مائی ٹرین, ہمارے بارے میں, ٹیم, مشن, آزاد ریلوے ٹریکر, مفت ٹرین ٹریکنگ, ٹریک مائی ٹرین کہانی"
         breadcrumbs={[{ name: "ہوم", url: "/ur" }, { name: "ہمارے بارے میں", url: "/ur/about" }]}
         faqSchema={aboutFaqs}
         additionalSchemas={[{

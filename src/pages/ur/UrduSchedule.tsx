@@ -25,7 +25,7 @@ export default function UrduSchedule() {
         canonical="/ur/schedule"
         lang="ur"
         alternateEnglish="/schedule"
-        keywords="پاکستان ریلوے شیڈول 2026, ٹرین ٹائم ٹیبل پاکستان, ٹرین اوقات, خیبر میل شیڈول, لاہور کراچی ٹرین وقت, اسلام آباد لاہور ٹرین شیڈول, آج کا ریلوے شیڈول"
+        keywords="ریلوے شیڈول, ٹرین ٹائم ٹیبل, ٹرین اوقات آج, روانگی کا وقت, آمد کا وقت, خیبر میل ٹائمنگ, تیزگام شیڈول, لاہور کراچی ٹرین وقت, آج کا ٹائم ٹیبل, تمام ٹرینوں کے اوقات, ایکسپریس ٹرین ٹائمنگ"
         breadcrumbs={[{ name: "ہوم", url: "/ur" }, { name: "شیڈول", url: "/ur/schedule" }]}
         faqSchema={faqs}
         additionalSchemas={[{

@@ -25,7 +25,7 @@ export default function UrduRailwayHelpline() {
         canonical="/ur/railway-helpline"
         lang="ur"
         alternateEnglish="/railway-helpline"
-        keywords="پاکستان ریلوے ہیلپ لائن, ریلوے رابطہ نمبر, 117 ہیلپ لائن, ریلوے پولیس, ریلوے دفاتر, شکایات"
+        keywords="ریلوے ہیلپ لائن 117, ریلوے رابطہ نمبر, ریلوے پولیس 1316, ریلوے شکایت نمبر, ریلوے انکوائری, اسٹیشن فون نمبر, ریلوے دفاتر, ریلوے کسٹمر سروس, ریلوے ایمرجنسی, گمشدہ سامان ریلوے"
         breadcrumbs={[{ name: "ہوم", url: "/ur" }, { name: "ریلوے ہیلپ لائن", url: "/ur/railway-helpline" }]}
         faqSchema={faqs}
       />

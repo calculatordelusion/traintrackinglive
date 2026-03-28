@@ -25,7 +25,7 @@ export default function UrduStations() {
         canonical="/ur/stations"
         lang="ur"
         alternateEnglish="/stations"
-        keywords="پاکستان ریلوے اسٹیشنز, ریلوے اسٹیشن فہرست, لاہور جنکشن, کراچی کینٹ اسٹیشن, ریلوے اسٹیشن سہولیات, اسلام آباد ریلوے اسٹیشن"
+        keywords="ریلوے اسٹیشنز, اسٹیشن فہرست, لاہور جنکشن, کراچی کینٹ, راولپنڈی اسٹیشن, اسلام آباد اسٹیشن, فیصل آباد اسٹیشن, ملتان اسٹیشن, اسٹیشن سہولیات, قریبی اسٹیشن, اسٹیشن کوڈ تلاش"
         breadcrumbs={[{ name: "ہوم", url: "/ur" }, { name: "ریلوے اسٹیشنز", url: "/ur/stations" }]}
         faqSchema={faqs}
         additionalSchemas={[{

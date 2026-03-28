@@ -31,7 +31,7 @@ export default function UrduBuyTickets() {
         canonical="/ur/buy-tickets"
         lang="ur"
         alternateEnglish="/buy-tickets"
-        keywords="پاکستان ریلوے ٹکٹ, آن لائن ٹکٹ بکنگ, RABTA ایپ, ٹرین ٹکٹ, کرایے, ٹکٹ کینسلیشن"
+        keywords="پاکستان ریلوے ٹکٹ بکنگ, آن لائن ٹکٹ بکنگ, RABTA ایپ, ٹکٹ کینسلیشن, JazzCash ٹرین ٹکٹ, ادائیگی طریقے ریلوے"
         breadcrumbs={[{ name: "ہوم", url: "/ur" }, { name: "ٹکٹ بکنگ", url: "/ur/buy-tickets" }]}
         faqSchema={faqs}
       />

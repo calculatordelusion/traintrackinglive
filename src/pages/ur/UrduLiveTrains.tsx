@@ -25,7 +25,7 @@ export default function UrduLiveTrains() {
         canonical="/ur/train"
         lang="ur"
         alternateEnglish="/train"
-        keywords="لائیو ٹرین ٹریکنگ, پاکستان ریلوے لائیو اسٹیٹس, ٹرین GPS ٹریکر, ریئل ٹائم ٹرین پوزیشن, ٹرین کہاں ہے, لائیو ٹرین نقشہ, پاکستان ریلوے آج, چلتی ٹرینوں کی پوزیشن"
+        keywords="لائیو ٹرین نقشہ, چلتی ٹرینوں کی پوزیشن, ٹرین GPS ٹریکر, ریئل ٹائم پوزیشن نقشہ, ٹرین کہاں ہے, فعال ٹرینیں دیکھیں, پاکستان ریلوے نقشہ آج"
         breadcrumbs={[{ name: "ہوم", url: "/ur" }, { name: "لائیو ٹرینیں", url: "/ur/train" }]}
         faqSchema={faqs}
         additionalSchemas={[{

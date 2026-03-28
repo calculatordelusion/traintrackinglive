@@ -90,7 +90,7 @@ export default function UrduScheduleGuide() {
         canonical="/ur/schedule-guide"
         lang="ur"
         alternateEnglish="/schedule-guide"
-        keywords="ریلوے شیڈول گائیڈ اردو, ٹرین ٹائم ٹیبل سمجھیں, ریلوے اوقات کار گائیڈ, موسمی تبدیلیاں ریلوے, دھند میں ٹرین تاخیر, عید اسپیشل ٹرینیں, ریلوے شیڈول پڑھنے کا طریقہ, سفری مشورے ریلوے"
+        keywords="ریلوے شیڈول گائیڈ اردو, ریلوے اوقات کار سمجھیں, موسمی تبدیلیاں ریلوے, عید اسپیشل ٹرینیں, ریلوے شیڈول پڑھنے کا طریقہ, سفری مشورے ریلوے, بہترین سفر وقت"
         breadcrumbs={[{ name: "ہوم", url: "/ur" }, { name: "شیڈول گائیڈ", url: "/ur/schedule-guide" }]}
         faqSchema={scheduleFaqs}
         additionalSchemas={[{

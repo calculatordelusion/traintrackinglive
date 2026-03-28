@@ -119,7 +119,7 @@ export default function HomePage() {
         title="Track My Train — Train Tracking Live | Pakistan Railway GPS Status 2026"
         description="Track My Train provides train tracking live for all Pakistan Railways trains. See real-time GPS positions, live speed, delay alerts & accurate ETAs for 164+ trains across 342+ stations. 100% free, no signup."
         canonical="/"
-        keywords="train tracking live, track my train, live train tracking, pakistan railway live tracking, train tracker pakistan, live train status pakistan, train GPS tracker, pakistan train running status, train location live, railway tracking, train tracking app pakistan, track train live location, real time train tracking pakistan, pakistan railways live status today 2026"
+        keywords="train tracking live, track my train, pakistan railway live tracking, train tracker pakistan, live train status pakistan, train GPS tracker, pakistan train running status, track train live location, real time train tracking pakistan, pakistan railways live status today 2026"
         ogImage="https://trackmytrain.pk/og-image.jpg"
         faqSchema={faqs}
         alternateUrdu="/ur"

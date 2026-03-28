@@ -20,7 +20,7 @@ export default function UrduTicketPricing() {
   return (
     <div>
       <SEOHead
-        title="پاکستان ریلوے ٹکٹ کی قیمتیں 2026 — کرایہ چارٹ | تمام کلاسز"
+        title="ریلوے ٹکٹ قیمتیں — کرایہ چارٹ 2026"
         description="تازہ ترین پاکستان ریلوے کرایہ چارٹ 2026۔ اکانومی، بزنس، AC اسٹینڈرڈ، AC پارلر کلاسز کے کرایے۔ طلباء رعایت، آن لائن بکنگ، اور ریفنڈ پالیسی کی مکمل تفصیلات۔"
         canonical="/ur/ticket-pricing"
         lang="ur"

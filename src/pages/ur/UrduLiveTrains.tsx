@@ -20,7 +20,7 @@ export default function UrduLiveTrains() {
   return (
     <div>
       <SEOHead
-        title="پاکستان لائیو ٹرینیں ٹریک کریں — ریئل ٹائم GPS نقشہ 2026"
+        title="لائیو ٹرینیں — ریئل ٹائم GPS نقشہ 2026"
         description="ابھی 164+ پاکستان ریلوے ٹرینیں لائیو ٹریک کریں۔ ریئل ٹائم GPS پوزیشنز، رفتار، تاخیر اسٹیٹس اور درست ETAs دیکھیں۔ ہر 5 سیکنڈ میں اپڈیٹ۔ مفت اور بغیر سائن اپ۔"
         canonical="/ur/train"
         lang="ur"

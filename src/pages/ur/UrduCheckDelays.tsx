@@ -18,7 +18,7 @@ export default function UrduCheckDelays() {
   return (
     <div>
       <SEOHead
-        title="ٹرین تاخیر چیک کریں — پاکستان ریلوے تاخیر ٹریکر 2026 | ریئل ٹائم"
+        title="ٹرین تاخیر چیکر — آج ٹرین لیٹ ہے؟ 2026"
         description="تمام پاکستان ریلوے ٹرینوں کی ریئل ٹائم تاخیر اسٹیٹس چیک کریں۔ GPS پر مبنی درست تاخیر حساب، فوری الرٹس اور تخمینی آمد کے اوقات۔ ہر 5 سیکنڈ میں اپڈیٹ۔"
         canonical="/ur/check-delays"
         lang="ur"

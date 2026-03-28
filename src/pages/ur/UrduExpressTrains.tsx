@@ -25,7 +25,7 @@ export default function UrduExpressTrains() {
         canonical="/ur/express-trains"
         lang="ur"
         alternateEnglish="/express-trains"
-        keywords="ایکسپریس ٹرینیں پاکستان, تیزگام ایکسپریس, خیبر میل, گرین لائن ایکسپریس, قراقرم ایکسپریس, بزنس ایکسپریس, پاکستان ریلوے ایکسپریس کرایہ"
+        keywords="ایکسپریس ٹرینیں پاکستان, تیزگام ایکسپریس شیڈول, خیبر میل ایکسپریس, قراقرم ایکسپریس, بزنس ایکسپریس, تمام ایکسپریس ٹرینوں کی فہرست, AC ٹرین پاکستان"
         breadcrumbs={[{ name: "ہوم", url: "/ur" }, { name: "ایکسپریس ٹرینیں", url: "/ur/express-trains" }]}
         faqSchema={faqs}
         additionalSchemas={[{

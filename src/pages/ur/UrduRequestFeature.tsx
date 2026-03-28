@@ -21,7 +21,7 @@ export default function UrduRequestFeature() {
         title="فیچر تجویز کریں — ٹریک مائی ٹرین کو بہتر بنائیں | کمیونٹی آئیڈیاز"
         description="ٹریک مائی ٹرین کے لیے نئے فیچرز تجویز کریں۔ آپ کی تجاویز ہمارے پلیٹ فارم کو بہتر بنانے میں مدد کرتی ہیں۔ اردو ورژن، GPS ٹرین تلاش، تاخیر چیکر — یہ سب آپ کی تجاویز سے بنے ہیں!"
         canonical="/ur/request-feature" lang="ur" alternateEnglish="/request-feature"
-        keywords="فیچر تجویز, ٹریک مائی ٹرین تجاویز, فیڈبیک, بگ رپورٹ, نئے فیچرز"
+        keywords="فیچر تجویز دیں, ٹریک مائی ٹرین تجاویز, نئے فیچرز کی درخواست, ایپ بہتری تجاویز, کمیونٹی فیچر ریکوئسٹ"
         breadcrumbs={[{ name: "ہوم", url: "/ur" }, { name: "فیچر تجویز کریں", url: "/ur/request-feature" }]}
         faqSchema={faqs}
       />

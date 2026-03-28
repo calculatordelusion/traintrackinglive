@@ -90,7 +90,7 @@ export default function UrduScheduleGuide() {
         canonical="/ur/schedule-guide"
         lang="ur"
         alternateEnglish="/schedule-guide"
-        keywords="پاکستان ریلوے شیڈول گائیڈ 2026, ٹرین ٹائم ٹیبل, ریلوے اوقات کار, گرین لائن شیڈول, تیزگام شیڈول, خیبر میل ٹائم ٹیبل, لاہور راولپنڈی ٹرین, کراچی لاہور ٹرین وقت, پاکستان ریلوے ٹائم ٹیبل 2026"
+        keywords="ریلوے شیڈول گائیڈ اردو, ٹرین ٹائم ٹیبل سمجھیں, ریلوے اوقات کار گائیڈ, موسمی تبدیلیاں ریلوے, دھند میں ٹرین تاخیر, عید اسپیشل ٹرینیں, ریلوے شیڈول پڑھنے کا طریقہ, سفری مشورے ریلوے"
         breadcrumbs={[{ name: "ہوم", url: "/ur" }, { name: "شیڈول گائیڈ", url: "/ur/schedule-guide" }]}
         faqSchema={scheduleFaqs}
         additionalSchemas={[{

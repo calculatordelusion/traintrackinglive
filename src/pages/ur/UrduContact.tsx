@@ -34,7 +34,7 @@ export default function UrduContactPage() {
         canonical="/ur/contact"
         lang="ur"
         alternateEnglish="/contact"
-        keywords="ٹریک مائی ٹرین رابطہ, فیڈبیک, بگ رپورٹ, فیچر ریکوئسٹ"
+        keywords="ٹریک مائی ٹرین رابطہ, ہم سے رابطہ کریں, پیغام بھیجیں, ٹرین ڈیٹا درست کروائیں, ریلوے ٹریکر سپورٹ"
         breadcrumbs={[{ name: "ہوم", url: "/ur" }, { name: "رابطہ", url: "/ur/contact" }]}
         faqSchema={contactFaqs}
         additionalSchemas={[{

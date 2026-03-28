@@ -25,7 +25,7 @@ export default function UrduFindMyTrain() {
         canonical="/ur/find-my-train"
         lang="ur"
         alternateEnglish="/find-my-train"
-        keywords="میری ٹرین تلاش کریں, GPS ٹرین ڈیٹیکشن, ٹرین تلاش, قریبی ٹرین, ٹرین شناخت, GPS ٹرین فائنڈر"
+        keywords="میری ٹرین تلاش کریں, GPS ٹرین ڈیٹیکشن, قریبی ٹرین شناخت, خودکار ٹرین تلاش, کون سی ٹرین پر ہوں, GPS ٹرین فائنڈر"
         breadcrumbs={[{ name: "ہوم", url: "/ur" }, { name: "میری ٹرین تلاش کریں", url: "/ur/find-my-train" }]}
         faqSchema={faqs}
         additionalSchemas={[{

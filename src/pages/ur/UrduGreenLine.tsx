@@ -25,7 +25,7 @@ export default function UrduGreenLine() {
         canonical="/ur/green-line-express"
         lang="ur"
         alternateEnglish="/green-line-express"
-        keywords="گرین لائن ایکسپریس 2026, اسلام آباد کراچی ٹرین, گرین لائن شیڈول, گرین لائن کرایہ, CPEC ٹرین, پریمیم ٹرین پاکستان"
+        keywords="گرین لائن ایکسپریس 2026, اسلام آباد کراچی ٹرین, گرین لائن ٹکٹ قیمت, گرین لائن اوقات, 5UP 6DN ٹرین, CPEC ٹرین پاکستان, گرین لائن سٹاپس"
         breadcrumbs={[{ name: "ہوم", url: "/ur" }, { name: "گرین لائن ایکسپریس", url: "/ur/green-line-express" }]}
         faqSchema={faqs}
         additionalSchemas={[{

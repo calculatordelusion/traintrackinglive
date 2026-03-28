@@ -434,6 +434,6 @@ export default function RoutesPage() {
           "acceptedAnswer": { "@type": "Answer", "text": f.a }
         }))
       })}} />
-    </div>
+    </main>
   );
 }

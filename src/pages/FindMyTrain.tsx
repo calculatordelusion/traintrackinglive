@@ -399,6 +399,6 @@ export default function FindMyTrainPage() {
         }))
       })}} />
       <RelatedLinks context="general" />
-    </div>
+    </main>
   );
 }

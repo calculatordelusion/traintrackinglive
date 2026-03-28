@@ -588,6 +588,6 @@ export default function TicketPricingPage() {
         }))
       })}} />
       <RelatedLinks context="general" />
-    </div>
+    </main>
   );
 }

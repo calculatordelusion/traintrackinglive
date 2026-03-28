@@ -417,6 +417,6 @@ export default function GreenLinePage() {
         }))
       })}} />
       <RelatedLinks context="train" currentName="Green Line Express" />
-    </div>
+    </main>
   );
 }

@@ -472,6 +472,6 @@ export default function ExpressTrainsPage() {
         }))
       })}} />
       <RelatedLinks context="general" />
-    </div>
+    </main>
   );
 }

@@ -308,6 +308,6 @@ export default function LiveTrainsPage() {
           </div>
         </section>
       </div>
-    </div>
+    </main>
   );
 }

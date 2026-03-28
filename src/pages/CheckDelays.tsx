@@ -416,6 +416,6 @@ export default function CheckDelays() {
         }))
       })}} />
       <RelatedLinks context="general" />
-    </div>
+    </main>
   );
 }

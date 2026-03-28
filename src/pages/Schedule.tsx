@@ -421,6 +421,6 @@ export default function SchedulePage() {
         }))
       })}} />
       <RelatedLinks context="schedule" />
-    </div>
+    </main>
   );
 }

@@ -20,7 +20,7 @@ export default function UrduRailwayHelpline() {
   return (
     <div>
       <SEOHead
-        title="ریلوے ہیلپ لائن — پاکستان ریلوے رابطہ نمبر اور دفاتر 2026"
+        title="ریلوے ہیلپ لائن 117 — رابطہ نمبر 2026"
         description="پاکستان ریلوے کے تمام ہیلپ لائن نمبر، ڈویژنل دفاتر، اسٹیشن رابطہ نمبر، اور شکایات کے طریقے۔ 117 ٹول فری ہیلپ لائن، ریلوے پولیس 1316، WhatsApp 0300-8008787۔"
         canonical="/ur/railway-helpline"
         lang="ur"

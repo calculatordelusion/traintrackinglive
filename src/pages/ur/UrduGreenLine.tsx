@@ -20,7 +20,7 @@ export default function UrduGreenLine() {
   return (
     <div>
       <SEOHead
-        title="گرین لائن ایکسپریس — اسلام آباد سے کراچی 2026 | شیڈول، کرایے، لائیو ٹریکنگ"
+        title="گرین لائن ایکسپریس — شیڈول اور کرایے 2026"
         description="گرین لائن ایکسپریس کی مکمل گائیڈ 2026۔ اسلام آباد-کراچی شیڈول، AC پارلر/بزنس/اسٹینڈرڈ کرایے، اسٹاپس، سہولیات، اور ریئل ٹائم GPS ٹریکنگ۔"
         canonical="/ur/green-line-express"
         lang="ur"

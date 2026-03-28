@@ -18,8 +18,8 @@ export default function TermsPage() {
   return (
     <div>
       <SEOHead
-        title="Terms of Service — Track My Train | Usage Agreement"
-        description="Read Track My Train's Terms of Service. Understand your rights and responsibilities when using our free Pakistan Railways train tracking platform."
+        title="Terms of Service — Track My Train"
+        description="Track My Train terms of service. Your rights and responsibilities when using Pakistan's free train tracking platform."
         canonical="/terms"
         keywords="track my train terms of service, train tracker terms, pakistan railways tracker usage agreement"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Terms of Service", url: "/terms" }]}

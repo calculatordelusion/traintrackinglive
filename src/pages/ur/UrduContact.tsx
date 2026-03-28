@@ -29,7 +29,7 @@ export default function UrduContactPage() {
   return (
     <div>
       <SEOHead
-        title="ٹریک مائی ٹرین سے رابطہ — فیڈ بیک، بگ رپورٹس اور فیچر ریکوئسٹس"
+        title="ہم سے رابطہ کریں — ٹریک مائی ٹرین"
         description="ٹریک مائی ٹرین ٹیم سے رابطہ کریں۔ بگ رپورٹس، فیچر تجاویز، یا فیڈبیک بھیجیں۔ ہم 2-3 کاروباری دنوں میں جواب دیتے ہیں۔"
         canonical="/ur/contact"
         lang="ur"

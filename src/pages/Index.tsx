@@ -116,8 +116,8 @@ export default function HomePage() {
   return (
     <main>
       <SEOHead
-        title="Track My Train — Train Tracking Live Pakistan | Railway Status 2026"
-        description="Track My Train is Pakistan's live railway status platform for 164+ trains. Check current train position, ETA, running status, and GPS-based updates across major routes and stations."
+        title="Track My Train — Train Tracking Live Pakistan 2026"
+        description="Pakistan's #1 live train tracker. See real-time GPS positions, delays, ETAs, and running status for 164+ Pakistan Railways trains. Free, no signup."
         canonical="/"
         keywords="train tracking live, track my train, pakistan railway live tracking, train tracker pakistan, live train status pakistan, pakistan train running status, real time train tracking pakistan, pakistan railways live status today 2026"
         ogImage="https://trackmytrain.pk/og-image.jpg"

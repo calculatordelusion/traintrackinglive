@@ -16,8 +16,8 @@ export default function DisclaimerPage() {
   return (
     <div>
       <SEOHead
-        title="Disclaimer — Track My Train | Important Information"
-        description="Read Track My Train's disclaimer. Understand the limitations of our train tracking data, our independence from Pakistan Railways, and how we handle third-party content."
+        title="Disclaimer — Track My Train | Important Notice"
+        description="Track My Train disclaimer. Understand limitations of our tracking data, our independence from Pakistan Railways, and third-party content policies."
         canonical="/disclaimer"
         keywords="track my train disclaimer, train tracker disclaimer, pakistan railways tracker disclaimer"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Disclaimer", url: "/disclaimer" }]}

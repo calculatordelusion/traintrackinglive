@@ -75,8 +75,8 @@ export default function LiveTrainsPage() {
   return (
     <main>
       <SEOHead
-        title="Live Train GPS Map Pakistan — Real-Time Train Positions & Status 2026"
-        description={`View ${stats.total || 164}+ Pakistan Railways trains on a real-time GPS map. Check current position, speed, movement, and station progress for running trains across Pakistan.`}
+        title="Live Train GPS Map Pakistan — Positions & Status"
+        description={`View ${stats.total || 164}+ Pakistan Railways trains live on a GPS map. Check position, speed, and station progress for all running trains.`}
         canonical="/train"
         keywords="live train GPS map pakistan, real time train positions pakistan, train location map pakistan, running train map, pakistan railway GPS map, current train position pakistan, train movement tracker pakistan, all running trains pakistan"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Live Train GPS Map", url: "/train" }]}

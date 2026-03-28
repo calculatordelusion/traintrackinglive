@@ -79,8 +79,8 @@ export default function RailwayHelpline() {
   return (
     <main>
       <SEOHead
-        title="Pakistan Railways Helpline 117 & Contact Numbers — Complete Directory 2026"
-        description="Pakistan Railways helpline 117 (24/7 toll-free), Railway Police 1316, all 7 divisional offices, 10+ major station contacts. Verified official directory updated 2026."
+        title="Pakistan Railways Helpline 117 — Contact Numbers"
+        description="Pakistan Railways helpline 117 (24/7), Railway Police 1316, all 7 divisional offices, and 10+ major station contacts. Official directory 2026."
         canonical="/railway-helpline"
         keywords="pakistan railways helpline 117, railway helpline number, pakistan railways contact number, railway police 1316, pakistan railways complaint, divisional superintendent railway, railway station phone numbers, railway inquiry number, PR helpline 24/7"
         breadcrumbs={[
@@ -88,6 +88,20 @@ export default function RailwayHelpline() {
           { name: "Railway Helpline & Offices", url: "/railway-helpline" },
         ]}
         faqSchema={faqs}
+        additionalSchemas={[{
+          "@context": "https://schema.org",
+          "@type": "GovernmentService",
+          "name": "Pakistan Railways Helpline 117",
+          "serviceType": "Railway Customer Support",
+          "provider": { "@type": "GovernmentOrganization", "name": "Pakistan Railways" },
+          "areaServed": { "@type": "Country", "name": "Pakistan" },
+          "availableChannel": {
+            "@type": "ServiceChannel",
+            "servicePhone": "+92117",
+            "availableLanguage": ["English", "Urdu"],
+            "serviceUrl": "https://trackmytrain.pk/railway-helpline"
+          }
+        }]}
       />
 
       {/* Hero Section */}

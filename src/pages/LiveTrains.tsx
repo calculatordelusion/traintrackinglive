@@ -75,11 +75,11 @@ export default function LiveTrainsPage() {
   return (
     <main>
       <SEOHead
-        title="Live Train Tracking Pakistan — Real-Time GPS Map All Trains 2026"
-        description={`Live train tracking for ${stats.total || 164}+ Pakistan Railways trains. See real-time GPS positions on map, current speed, delay status & ETAs updated every 5 seconds. Free, no signup.`}
+        title="Live Train GPS Map Pakistan — Real-Time Train Positions & Status 2026"
+        description={`View ${stats.total || 164}+ Pakistan Railways trains on a real-time GPS map. Check current position, speed, movement, and station progress for running trains across Pakistan.`}
         canonical="/train"
-        keywords="live train tracking pakistan, all trains live status, pakistan railway running trains, train GPS map pakistan, real time train position pakistan, running train status today, live train map, is my train running today, train location today pakistan"
-        breadcrumbs={[{ name: "Home", url: "/" }, { name: "Live Train Tracking", url: "/train" }]}
+        keywords="live train GPS map pakistan, real time train positions pakistan, train location map pakistan, running train map, pakistan railway GPS map, current train position pakistan, train movement tracker pakistan, all running trains pakistan"
+        breadcrumbs={[{ name: "Home", url: "/" }, { name: "Live Train GPS Map", url: "/train" }]}
         additionalSchemas={[{
           "@context": "https://schema.org",
           "@type": "ItemList",
@@ -101,11 +101,11 @@ export default function LiveTrainsPage() {
         }]}
       />
       <PremiumHero
-        breadcrumbs={[{ label: "Home", to: "/" }, { label: "Live Trains" }]}
-        badge="LIVE GPS TRACKING • UPDATED EVERY 5 SECONDS"
-        title={<>Track All{" "}<span className="text-gradient-gold">Pakistan Railways Trains</span></>}
-        subtitle={`Monitor ${stats.total || 164}+ trains in real-time with GPS accuracy. View live speed, delay status, and estimated arrival times across ${categoryFilter === "express" ? "express" : categoryFilter === "passenger" ? "passenger" : "all"} trains.`}
-        subtitleUrdu="پاکستان ریلوے کی تمام ٹرینوں کو لائیو ٹریک کریں"
+        breadcrumbs={[{ label: "Home", to: "/" }, { label: "Live Train GPS Map" }]}
+        badge="LIVE TRAIN GPS MAP • UPDATED EVERY 5 SECONDS"
+        title={<>Pakistan Railways <span className="text-gradient-gold">GPS Map</span></>}
+        subtitle={`See ${stats.total || 164}+ running trains on a real-time map with current position, speed, movement, and station progress across ${categoryFilter === "express" ? "express" : categoryFilter === "passenger" ? "passenger" : "all"} trains.`}
+        subtitleUrdu="پاکستان ریلوے کی تمام چلتی ٹرینوں کی لائیو GPS پوزیشن دیکھیں"
       >
         <div className="flex flex-wrap items-center gap-2 mt-6">
           <Link to="/trains/express" className="px-4 py-2 rounded-full bg-[hsl(0_0%_100%/0.1)] hover:bg-[hsl(0_0%_100%/0.2)] backdrop-blur-sm border border-[hsl(0_0%_100%/0.1)] text-sm font-medium transition-colors">Express Trains</Link>

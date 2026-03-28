@@ -618,6 +618,6 @@ export default function BuyTickets() {
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 }

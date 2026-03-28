@@ -70,8 +70,8 @@ export default function StationsPage() {
   return (
     <main>
       <SEOHead
-        title="All Pakistan Railway Stations 2026 — Complete Directory (${stations.length}+ Stations)"
-        description={`Browse ${stations.length}+ Pakistan Railways stations with search. View station details, connecting trains, platforms, facilities. Find any railway station in Pakistan — Lahore, Karachi, Rawalpindi & more.`}
+        title="Pakistan Railway Stations — Directory 2026"
+        description={`Search ${stations.length}+ Pakistan railway stations. View platforms, facilities, connecting trains, and details for Lahore, Karachi, Rawalpindi, and more.`}
         canonical="/stations"
         keywords="pakistan railway stations list, railway station directory pakistan, lahore junction, karachi cantt station, rawalpindi railway station, all stations pakistan railways, train station near me, pakistan railway station facilities, station code pakistan"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Railway Stations", url: "/stations" }]}

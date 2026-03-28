@@ -65,8 +65,8 @@ export default function FAQPage() {
   return (
     <div>
       <SEOHead
-        title="Pakistan Railways FAQ 2026 — Travel Tips, Routes, Accessibility & Practical Guide"
-        description="Answers to 25 essential Pakistan Railways questions — on-board experience, route connections, accessibility for disabled & elderly, packing tips, luggage policy, and practical travel advice. Updated 2026."
+        title="Pakistan Railways FAQ — 25+ Travel Questions 2026"
+        description="Answers to 25+ Pakistan Railways questions — on-board tips, route connections, wheelchair access, luggage policy, and practical travel advice."
         canonical="/faq"
         keywords="pakistan railways FAQ, train travel questions pakistan, wheelchair access pakistan railways, ladies compartment train, luggage limit pakistan railways, platform ticket price, train complaint number, pakistan railway rules, first time train travel tips"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "FAQ", url: "/faq" }]}

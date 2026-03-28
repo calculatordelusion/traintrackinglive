@@ -73,8 +73,8 @@ export default function ExpressTrainsPage() {
   return (
     <main>
       <SEOHead
-        title="Pakistan Railways Express Trains 2026 — Complete List, Schedule, Fares & Live Tracking"
-        description="All Pakistan Railways express and AC trains — Green Line, Tezgam, Karakoram, Business Express. Live train tracking, schedules, routes, ticket prices, and booking info. Updated 2026."
+        title="Pakistan Express Trains — Complete List & Fares 2026"
+        description="All Pakistan Railways express and AC trains — Tezgam, Karakoram, Business Express. Fares, routes, classes, and live tracking for every premium service."
         canonical="/express-trains"
         keywords="pakistan express trains list, tezgam express schedule, karakoram express, business express pakistan, AC train pakistan, fastest trains pakistan, express train schedule 2026, premium trains pakistan, all express trains pakistan railway"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Express Trains", url: "/express-trains" }]}

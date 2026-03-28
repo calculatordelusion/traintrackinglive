@@ -101,11 +101,11 @@ export default function LiveTrainsPage() {
         }]}
       />
       <PremiumHero
-        breadcrumbs={[{ label: "Home", to: "/" }, { label: "Live Trains" }]}
-        badge="LIVE GPS TRACKING • UPDATED EVERY 5 SECONDS"
-        title={<>Track All{" "}<span className="text-gradient-gold">Pakistan Railways Trains</span></>}
-        subtitle={`Monitor ${stats.total || 164}+ trains in real-time with GPS accuracy. View live speed, delay status, and estimated arrival times across ${categoryFilter === "express" ? "express" : categoryFilter === "passenger" ? "passenger" : "all"} trains.`}
-        subtitleUrdu="پاکستان ریلوے کی تمام ٹرینوں کو لائیو ٹریک کریں"
+        breadcrumbs={[{ label: "Home", to: "/" }, { label: "Live Train GPS Map" }]}
+        badge="LIVE TRAIN GPS MAP • UPDATED EVERY 5 SECONDS"
+        title={<>Pakistan Railways <span className="text-gradient-gold">GPS Map</span></>}
+        subtitle={`See ${stats.total || 164}+ running trains on a real-time map with current position, speed, movement, and station progress across ${categoryFilter === "express" ? "express" : categoryFilter === "passenger" ? "passenger" : "all"} trains.`}
+        subtitleUrdu="پاکستان ریلوے کی تمام چلتی ٹرینوں کی لائیو GPS پوزیشن دیکھیں"
       >
         <div className="flex flex-wrap items-center gap-2 mt-6">
           <Link to="/trains/express" className="px-4 py-2 rounded-full bg-[hsl(0_0%_100%/0.1)] hover:bg-[hsl(0_0%_100%/0.2)] backdrop-blur-sm border border-[hsl(0_0%_100%/0.1)] text-sm font-medium transition-colors">Express Trains</Link>

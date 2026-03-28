@@ -144,6 +144,20 @@ export default function UrduHomePage() {
               "target": "https://trackmytrain.pk/ur/train?q={search_term_string}",
               "query-input": "required name=search_term_string"
             }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Track My Train",
+            "alternateName": "ٹریک مائی ٹرین",
+            "url": "https://trackmytrain.pk",
+            "logo": "https://trackmytrain.pk/og-image.png",
+            "foundingDate": "2024",
+            "foundingLocation": { "@type": "Place", "name": "لاہور، پاکستان" },
+            "description": "پاکستان کا سب سے بھروسہ مند آزاد ریلوے ٹریکنگ پلیٹ فارم — 164+ ٹرینوں اور 342+ اسٹیشنز کے لیے مفت ریئل ٹائم GPS ٹریکنگ فراہم کرتا ہے۔",
+            "areaServed": { "@type": "Country", "name": "پاکستان" },
+            "knowsAbout": ["پاکستان ریلوے", "ٹرین ٹریکنگ", "GPS نیویگیشن", "ریلوے شیڈولز", "لائیو ٹرین اسٹیٹس"],
+            "sameAs": ["https://trackmytrain.pk"]
           }
         ]}
       />

@@ -68,7 +68,7 @@ export default function FAQPage() {
         title="Pakistan Railways FAQ 2026 — Travel Tips, Routes, Accessibility & Practical Guide"
         description="Answers to 25 essential Pakistan Railways questions — on-board experience, route connections, accessibility for disabled & elderly, packing tips, luggage policy, and practical travel advice. Updated 2026."
         canonical="/faq"
-        keywords="pakistan railways travel tips, train journey pakistan tips, wheelchair access pakistan railways, ladies compartment train, karachi quetta train, faisalabad lahore train, platform ticket pakistan, luggage limit pakistan railways, pakistan train food, train complaint pakistan"
+        keywords="pakistan railways FAQ, train travel questions pakistan, wheelchair access pakistan railways, ladies compartment train, luggage limit pakistan railways, platform ticket price, train complaint number, pakistan railway rules, first time train travel tips"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "FAQ", url: "/faq" }]}
         faqSchema={allFaqs}
       />

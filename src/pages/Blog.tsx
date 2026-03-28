@@ -19,9 +19,9 @@ export default function BlogPage() {
     <main>
       <SEOHead
         title="Pakistan Railways Travel Blog 2026 — Expert Guides, Tips & Railway News"
-        description="In-depth Pakistan Railways travel guides, booking tips, route reviews, and expert advice. Written by experienced travelers. Train tracking live updates, Eid travel tips, scenic routes, and more."
+        description="In-depth Pakistan Railways travel guides, booking tips, route reviews, and expert advice. Written by experienced travelers covering Eid travel, scenic routes, first-time tips, and more."
         canonical="/blog"
-        keywords="pakistan railways blog, train travel tips pakistan, how to book train ticket pakistan, scenic train journeys pakistan, pakistan railways news 2026, eid travel tips railway, train tracking live blog"
+        keywords="pakistan railways blog, train travel tips pakistan, pakistan railways news 2026, eid train travel tips, scenic train journeys pakistan, railway travel guide, pakistan train blog articles, first time train travel pakistan"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Blog", url: "/blog" }]}
         faqSchema={blogFaqs}
         additionalSchemas={[{

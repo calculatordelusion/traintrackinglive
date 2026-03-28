@@ -92,7 +92,7 @@ export default function ScheduleGuide() {
         title="Pakistan Railways Schedule Guide 2026 — Complete Timetable, Routes & Seasonal Tips"
         description="Complete Pakistan Railways timetable guide 2026. Accurate departure & arrival times for all 164+ trains. Green Line, Tezgam, Khyber Mail schedules, route corridors, fog season tips, and live tracking."
         canonical="/schedule-guide"
-        keywords="pakistan railways schedule 2026, train timetable pakistan, train timing today pakistan, green line express schedule, tezgam schedule, khyber mail timetable, karachi to lahore train time, pakistan railway time table 2026, train schedule guide, railway timetable today"
+        keywords="pakistan railways schedule guide 2026, how to read train timetable, train timing guide pakistan, seasonal schedule changes railway, fog season train delays, eid special trains schedule, train timetable tips, railway schedule explained, best time to travel by train pakistan"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Schedule Guide", url: "/schedule-guide" }]}
         faqSchema={scheduleFaqs}
         additionalSchemas={[{

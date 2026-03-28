@@ -37,10 +37,10 @@ export default function AboutPage() {
   return (
     <main>
       <SEOHead
-        title="About Track My Train — Pakistan's #1 Independent Train Tracking Live Platform"
-        description="Track My Train is Pakistan's most trusted independent train tracking live service. Free real-time GPS tracking for 164+ Pakistan Railways trains across 342+ stations. Learn about our mission, values, and E-E-A-T commitment."
+        title="About TrackMyTrain.pk — Pakistan's Independent Train Tracker | Our Story & Mission"
+        description="Learn about TrackMyTrain.pk — who we are, our mission to simplify railway travel for millions of Pakistanis, our team, and our commitment to free, accurate train information for 164+ trains."
         canonical="/about"
-        keywords="about track my train, trackmytrain.pk, pakistan train tracking platform, who made trackmytrain, train tracking live pakistan, pakistan railway independent tracker, train tracker app pakistan"
+        keywords="about trackmytrain.pk, who made track my train, trackmytrain team, pakistan train tracker about, train tracking platform pakistan, railway travel mission pakistan, independent railway service pakistan"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "About Us", url: "/about" }]}
         faqSchema={aboutFaqs}
         additionalSchemas={[{

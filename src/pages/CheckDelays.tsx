@@ -105,7 +105,7 @@ export default function CheckDelays() {
         title="Is My Train Late? — Pakistan Railways Delay Checker | Live Status 2026"
         description="Check if your Pakistan Railways train is delayed right now. Live GPS delay monitor shows exact late minutes, on-time percentage & adjusted ETAs for all trains. Train tracking live delay data updated every 5 seconds."
         canonical="/check-delays"
-        keywords="is my train late today, pakistan train delay, check train delay pakistan, pakistan railways delay status, train late today, tezgam delay, green line express late, train running status today pakistan, train tracking live delay checker 2026"
+        keywords="is my train late today, pakistan train delay, check train delay pakistan, pakistan railways delay status, train late today, tezgam delay, green line express late, train running status today pakistan, fog delay trains pakistan, winter train delay 2026"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Check Delays", url: "/check-delays" }]}
         faqSchema={delayFaqs}
         additionalSchemas={[{

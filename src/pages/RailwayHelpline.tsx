@@ -371,6 +371,6 @@ export default function RailwayHelpline() {
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 }

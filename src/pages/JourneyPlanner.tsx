@@ -617,6 +617,6 @@ export default function JourneyPlannerPage() {
           "acceptedAnswer": { "@type": "Answer", "text": f.a }
         }))
       })}} />
-    </div>
+    </main>
   );
 }

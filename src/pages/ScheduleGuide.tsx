@@ -528,6 +528,6 @@ export default function ScheduleGuide() {
           <Link to="/schedule" className="text-primary font-semibold hover:underline">Interactive Timetable →</Link>
         </p>
       </div>
-    </div>
+    </main>
   );
 }

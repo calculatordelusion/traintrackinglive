@@ -60,12 +60,12 @@ export default function FindMyTrainPage() {
   };
 
   return (
-    <div>
+    <main>
       <SEOHead
-        title="Find My Train — GPS Auto-Detection for Pakistan Railways 2026"
-        description="Automatically detect which Pakistan Railways train you're on using your phone's GPS. No searching required — just tap and we find your train instantly with live tracking."
+        title="Find My Train — GPS Auto-Detection | Which Train Am I On? Pakistan Railways 2026"
+        description="Automatically detect which Pakistan Railways train you're on using your phone's GPS. Find my train feature uses live train tracking to match your location with running trains instantly — no searching required."
         canonical="/find-my-train"
-        keywords="find my train, GPS train detection pakistan, which train am I on, auto detect train pakistan, track my train GPS, locate my train"
+        keywords="find my train, which train am I on, GPS train detection pakistan, auto detect train pakistan, track my train GPS, locate my train, find my train pakistan, train tracking live GPS detection"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Find My Train", url: "/find-my-train" }]}
         faqSchema={findMyTrainFaqs}
         howToSchema={{

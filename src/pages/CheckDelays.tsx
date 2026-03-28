@@ -100,12 +100,12 @@ export default function CheckDelays() {
   }, [activeTrains, delayedTrains, onTimeTrains, severeDelays, filter, search]);
 
   return (
-    <div>
+    <main>
       <SEOHead
-        title="Is My Train Late Today? Check Pakistan Railways Delays Live 2026"
-        description="Instantly check if your Pakistan Railways train is delayed right now. Live GPS delay monitor shows exact late minutes, on-time rates & adjusted ETAs for all trains. Updated every 5 seconds."
+        title="Is My Train Late? — Pakistan Railways Delay Checker | Live Status 2026"
+        description="Check if your Pakistan Railways train is delayed right now. Live GPS delay monitor shows exact late minutes, on-time percentage & adjusted ETAs for all trains. Train tracking live delay data updated every 5 seconds."
         canonical="/check-delays"
-        keywords="is my train late today, pakistan train delay today, check train delay pakistan, pakistan railways delay status, train late today pakistan, tezgam delay today, green line express late today, pak railway train running status"
+        keywords="is my train late today, pakistan train delay, check train delay pakistan, pakistan railways delay status, train late today, tezgam delay, green line express late, train running status today pakistan, train tracking live delay checker 2026"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Check Delays", url: "/check-delays" }]}
         faqSchema={delayFaqs}
         additionalSchemas={[{

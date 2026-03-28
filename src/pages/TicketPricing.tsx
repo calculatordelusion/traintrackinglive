@@ -54,12 +54,12 @@ const ticketFaqs = [
 
 export default function TicketPricingPage() {
   return (
-    <div>
+    <main>
       <SEOHead
-        title="Pakistan Railways Ticket Prices & Fares 2026 — Complete Fare Chart"
-        description="Updated Pakistan Railways fare list for 2026. Compare ticket prices for Economy, Business, AC Standard, AC Business, Sleeper, and Parlor classes across all major routes."
+        title="Pakistan Railways Ticket Prices 2026 — Complete Fare Chart All Routes & Classes"
+        description="Updated Pakistan Railways fare list 2026. Compare ticket prices for Economy, Business, AC Standard, AC Business, Sleeper & Parlor classes. Karachi to Lahore from Rs. 1,800. All 14 major routes."
         canonical="/ticket-pricing"
-        keywords="pakistan railway ticket price, train fare pakistan 2026, karachi lahore train ticket price, pakistan railways fare list, train ticket booking price, economy vs business class train"
+        keywords="pakistan railway ticket price, train fare pakistan 2026, karachi lahore train ticket price, pakistan railways fare list, train ticket price, economy vs business class train pakistan, pakistan railway fare chart, train ticket booking price pakistan 2026"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Ticket Pricing", url: "/ticket-pricing" }]}
         faqSchema={ticketFaqs}
         additionalSchemas={[{

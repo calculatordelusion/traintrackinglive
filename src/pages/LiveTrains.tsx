@@ -73,13 +73,13 @@ export default function LiveTrainsPage() {
   const formatTime = (d: Date) => d.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true });
 
   return (
-    <div>
+    <main>
       <SEOHead
-        title="Track Live Trains Pakistan — Real-Time GPS Map (Updated Every 5s) 2026"
-        description={`Track ${stats.total || 164}+ Pakistan Railways trains LIVE right now. See real-time GPS positions, speed in km/h, delay status & accurate ETAs. Updated every 5 seconds. Free, no signup — works on any phone.`}
+        title="Live Train Tracking Pakistan — Track All Trains in Real-Time GPS Map 2026"
+        description={`Live train tracking for ${stats.total || 164}+ Pakistan Railways trains. See real-time GPS positions on map, speed in km/h, delay status & accurate ETAs. Train tracking live updated every 5 seconds. Free, no signup.`}
         canonical="/train"
-        keywords="live train tracking pakistan, pakistan railway live status today, train GPS tracker pakistan, real-time train position, running train status pakistan, live train map pakistan, is my train late today, train location live pakistan 2026"
-        breadcrumbs={[{ name: "Home", url: "/" }, { name: "Live Trains", url: "/train" }]}
+        keywords="live train tracking, train tracking live, track train live pakistan, pakistan railway live status, real time train position, running train status pakistan, live train map pakistan, train location live pakistan, train tracker GPS pakistan, is my train running today 2026"
+        breadcrumbs={[{ name: "Home", url: "/" }, { name: "Live Train Tracking", url: "/train" }]}
         additionalSchemas={[{
           "@context": "https://schema.org",
           "@type": "ItemList",

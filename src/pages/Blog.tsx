@@ -16,12 +16,12 @@ export default function BlogPage() {
   const featured = blogPosts[0];
 
   return (
-    <div>
+    <main>
       <SEOHead
-        title="Pakistan Railways Travel Blog 2026 — Guides, Tips & Expert Advice"
-        description="Comprehensive travel guides, booking tips, route reviews, and expert advice for Pakistan Railways travelers. Written by experienced travelers for the railway community."
+        title="Pakistan Railways Travel Blog 2026 — Expert Guides, Tips & Railway News"
+        description="In-depth Pakistan Railways travel guides, booking tips, route reviews, and expert advice. Written by experienced travelers. Train tracking live updates, Eid travel tips, scenic routes, and more."
         canonical="/blog"
-        keywords="pakistan railways blog, train travel tips pakistan, how to book train ticket pakistan, scenic train journeys pakistan, train delay guide, eid travel tips pakistan railways"
+        keywords="pakistan railways blog, train travel tips pakistan, how to book train ticket pakistan, scenic train journeys pakistan, pakistan railways news 2026, eid travel tips railway, train tracking live blog"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Blog", url: "/blog" }]}
         faqSchema={blogFaqs}
         additionalSchemas={[{

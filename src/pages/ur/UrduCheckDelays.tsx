@@ -23,7 +23,7 @@ export default function UrduCheckDelays() {
         canonical="/ur/check-delays"
         lang="ur"
         alternateEnglish="/check-delays"
-        keywords="ٹرین تاخیر چیک, تاخیر اسٹیٹس, پاکستان ریلوے تاخیر, ٹرین لیٹ, ریئل ٹائم تاخیر, ٹرین دھند تاخیر, آج ٹرین تاخیر"
+        keywords="ٹرین تاخیر چیک, تاخیر اسٹیٹس, پاکستان ریلوے تاخیر, ٹرین لیٹ آج, دھند تاخیر ٹرین, سردیوں میں ٹرین تاخیر, ریلوے دیری چیکر"
         breadcrumbs={[{ name: "ہوم", url: "/ur" }, { name: "تاخیر چیک کریں", url: "/ur/check-delays" }]}
         faqSchema={faqs}
         additionalSchemas={[{

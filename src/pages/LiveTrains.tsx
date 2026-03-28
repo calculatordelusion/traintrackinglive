@@ -75,11 +75,11 @@ export default function LiveTrainsPage() {
   return (
     <main>
       <SEOHead
-        title="Live Train Tracking Pakistan — Real-Time GPS Map All Trains 2026"
-        description={`Live train tracking for ${stats.total || 164}+ Pakistan Railways trains. See real-time GPS positions on map, current speed, delay status & ETAs updated every 5 seconds. Free, no signup.`}
+        title="Live Train GPS Map Pakistan — Real-Time Train Positions & Status 2026"
+        description={`View ${stats.total || 164}+ Pakistan Railways trains on a real-time GPS map. Check current position, speed, movement, and station progress for running trains across Pakistan.`}
         canonical="/train"
-        keywords="live train tracking pakistan, all trains live status, pakistan railway running trains, train GPS map pakistan, real time train position pakistan, running train status today, live train map, is my train running today, train location today pakistan"
-        breadcrumbs={[{ name: "Home", url: "/" }, { name: "Live Train Tracking", url: "/train" }]}
+        keywords="live train GPS map pakistan, real time train positions pakistan, train location map pakistan, running train map, pakistan railway GPS map, current train position pakistan, train movement tracker pakistan, all running trains pakistan"
+        breadcrumbs={[{ name: "Home", url: "/" }, { name: "Live Train GPS Map", url: "/train" }]}
         additionalSchemas={[{
           "@context": "https://schema.org",
           "@type": "ItemList",

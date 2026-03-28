@@ -45,7 +45,7 @@ export default function ContactPage() {
         title="Contact Track My Train — Feedback & Support"
         description="Reach the Track My Train team for bug reports, feature suggestions, or data corrections. We respond within 2-3 business days."
         canonical="/contact"
-        keywords="contact trackmytrain.pk, report train bug, suggest feature trackmytrain, pakistan railway feedback, trackmytrain support email, train data correction, contact railway tracker team"
+        keywords="contact trackmytrain, report bug, suggest feature, train data correction, trackmytrain feedback, railway tracker support, submit feedback train tracker"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Contact Us", url: "/contact" }]}
         faqSchema={contactFaqs}
         additionalSchemas={[{

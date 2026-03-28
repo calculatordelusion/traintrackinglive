@@ -72,7 +72,7 @@ export default function GreenLinePage() {
         title="Green Line Express — Schedule, Fares & Tracking 2026"
         description="Green Line Express (5UP/6DN) complete guide — Karachi to Islamabad schedule, AC class fares Rs 1,200–6,500, live GPS tracking, and booking tips."
         canonical="/green-line-express"
-        keywords="green line express, green line train pakistan, karachi islamabad train, green line express schedule 2026, green line ticket price, 5UP 6DN train, green line express booking, green line express fare, green line stops, green line express timing"
+        keywords="green line express, green line train, karachi to islamabad train, green line schedule, green line ticket price, green line fare, 5UP 6DN, green line express booking, green line stops, green line timing, green line express today, green line express speed"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Express Trains", url: "/express-trains" }, { name: "Green Line Express", url: "/green-line-express" }]}
         faqSchema={greenLineFaqs}
         additionalSchemas={[{

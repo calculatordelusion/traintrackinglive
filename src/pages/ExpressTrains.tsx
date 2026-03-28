@@ -76,7 +76,7 @@ export default function ExpressTrainsPage() {
         title="Pakistan Express Trains — Complete List & Fares 2026"
         description="All Pakistan Railways express and AC trains — Tezgam, Karakoram, Business Express. Fares, routes, classes, and live tracking for every premium service."
         canonical="/express-trains"
-        keywords="pakistan express trains list, tezgam express schedule, karakoram express, business express pakistan, AC train pakistan, fastest trains pakistan, express train schedule 2026, premium trains pakistan, all express trains pakistan railway"
+        keywords="pakistan express trains, tezgam express, karakoram express, business express, AC train pakistan, fastest train pakistan, express train list, premium trains, all express trains, shalimar express, allama iqbal express, pakistan mail, express train fare"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Express Trains", url: "/express-trains" }]}
         faqSchema={expressFaqs}
         additionalSchemas={[{

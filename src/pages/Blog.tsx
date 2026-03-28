@@ -21,7 +21,7 @@ export default function BlogPage() {
         title="Pakistan Railways Blog — Travel Guides & Tips 2026"
         description="Expert Pakistan Railways travel guides, Eid tips, scenic route reviews, and booking advice. Written by experienced travelers. Updated weekly."
         canonical="/blog"
-        keywords="pakistan railways blog, train travel tips pakistan, pakistan railways news 2026, eid train travel tips, scenic train journeys pakistan, railway travel guide, pakistan train blog articles, first time train travel pakistan"
+        keywords="pakistan railways blog, train travel guide, railway travel tips, eid train travel, scenic train routes, first time train journey, train travel advice, railway news pakistan, travel by train pakistan, best train journeys, train trip planning"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Blog", url: "/blog" }]}
         faqSchema={blogFaqs}
         additionalSchemas={[{

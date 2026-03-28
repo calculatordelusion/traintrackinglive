@@ -65,7 +65,7 @@ export default function FindMyTrainPage() {
         title="Find My Train — GPS Train Detector Pakistan 2026"
         description="Detect which Pakistan Railways train you're on using GPS. Auto-matches your location with active trains within 2km. Free, instant, no signup."
         canonical="/find-my-train"
-        keywords="find my train pakistan, which train am i on, GPS train detector pakistan, auto detect train pakistan, locate my train, identify my train, what train am i on now, train detector by location"
+        keywords="find my train, which train am i on, GPS train detector, detect my train, locate my train, identify train by location, what train is this, train near me, nearest train, auto detect train, train finder by GPS, am i on the right train"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Find My Train", url: "/find-my-train" }]}
         faqSchema={findMyTrainFaqs}
         howToSchema={{
